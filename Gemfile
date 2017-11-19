@@ -5,7 +5,7 @@ bundle exec rake namespace:start
 
 gem 'rake', '12.0.0'
 gem 'bundler', '1.16.0'
-gem 'jruby', '9.1.14.0'
+gem 'jruby', '9.1.14.0200'
 
 #gem install bundler
 
