@@ -1,4 +1,7 @@
 language: ruby
+
+install: rvm install 2.3.5
+
 rvm:
   - 2.3.5
   - jruby
