@@ -1,6 +1,12 @@
 source 'https://rubygems.org'
 ruby '2.3.5'
 
+bundle exec rake namespace:start
+
+gem 'rake', '12.0.0'
+gem 'bundler', '1.16.0'
+gem 'jruby', '9.1.13.0'
+
 #gem install bundler
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
