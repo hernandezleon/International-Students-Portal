@@ -1,3 +1,5 @@
 language: ruby
 
-install: rvm install ruby-2.3.5
+install: 
+	- rvm install ruby-2.3.5	
+	- rvm --default use 2.3.5
