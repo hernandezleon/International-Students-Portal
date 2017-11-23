@@ -1,6 +1,2 @@
 language: ruby
 
-rvm:
-  - 2.3.5
-  - jruby
-  - 9.1.14-p200
