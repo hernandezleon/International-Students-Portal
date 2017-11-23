@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+rvm --default use 2.3.5
+
 ruby '2.3.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
