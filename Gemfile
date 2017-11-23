@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-rvm --default use 2.3.5
 
 ruby '2.3.5'
 
