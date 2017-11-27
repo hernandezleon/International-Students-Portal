@@ -72,7 +72,7 @@ GEM
     multi_json (1.12.2)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
-    pg (0.21.0)
+    pg (0.20.0)
     puma (3.11.0)
     rack (1.6.8)
     rack-test (0.6.3)
@@ -152,7 +152,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
-  pg
+  pg (~> 0.20.0)
   puma
   rails (= 4.2.8)
   rails_12factor
