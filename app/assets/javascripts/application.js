@@ -16,3 +16,7 @@
 //= require bootstrap-sprockets
 //= require_tree .
 //= require bootstrap
+//= require bootstrap.min
+//= require modernizr-2.8.3-respond-1.4.2.min
+//= require jquery-1.11.2.min
+//= require npm
