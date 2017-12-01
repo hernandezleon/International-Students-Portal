@@ -21,6 +21,8 @@
 @import "tooplate-style";
 @import "bootstrap.min";
 
+//= require bootstrap.min
+
 *= require fontAwesome
 *= require bootstrap-theme.min
 *= require tooplate-style
