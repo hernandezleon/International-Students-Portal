@@ -54,3 +54,15 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+WARNING on line 25 of /home/jay/Desktop/International-Students-Portal/app/assets/stylesheets/application.css.sass:
+This selector doesn't have any properties and will not be rendered.
+
+WARNING on line 26 of /home/jay/Desktop/International-Students-Portal/app/assets/stylesheets/application.css.sass:
+This selector doesn't have any properties and will not be rendered.
+
+WARNING on line 27 of /home/jay/Desktop/International-Students-Portal/app/assets/stylesheets/application.css.sass:
+This selector doesn't have any properties and will not be rendered.
+
+WARNING on line 28 of /home/jay/Desktop/International-Students-Portal/app/assets/stylesheets/application.css.sass:
+This selector doesn't have any properties and will not be rendered.
+
