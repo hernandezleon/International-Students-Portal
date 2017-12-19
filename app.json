@@ -1,8 +1,8 @@
 {
-  "name": "Start on Heroku: Ruby",
-  "description": "A barebones Rails app, which can easily be deployed to Heroku",
+  "name": "International Students Web Portal",
+  "description": "A centralized information board for prospective and current International Students ",
   "image": "heroku/ruby",
-  "repository": "https://github.com/heroku/ruby-getting-started",
+  "repository": "https://github.com/hernandezleon/International-Students-Portal/",
   "keywords": ["ruby", "rails" ],
   "addons": [ "heroku-postgresql" ]
 }

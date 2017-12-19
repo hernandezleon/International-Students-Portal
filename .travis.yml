@@ -11,3 +11,7 @@ test:
   adapter: postgresql
   database: ruby-getting-started_test
 
+notifications:
+  email: false
+
+
