@@ -53,3 +53,5 @@ gem 'puma'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'autoprefixer-rails'
 
+gem 'rspec-rails','3.7.2'
+gem 'capybara','2.16.1'

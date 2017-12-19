@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
+  get 'static_pages/home'
+
+  get 'static_pages/help'
+
   resources :microposts
   resources :users
+  resources :static_pages
+  resources :startup
   get 'startup/index'
 
 
