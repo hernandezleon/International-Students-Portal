@@ -6039,3 +6039,15 @@ Started GET "/static_pages" for 127.0.0.1 at 2017-12-19 17:46:21 -0600
 Processing by StaticPagesController#index as HTML
   Rendered static_pages/index.html.erb within layouts/application (0.2ms)
 Completed 200 OK in 185ms (Views: 182.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (247.0ms)[0m  [1mDROP DATABASE IF EXISTS "ruby-getting-started_test"[0m
+  [1m[35m (866.6ms)[0m  CREATE DATABASE "ruby-getting-started_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (68.2ms)[0m  CREATE TABLE "microposts" ("id" serial primary key, "content" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (56.9ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "name" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (57.1ms)[0m  CREATE TABLE "widgets" ("id" serial primary key, "name" character varying, "description" text, "stock" integer, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (31.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (29.9ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.5ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (7.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20171219153856')
+  [1m[36m (8.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20171219144556')[0m
+  [1m[35m (8.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140707111715')
