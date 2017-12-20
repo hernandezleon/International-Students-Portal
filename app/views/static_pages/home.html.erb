@@ -1,78 +1,19 @@
-
-<!-- <h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
- -->
-<!DOCTYPE html>
-<html>
-<head>
-	<title>International Students Web Portal</title>
-	<%= stylesheet_link_tag		'application', media: 'all', 'data-turbolinks-track' => true %> 
-	<%= javascript_include_tag	'application', 'data-turbolinks-track' => true %>
-	<%= csrf_meta_tags %>
-
-	
-	<link href="https://getbootstrap.com/docs/3.3/examples/jumbotron/jumbotron.css" rel="stylesheet">
-	<!-- BOOTSTRAP -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"> </script>
-</head>
-<body>
- 
-
-
- <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-            <a class="navbar-brand" href="static_pages#help">About</a>
-            <a class="navbar-brand" href="microposts">Microposts</a>
-            <a class="navbar-brand" href="users#new">Register</a>
-
-
+<% provide(:title, 'Home') %>
+     <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Coming Soon</h2>
+          <p>Coming soon is a site that will provide a much needed benefit to the International Student looking to study in the US. We will provide a single place for students from all over the world to share, connect, and obtain all necessary information and documentation for making this change  </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-
-	  <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
+        <div class="col-md-4">
+          <h2>About</h2>
+          <p>Our Web App is for International Students who need to accelerate the process to come to the US, the “International Student Portal” will allow International Students to familiarize themselves with what they need in order to apply and what is the process to become a student in the US. Unlike all the other competitive alternatives, our product will have all the information in one place to efficiently, concisely, and reliably facilitate the admissions and accommodation process for international students at an affordable price. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Contact</h2>
+          <p>Feel free to leave us a comment on the ISWP Comment page. We value any feedback our users can offer.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
       </div>
-    </nav>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>INTERNATIONAL COLLEGE INFORMATION PORTAL</h1>
-        <p>Helping International Students Connect. </p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
-
-    <div class="container">
-      <%= yield %>
-
-
-      
-
-      <hr>
-
-      <footer>
-        <p>&copy; 2017 | International Students</p>
-      </footer>
-    </div> <!-- /container -->
-
-
-</body>
-</html>
