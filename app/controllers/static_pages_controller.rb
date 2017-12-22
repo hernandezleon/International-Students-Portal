@@ -1,9 +1,8 @@
-class StaticPagesController < ApplicationControllerhelp
+class StaticPagesController < ApplicationController
   def home
   end
 
   def help
-  	#render 'static_pages/help'
   end
 
   def about
