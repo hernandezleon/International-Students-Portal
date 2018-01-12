@@ -57,3 +57,7 @@ gem 'rspec-rails','3.7.2'
 gem 'capybara','2.16.1'
 gem 'rspec'
 gem 'rspec-core'
+
+# Heroku Addons
+
+gem 'newrelic_rpm'
