@@ -1,0 +1,12 @@
+List of files in zipfile
+Stored file name:Base/Config/newrelic.yml
+Original path:/home/jjain/Desktop/International-Students-Portal/config/newrelic.yml
+
+Stored file name:Ruby/Config/Gemfile
+Original path:/home/jjain/Desktop/International-Students-Portal/Gemfile
+
+Stored file name:Ruby/Config/Gemfile.lock
+Original path:/home/jjain/Desktop/International-Students-Portal/Gemfile.lock
+
+Stored file name:nrdiag-filelist.txt
+Original path:./nrdiag-filelist.txt
