@@ -905,6 +905,7 @@ body {
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
+  margin:0;
 }
 input,
 button,
@@ -4624,7 +4625,7 @@ a.badge:focus {
   margin-bottom: 30px;
   
   
-  background-image: url('intl-static-jumbo.jpeg');
+  /*background-image: url('intl-static-jumbo.jpeg');*/
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -6333,3 +6334,10 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+/**, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+*/
