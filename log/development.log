@@ -44149,3 +44149,32 @@ Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9
 
 
 Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-22 20:35:27 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 12:16:00 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_jumbotron.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 1848ms (Views: 1840.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-833cd868d91d963cd230eb138f92a0fa8d1b4c32493d6724f7a1e4e2d04aa33d.css?body=1" for 127.0.0.1 at 2018-01-23 12:16:02 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 12:16:02 -0600
+
+
+Started GET "/" for ::1 at 2018-01-23 12:16:17 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_jumbotron.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 174ms (Views: 166.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-833cd868d91d963cd230eb138f92a0fa8d1b4c32493d6724f7a1e4e2d04aa33d.css?body=1" for ::1 at 2018-01-23 12:16:18 -0600
