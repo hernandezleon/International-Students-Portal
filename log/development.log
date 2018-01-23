@@ -44133,3 +44133,19 @@ Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9
 
 
 Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-22 20:25:57 -0600
+
+
+Started GET "/users" for 127.0.0.1 at 2018-01-22 20:35:27 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9972004f693f5b8b6e81d1a.css?body=1" for 127.0.0.1 at 2018-01-22 20:35:27 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-22 20:35:27 -0600
