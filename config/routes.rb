@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   
   #get 'startup/help', to: 'startup#help', as: :help
   match '/help', to: 'startup#help', :via => [:get, :post]
-  match '/startup',to:'startup#index',:via => [:get, :post]
+  #match '/startup',to:'startup#index',:via => [:get, :post]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
