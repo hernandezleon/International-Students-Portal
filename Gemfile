@@ -63,4 +63,6 @@ gem 'rspec-core'
 gem 'newrelic_rpm'
 
 # Google authentication gem
-gem "omniauth-google-oauth2", "~> 0.2.1"
+gem "omniauth-google-oauth2", "~> 0.2.1",:require => 'google/api_client'
+gem 'google-api-client','~> 0.7.1'
+

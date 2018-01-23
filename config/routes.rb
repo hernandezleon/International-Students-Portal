@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   
-  
+  require 'omniauth-google-oauth2'
+  get 'sessions/create'
+
+  get 'sessions/destroy'
+
+  get 'home/show'
+
   resources :layouts
   resources :startup
   resources :microposts
@@ -64,4 +70,28 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  # Quickcal::Application.routes.draw do
+  #   get 'auth/:provider/callback', to: 'sessions#create'
+  #   get 'auth/failure', to: redirect('/')
+  #   get 'signout', to: 'sessions#destroy', as: 'signout'
+
+  #   resources :sessions, only: [:create, :destroy]
+  #   resource :home, only: [:show]
+
+  #   root to: "startup#index"
+  # end
+  # require 'omniauth-google-oauth2'
+  # InternationalStudentsPortal::Application.routes.draw do
+  #   get 'auth/:provider/callback', to: 'sessions#create'
+  #   get 'auth/failure', to: redirect('/')
+  #   get 'signout', to: 'sessions#destroy', as: 'signout'
+
+  #   resources :sessions, only: [:create, :destroy]
+  #   resource :home, only: [:show]
+
+  #   root to: "startup#index"
+  # end
+
+
 end
