@@ -1,12 +1,12 @@
 class SessionsController < ApplicationController
   def create
-    user = User.from_omniauth(env["omniauth.auth"])
-    session[:user_id] = user.id
+    google_user = GoogleUser.from_omniauth(env["omniauth.auth"])
+    session[:google_user_id] = google_user.id
     redirect_to root_path
   end
 
   def destroy
-    session[:user_id] = nil
+    session[:google_user_id] = nil
     redirect_to root_path
   end
 end

@@ -59,5 +59,12 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 
+  # Omniauth 
+  config.include Omniauth::Mock
+  config.include Omniauth::SessionHelpers, type: :feature
+
   ActiveRecord::Migration.maintain_test_schema!
 end
+
+
+OmniAuth.config.test_mode = true

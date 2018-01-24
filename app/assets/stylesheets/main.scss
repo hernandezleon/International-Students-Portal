@@ -32,8 +32,8 @@ a {
   }
 
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    background-color: #fff;
   }
 }
 
@@ -113,14 +113,21 @@ div {
     color: #fff;
     background-color:#496ebc 
 }
-.btn-tw{
-    color: #fff !important;
-    background-color:#55acee;
-}
-.btn-tw:hover{
+.btn-googleplus {
+    background: #E93F2E;
+    border-radius: 0;
     color: #fff;
-    background-color:#59b5fa;
-}
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b72213;
+  }
+  .btn-googleplus:link, .btn-googleplus:visited {
+    color: #fff;
+  }
+  .btn-googleplus:active, .btn-googleplus:hover {
+    background: #b72213;
+    color: #fff !important;
+  }
 @media(max-width:768px){
     #login-dp{
         background-color: inherit;

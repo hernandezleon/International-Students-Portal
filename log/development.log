@@ -44311,3 +44311,593 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 19:01:49 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.8) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.8) lib/active_record/migration.rb:373:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+  puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+  puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+  puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /home/jay/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /home/jay/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/jay/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/jay/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGoogleUsers (20180123223533)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (16.3ms)[0m  [1mCREATE TABLE "google_users" ("id" serial primary key, "provider" character varying, "uid" character varying, "name" character varying, "oauth_token" character varying, "oauth_expires_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20180123223533"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'google_users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.2ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'microposts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.1ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'widgets'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 19:02:13 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_jumbotron.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 3265ms (Views: 3255.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9972004f693f5b8b6e81d1a.css?body=1" for 127.0.0.1 at 2018-01-23 19:02:17 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 19:02:17 -0600
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 19:55:11 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_jumbotron.erb (0.3ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 234ms (Views: 223.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 19:58:27 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_jumbotron.erb (0.5ms)
+  Rendered layouts/_footer.erb (0.4ms)
+Completed 200 OK in 273ms (Views: 259.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9972004f693f5b8b6e81d1a.css?body=1" for 127.0.0.1 at 2018-01-23 19:58:27 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 19:58:27 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 19:58:39 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9972004f693f5b8b6e81d1a.css?body=1" for 127.0.0.1 at 2018-01-23 19:58:39 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 19:58:39 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 19:59:19 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9972004f693f5b8b6e81d1a.css?body=1" for 127.0.0.1 at 2018-01-23 19:59:20 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 19:59:20 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 19:59:20 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9972004f693f5b8b6e81d1a.css?body=1" for 127.0.0.1 at 2018-01-23 19:59:20 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 19:59:20 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 19:59:28 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9972004f693f5b8b6e81d1a.css?body=1" for 127.0.0.1 at 2018-01-23 19:59:28 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 19:59:28 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 19:59:31 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 20:00:22 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9972004f693f5b8b6e81d1a.css?body=1" for 127.0.0.1 at 2018-01-23 20:00:22 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 20:00:22 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 20:00:24 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_jumbotron.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 20:00:25 -0600
+Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9972004f693f5b8b6e81d1a.css?body=1" for 127.0.0.1 at 2018-01-23 20:00:25 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 20:00:26 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9972004f693f5b8b6e81d1a.css?body=1" for 127.0.0.1 at 2018-01-23 20:00:26 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 20:00:26 -0600
+
+
+Started GET "/" for ::1 at 2018-01-23 20:00:32 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9972004f693f5b8b6e81d1a.css?body=1" for ::1 at 2018-01-23 20:00:33 -0600
+
+
+Started GET "/" for ::1 at 2018-01-23 20:00:34 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9972004f693f5b8b6e81d1a.css?body=1" for ::1 at 2018-01-23 20:00:34 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for ::1 at 2018-01-23 20:00:34 -0600
+
+
+Started GET "/" for ::1 at 2018-01-23 20:00:35 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9972004f693f5b8b6e81d1a.css?body=1" for ::1 at 2018-01-23 20:00:35 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for ::1 at 2018-01-23 20:00:35 -0600
+
+
+Started GET "/" for ::1 at 2018-01-23 20:00:36 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_jumbotron.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9972004f693f5b8b6e81d1a.css?body=1" for ::1 at 2018-01-23 20:00:36 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for ::1 at 2018-01-23 20:00:36 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 20:01:04 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9972004f693f5b8b6e81d1a.css?body=1" for 127.0.0.1 at 2018-01-23 20:01:04 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 20:01:04 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 20:01:37 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_jumbotron.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+
+Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9972004f693f5b8b6e81d1a.css?body=1" for 127.0.0.1 at 2018-01-23 20:01:37 -0600
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 20:01:37 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 20:01:40 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_jumbotron.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 20:01:40 -0600
+
+
+Started GET "/assets/application.self-7915aed6e84b803f307f6b0918715996e0facb4fd9972004f693f5b8b6e81d1a.css?body=1" for 127.0.0.1 at 2018-01-23 20:01:40 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 20:02:27 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 2144ms (Views: 2142.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7d1f3cd5bc9f4ee252fceba25895adcdc03179b92ad98d16e084a59783dbe7df.css?body=1" for 127.0.0.1 at 2018-01-23 20:02:29 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 20:02:29 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 20:03:47 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 2085ms (Views: 2084.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-14837944844a14f5eb4ed3b1f81cc88971de115adf42bd34eeec265032fc342f.css?body=1" for 127.0.0.1 at 2018-01-23 20:03:49 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 20:03:49 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 20:04:42 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 1483ms (Views: 1482.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f252bcdd729761b029b454aab71cf7453a11bf246fde0cda73bf2457be332f48.css?body=1" for 127.0.0.1 at 2018-01-23 20:04:43 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 20:04:43 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 20:05:00 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 1409ms (Views: 1408.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3182c660c714af4b9ff08f44116b61452f8f3a479c3811ece53c55f35039394c.css?body=1" for 127.0.0.1 at 2018-01-23 20:05:02 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 20:05:02 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 20:05:06 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3182c660c714af4b9ff08f44116b61452f8f3a479c3811ece53c55f35039394c.css?body=1" for 127.0.0.1 at 2018-01-23 20:05:06 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 20:05:06 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 20:06:23 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 1457ms (Views: 1456.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e1dd3011c92bcdab6e8fc56f975517914ab9b599be01773751e72b10f1e0d416.css?body=1" for 127.0.0.1 at 2018-01-23 20:06:25 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 20:06:25 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 20:07:36 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e1dd3011c92bcdab6e8fc56f975517914ab9b599be01773751e72b10f1e0d416.css?body=1" for 127.0.0.1 at 2018-01-23 20:07:36 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 20:07:36 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 20:07:47 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e1dd3011c92bcdab6e8fc56f975517914ab9b599be01773751e72b10f1e0d416.css?body=1" for 127.0.0.1 at 2018-01-23 20:07:47 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 20:07:47 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 20:07:56 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_jumbotron.erb (0.4ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e1dd3011c92bcdab6e8fc56f975517914ab9b599be01773751e72b10f1e0d416.css?body=1" for 127.0.0.1 at 2018-01-23 20:07:57 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 20:07:57 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 20:08:59 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e1dd3011c92bcdab6e8fc56f975517914ab9b599be01773751e72b10f1e0d416.css?body=1" for 127.0.0.1 at 2018-01-23 20:08:59 -0600
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 20:08:59 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-23 20:09:12 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_jumbotron.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/assets/application.self-3b69d011e4f01754d4bf600db86e029240f210ed4292bb0bdb9270f5a4840b14.js?body=1" for 127.0.0.1 at 2018-01-23 20:09:13 -0600
+Started GET "/assets/application.self-e1dd3011c92bcdab6e8fc56f975517914ab9b599be01773751e72b10f1e0d416.css?body=1" for 127.0.0.1 at 2018-01-23 20:09:13 -0600
+
+
+Started GET "/%3Ca%20id=" for 127.0.0.1 at 2018-01-23 20:09:24 -0600
+
+ActionController::RoutingError (No route matches [GET] "/%3Ca%20id="):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+  puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+  puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+  puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /home/jay/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/jay/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.2ms)
+  Rendered /home/jay/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.5ms)
+  Rendered /home/jay/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/jay/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.9ms)

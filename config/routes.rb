@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   resources :startup
   resources :microposts
   resources :users
+  resources :google_user
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -19,9 +20,9 @@ Rails.application.routes.draw do
 
   root 'startup#index'
   
-  #get 'startup/help', to: 'startup#help', as: :help
+  #get 'starutp/help', to: 'startup#help', as: :help
   match '/help', to: 'startup#help', :via => [:get, :post]
-  #match '/startup',to:'startup#index',:via => [:get, :post]
+  match '/startup',to:'startup#index',:via => [:get, :post]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -70,28 +71,18 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  
+  
+    get 'auth/:provider/callback', to: 'sessions#create'
+    get 'auth/failure', to: redirect('startup')
+    get 'signout', to: 'sessions#destroy', as: 'signout'
 
-  # Quickcal::Application.routes.draw do
-  #   get 'auth/:provider/callback', to: 'sessions#create'
-  #   get 'auth/failure', to: redirect('/')
-  #   get 'signout', to: 'sessions#destroy', as: 'signout'
+    resources :sessions, only: [:create, :destroy]
+    resource :home, only: [:show]
 
-  #   resources :sessions, only: [:create, :destroy]
-  #   resource :home, only: [:show]
-
-  #   root to: "startup#index"
-  # end
-  # require 'omniauth-google-oauth2'
-  # InternationalStudentsPortal::Application.routes.draw do
-  #   get 'auth/:provider/callback', to: 'sessions#create'
-  #   get 'auth/failure', to: redirect('/')
-  #   get 'signout', to: 'sessions#destroy', as: 'signout'
-
-  #   resources :sessions, only: [:create, :destroy]
-  #   resource :home, only: [:show]
-
-  #   root to: "startup#index"
-  # end
+    #root to: "home#show"
+  
+ 
 
 
 end
