@@ -119,15 +119,6 @@ GEM
     newrelic_rpm (4.7.1.340)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
-    oa-core (0.0.5)
-      rack (~> 1.1)
-    oa-oauth (0.0.1)
-      json
-      nokogiri
-      oa-core (~> 0.0.0)
-      oauth
-      oauth2
-    oauth (0.5.4)
     oauth2 (1.4.0)
       faraday (>= 0.8, < 0.13)
       jwt (~> 1.0)
@@ -269,7 +260,6 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   newrelic_rpm
-  oa-oauth
   omniauth-google-oauth2 (~> 0.2.1)
   pg (~> 0.20.0)
   puma
