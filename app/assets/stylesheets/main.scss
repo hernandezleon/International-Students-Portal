@@ -2,7 +2,7 @@
 body {
   background-color: #fff;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: Roboto,-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Oxygen","Ubuntu","Cantarell","Open Sans",sans-serif !important;
   font-size: 13px;
   line-height: 18px;
   padding: 0;
@@ -13,7 +13,7 @@ body {
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: Roboto,-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Oxygen","Ubuntu","Cantarell","Open Sans",sans-serif !important;
   font-size: 13px;
   line-height: 18px;
 }
@@ -139,4 +139,27 @@ div {
     }
 }
 
+
+
+
+
+.navbar-inverse {
+  background-color: #222;
+  border-color: white !important;
+}
+
+
+// Search bar width
 #navBarSearchForm input[type=text]{width:430px !important;}
+
+
+
+.right-form{
+  margin-top: 60px;
+ 
+}
+
+.right-form .panel{
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}

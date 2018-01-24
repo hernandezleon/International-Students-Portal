@@ -4623,6 +4623,8 @@ a.badge:focus {
 .jumbotron {
   padding: 30px 15px;
   margin-bottom: 30px;
+
+  background-color:#636060;
   
   
   /*background-image: url('intl-static-jumbo.jpeg');*/
@@ -4630,6 +4632,7 @@ a.badge:focus {
 .jumbotron h1,
 .jumbotron .h1 {
   color: inherit;
+  font-size:35px !important;
 }
 .jumbotron p {
   margin-bottom: 15px;
