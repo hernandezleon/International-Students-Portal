@@ -1,0 +1,29 @@
+{
+  "name": "International-Students-Portal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "browserify": "^15.2.0",
+    "browserify-incremental": "^3.1.1",
+    "dropdown": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hernandezleon/International-Students-Portal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hernandezleon/International-Students-Portal/issues"
+  },
+  "homepage": "https://github.com/hernandezleon/International-Students-Portal#readme"
+}
