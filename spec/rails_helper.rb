@@ -60,8 +60,8 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 
   # Omniauth 
-  config.include Omniauth::Mock
-  config.include Omniauth::SessionHelpers, type: :feature
+  #config.include Omniauth::Mock
+  #config.include Omniauth::SessionHelpers, type: :feature
 
   ActiveRecord::Migration.maintain_test_schema!
 end
