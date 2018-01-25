@@ -1804,3 +1804,20 @@
 [2018-01-24 15:48:54 -0600 LABi2 (27896)] INFO : Installing deferred Puma::Rack::Builder instrumentation
 [2018-01-24 15:48:54 -0600 LABi2 (27896)] INFO : Installing Puma::Rack::Builder middleware instrumentation
 [2018-01-24 15:48:56 -0600 LABi2 (27896)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-01-24 19:02:35 -0600 multiverse76 (16406)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-01-24 19:02:35 -0600 multiverse76 (16406)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-01-24 19:02:35 -0600 multiverse76 (16406)] INFO : Reading configuration from config/newrelic.yml (/home/jay/Desktop/International-Students-Portal)
+[2018-01-24 19:02:35 -0600 multiverse76 (16406)] INFO : Environment: development
+[2018-01-24 19:02:35 -0600 multiverse76 (16406)] INFO : No known dispatcher detected.
+[2018-01-24 19:02:35 -0600 multiverse76 (16406)] INFO : Application: My Application (Development)
+[2018-01-24 19:02:36 -0600 multiverse76 (16406)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-01-24 19:02:36 -0600 multiverse76 (16406)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-01-24 19:02:36 -0600 multiverse76 (16406)] INFO : Installing Net instrumentation
+[2018-01-24 19:02:36 -0600 multiverse76 (16406)] INFO : Installing ActiveJob instrumentation
+[2018-01-24 19:02:36 -0600 multiverse76 (16406)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-01-24 19:02:36 -0600 multiverse76 (16406)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-01-24 19:02:36 -0600 multiverse76 (16406)] INFO : Installing Rails 4 view instrumentation
+[2018-01-24 19:02:36 -0600 multiverse76 (16406)] INFO : Installing Rails 4 Controller instrumentation
+[2018-01-24 19:02:36 -0600 multiverse76 (16406)] INFO : Finished instrumentation
+[2018-01-24 19:02:36 -0600 multiverse76 (16406)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-01-24 19:02:36 -0600 multiverse76 (16406)] INFO : Starting Agent shutdown
