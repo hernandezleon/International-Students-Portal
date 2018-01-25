@@ -51,4 +51,4 @@ build-iPhoneSimulator/
 
 
 # secret_token.rb doesn't exist in rails 4.1+
-/config/initializers/secret_token.rb
+#/config/initializers/secret_token.rb
