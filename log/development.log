@@ -48116,3 +48116,170 @@ Started GET "/assets/application.self-035bd206b5a58472a170f1a4a43b6a632dafccf7a5
 
 
 Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 09:57:14 -0600
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-01-25 10:15:55 -0600
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=63cf48a4a4cba950f2cf601408010156502e0e7a006b4f33&code=4/hF1mI9f3zk2e8Syo9NEvXiz9I9_fkJDyZJP-IU4xu44" for 127.0.0.1 at 2018-01-25 10:15:55 -0600
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"63cf48a4a4cba950f2cf601408010156502e0e7a006b4f33", "code"=>"4/hF1mI9f3zk2e8Syo9NEvXiz9I9_fkJDyZJP-IU4xu44", "provider"=>"google_oauth2"}
+  [1m[35mGoogleUser Load (0.4ms)[0m  SELECT  "google_users".* FROM "google_users" WHERE "google_users"."provider" = $1 AND "google_users"."uid" = $2  ORDER BY "google_users"."id" ASC LIMIT 1  [["provider", "google_oauth2"], ["uid", "102302283442418311234"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "google_users" SET "oauth_token" = $1, "oauth_expires_at" = $2, "updated_at" = $3 WHERE "google_users"."id" = $4  [["oauth_token", "ya29.GlxNBU4ygPQgga8ZUAbKKeBcB0VZzX8Kt6nb13bnNjwaG4U1cHm7zpf_EZErF-ve090c9wlsTyNqLi7qdqrZIDX5wgd03of2kvos1CqNgDWBbHfIm44AMdO_shgyqQ"], ["oauth_expires_at", "2018-01-25 17:15:55.000000"], ["updated_at", "2018-01-25 16:15:55.573634"], ["id", 1]]
+  [1m[36m (3.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 26ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 10:15:55 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  [1m[35mGoogleUser Load (0.3ms)[0m  SELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_register.html.erb (0.1ms)
+  Rendered layouts/_jumbotron.erb (0.5ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 1816ms (Views: 1814.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-1dbf0e804fb89d7a1064a1e3beb51a681ec607fa3bcf37e049a4d314578e6c1b.css?body=1" for 127.0.0.1 at 2018-01-25 10:15:57 -0600
+
+
+Started GET "/signout" for 127.0.0.1 at 2018-01-25 10:16:05 -0600
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 10:16:05 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_register.html.erb (0.1ms)
+  Rendered layouts/_jumbotron.erb (0.8ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 10:18:04 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_signin.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_register.html.erb (0.5ms)
+  Rendered layouts/_jumbotron.erb (1.6ms)
+  Rendered layouts/_footer.erb (0.4ms)
+Completed 200 OK in 74ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 10:18:04 -0600
+Started GET "/assets/application.self-1dbf0e804fb89d7a1064a1e3beb51a681ec607fa3bcf37e049a4d314578e6c1b.css?body=1" for 127.0.0.1 at 2018-01-25 10:18:04 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 10:18:18 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_register.html.erb (0.1ms)
+  Rendered layouts/_jumbotron.erb (0.8ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1dbf0e804fb89d7a1064a1e3beb51a681ec607fa3bcf37e049a4d314578e6c1b.css?body=1" for 127.0.0.1 at 2018-01-25 10:18:18 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 10:18:18 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 10:18:26 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_signin.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_register.html.erb (0.2ms)
+  Rendered layouts/_jumbotron.erb (1.6ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1dbf0e804fb89d7a1064a1e3beb51a681ec607fa3bcf37e049a4d314578e6c1b.css?body=1" for 127.0.0.1 at 2018-01-25 10:18:26 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 10:18:26 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 10:18:39 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_signin.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_register.html.erb (0.2ms)
+  Rendered layouts/_jumbotron.erb (1.7ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1dbf0e804fb89d7a1064a1e3beb51a681ec607fa3bcf37e049a4d314578e6c1b.css?body=1" for 127.0.0.1 at 2018-01-25 10:18:39 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 10:18:39 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 10:18:47 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_register.html.erb (0.2ms)
+  Rendered layouts/_jumbotron.erb (1.6ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 10:18:47 -0600
+
+
+Started GET "/assets/application.self-1dbf0e804fb89d7a1064a1e3beb51a681ec607fa3bcf37e049a4d314578e6c1b.css?body=1" for 127.0.0.1 at 2018-01-25 10:18:47 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 10:18:55 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_register.html.erb (0.2ms)
+  Rendered layouts/_jumbotron.erb (1.3ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1dbf0e804fb89d7a1064a1e3beb51a681ec607fa3bcf37e049a4d314578e6c1b.css?body=1" for 127.0.0.1 at 2018-01-25 10:18:55 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 10:18:55 -0600
+
+
+Started GET "/" for ::1 at 2018-01-25 10:22:57 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_register.html.erb (0.1ms)
+  Rendered layouts/_jumbotron.erb (1.0ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1dbf0e804fb89d7a1064a1e3beb51a681ec607fa3bcf37e049a4d314578e6c1b.css?body=1" for ::1 at 2018-01-25 10:22:57 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for ::1 at 2018-01-25 10:22:57 -0600

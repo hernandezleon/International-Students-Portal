@@ -114,20 +114,22 @@ div {
     background-color:#496ebc 
 }
 .btn-googleplus {
-    background: #E93F2E;
+    background: #E93F2E !important;
     border-radius: 0;
-    color: #fff;
+    color: #fff !important;
     border-width: 1px;
     border-style: solid;
-    border-color: #b72213;
-  }
-  .btn-googleplus:link, .btn-googleplus:visited {
-    color: #fff;
-  }
-  .btn-googleplus:active, .btn-googleplus:hover {
-    background: #b72213;
-    color: #fff !important;
-  }
+    border-color: #b72213 !important;
+}
+  
+.btn-googleplus:link, .btn-googleplus:visited {
+  color: #fff;
+}
+.btn-googleplus:active, .btn-googleplus:hover {
+  background: #b72213;
+  color: #fff !important;
+}
+
 @media(max-width:768px){
     #login-dp{
         background-color: inherit;
