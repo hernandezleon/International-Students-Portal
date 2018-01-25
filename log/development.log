@@ -48283,3 +48283,985 @@ Started GET "/assets/application.self-1dbf0e804fb89d7a1064a1e3beb51a681ec607fa3b
 
 
 Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for ::1 at 2018-01-25 10:22:57 -0600
+
+
+Started GET "/" for ::1 at 2018-01-25 10:25:32 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_register.html.erb (0.1ms)
+  Rendered layouts/_jumbotron.erb (0.5ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 1712ms (Views: 1711.5ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/assets/application.self-21edd59fcdd22dbd4c11b301de97472584109c037048dc18bfcfb4eae36b1661.css?body=1" for ::1 at 2018-01-25 10:25:33 -0600
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for ::1 at 2018-01-25 10:25:33 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 11:38:48 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_signin.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_register.html.erb (0.2ms)
+  Rendered layouts/_jumbotron.erb (0.9ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 255ms (Views: 248.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-21edd59fcdd22dbd4c11b301de97472584109c037048dc18bfcfb4eae36b1661.css?body=1" for 127.0.0.1 at 2018-01-25 11:38:48 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:05:12 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_signin.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_register.html.erb (0.3ms)
+  Rendered layouts/_jumbotron.erb (1.1ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 227ms (Views: 220.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-21edd59fcdd22dbd4c11b301de97472584109c037048dc18bfcfb4eae36b1661.css?body=1" for 127.0.0.1 at 2018-01-25 17:05:12 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:05:12 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:07:00 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_signin.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_register.html.erb (0.2ms)
+  Rendered layouts/_jumbotron.erb (0.9ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 214ms (Views: 204.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-21edd59fcdd22dbd4c11b301de97472584109c037048dc18bfcfb4eae36b1661.css?body=1" for 127.0.0.1 at 2018-01-25 17:07:00 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:07:00 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:07:17 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_register.html.erb (0.2ms)
+  Rendered layouts/_jumbotron.erb (1.1ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:07:17 -0600
+Started GET "/assets/application.self-21edd59fcdd22dbd4c11b301de97472584109c037048dc18bfcfb4eae36b1661.css?body=1" for 127.0.0.1 at 2018-01-25 17:07:17 -0600
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-01-25 17:08:28 -0600
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=bb85c804fe13ad626d0de201b39b81d0a31ad0509f1a70b4&code=4/Ya2s8dKOE8D1EuTCyD3Zf2cov_WKzAK5cJyMHVsAMGY" for 127.0.0.1 at 2018-01-25 17:08:28 -0600
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"bb85c804fe13ad626d0de201b39b81d0a31ad0509f1a70b4", "code"=>"4/Ya2s8dKOE8D1EuTCyD3Zf2cov_WKzAK5cJyMHVsAMGY", "provider"=>"google_oauth2"}
+  [1m[35mGoogleUser Load (0.6ms)[0m  SELECT  "google_users".* FROM "google_users" WHERE "google_users"."provider" = $1 AND "google_users"."uid" = $2  ORDER BY "google_users"."id" ASC LIMIT 1  [["provider", "google_oauth2"], ["uid", "102302283442418311234"]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "google_users" SET "oauth_token" = $1, "oauth_expires_at" = $2, "updated_at" = $3 WHERE "google_users"."id" = $4  [["oauth_token", "ya29.GlxNBYRDzaAkDVaSyl9x45nkATcNkShIfEjQauLiwIlUW6HI7gNatSl34u74qVyGfhgI7nIwrWM_GfYAw2rhMbwsESbmyQUpo6PNB6FxeYrbiKosW4SsA-3q4xE6dg"], ["oauth_expires_at", "2018-01-26 00:08:28.000000"], ["updated_at", "2018-01-25 23:08:29.232201"], ["id", 1]]
+  [1m[36m (8.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 37ms (ActiveRecord: 14.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:08:29 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  [1m[35mGoogleUser Load (0.4ms)[0m  SELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_register.html.erb (0.4ms)
+  Rendered layouts/_jumbotron.erb (0.8ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 1735ms (Views: 1734.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:08:31 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:08:59 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.7ms)
+  [1m[36mGoogleUser Load (0.7ms)[0m  [1mSELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (1.4ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_register.html.erb (0.3ms)
+  Rendered layouts/_jumbotron.erb (1.0ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:08:59 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:08:59 -0600
+
+
+Started GET "/home" for 127.0.0.1 at 2018-01-25 17:12:14 -0600
+
+ActionController::RoutingError (uninitialized constant HomesController):
+  activesupport (4.2.8) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.8) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.8) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.8) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.8) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  omniauth (1.8.1) lib/omniauth/strategy.rb:190:in `call!'
+  omniauth (1.8.1) lib/omniauth/strategy.rb:168:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  omniauth (1.8.1) lib/omniauth/builder.rb:63:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/rack/browser_monitoring.rb:32:in `traced_call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+  puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+  puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+  puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.2ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:15:58 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/jjain/Desktop/International-Students-Portal/app/views/layouts/application.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+?(controller: 'startup' action: 'index') 
+                              ^
+/home/jjain/Desktop/International-Students-Portal/app/views/layouts/application.html.erb:24: syntax error, unexpected ')', expecting keyword_end
+er: 'startup' action: 'index') 
+                              ^
+/home/jjain/Desktop/International-Students-Portal/app/views/layouts/application.html.erb:36: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  app/views/layouts/application.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/layouts/application.html.erb:24: syntax error, unexpected ')', expecting keyword_end
+  app/views/layouts/application.html.erb:36: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-01-25 17:17:51 -0600
+Processing by StartupController#help as HTML
+  Rendered startup/help.html.erb within layouts/application (0.5ms)
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/jjain/Desktop/International-Students-Portal/app/views/layouts/application.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+?(controller: 'startup' action: 'index') 
+                              ^
+/home/jjain/Desktop/International-Students-Portal/app/views/layouts/application.html.erb:24: syntax error, unexpected ')', expecting keyword_end
+er: 'startup' action: 'index') 
+                              ^
+/home/jjain/Desktop/International-Students-Portal/app/views/layouts/application.html.erb:36: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  app/views/layouts/application.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/layouts/application.html.erb:24: syntax error, unexpected ')', expecting keyword_end
+  app/views/layouts/application.html.erb:36: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.8ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-01-25 17:19:02 -0600
+Processing by StartupController#help as HTML
+  Rendered startup/help.html.erb within layouts/application (0.3ms)
+  [1m[35mGoogleUser Load (0.4ms)[0m  SELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:19:02 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:19:02 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:19:04 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  [1m[36mGoogleUser Load (0.5ms)[0m  [1mSELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-01-25 17:19:08 -0600
+Processing by StartupController#help as HTML
+  Rendered startup/help.html.erb within layouts/application (0.2ms)
+  [1m[35mGoogleUser Load (0.5ms)[0m  SELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2018-01-25 17:19:13 -0600
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:19:13 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:19:32 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>""}):
+    21: </head>
+    22: <body>
+    23:   <%= render 'layouts/header' %>
+    24:   <% if current_page?(controller: '/') %>
+    25:   	<%= render 'layouts/jumbotron' %>
+    26:   <% end %>  	
+    27:   <div class="container">
+  app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___1662101842128570228_70229764689260'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:19:43 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"index"}):
+    21: </head>
+    22: <body>
+    23:   <%= render 'layouts/header' %>
+    24:   <% if current_page?(controller: 'index') %>
+    25:   	<%= render 'layouts/jumbotron' %>
+    26:   <% end %>  	
+    27:   <div class="container">
+  app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___1662101842128570228_70229773145980'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:19:48 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:19:48 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:19:48 -0600
+
+
+Started GET "/help" for 127.0.0.1 at 2018-01-25 17:19:51 -0600
+Processing by StartupController#help as HTML
+  Rendered startup/help.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:19:52 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_signin.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:20:31 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"application"}):
+    21: </head>
+    22: <body>
+    23:   <%= render 'layouts/header' %>
+    24:   <% if current_page?(controller: 'application') %>
+    25:   	<%= render 'layouts/jumbotron' %>
+    26:   <% end %>  	
+    27:   <div class="container">
+  app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___1662101842128570228_70229771550300'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:20:46 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"home"}):
+    21: </head>
+    22: <body>
+    23:   <%= render 'layouts/header' %>
+    24:   <% if current_page?(controller: 'home') %>
+    25:   	<%= render 'layouts/jumbotron' %>
+    26:   <% end %>  	
+    27:   <div class="container">
+  app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___1662101842128570228_70229804590240'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:20:53 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:20:53 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:20:53 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:21:07 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:21:07 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:21:07 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:21:08 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:21:08 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:21:08 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:21:09 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:21:09 -0600
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:21:09 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:21:09 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:21:09 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:21:09 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:21:09 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:21:09 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:21:09 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:21:09 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:21:10 -0600
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:21:10 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:21:10 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:21:10 -0600
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:21:10 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:21:11 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:21:11 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:21:11 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:21:50 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:21:51 -0600
+
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:21:51 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:22:05 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_signin.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.erb (0.3ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:22:05 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:22:05 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:22:06 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:22:06 -0600
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:22:06 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:22:20 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_signin.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:22:20 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:22:20 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:22:46 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_register.html.erb (0.1ms)
+  Rendered layouts/_jumbotron.erb (0.6ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:22:46 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:22:46 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:24:21 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_register.html.erb (0.1ms)
+  Rendered layouts/_jumbotron.erb (0.6ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2df1c94086f7a7f6bfc8806f2cfa7f974300dc6e1ead32f3169ccd3785bb850f.css?body=1" for 127.0.0.1 at 2018-01-25 17:24:21 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-01-25 17:24:21 -0600
+
+
+Started GET "/help" for 127.0.0.1 at 2018-01-25 17:24:23 -0600
+Processing by StartupController#help as HTML
+  Rendered startup/help.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/microposts" for 127.0.0.1 at 2018-01-25 17:24:25 -0600
+Processing by MicropostsController#index as HTML
+  [1m[36mMicropost Load (5.1ms)[0m  [1mSELECT "microposts".* FROM "microposts"[0m
+  Rendered microposts/index.html.erb within layouts/application (15.8ms)
+  Rendered layouts/_signin.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 36ms (Views: 25.9ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:24:29 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_register.html.erb (0.1ms)
+  Rendered layouts/_jumbotron.erb (0.6ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-01-25 17:25:03 -0600
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=de4ef3bad450b9a7dd0fca4460a911d2c1d2c2bfa7b5ec0e&code=4/nOc07nm2YyGzTWNdVdTyRlNtf5swv5F0axEhsIf6tEY" for 127.0.0.1 at 2018-01-25 17:25:04 -0600
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"de4ef3bad450b9a7dd0fca4460a911d2c1d2c2bfa7b5ec0e", "code"=>"4/nOc07nm2YyGzTWNdVdTyRlNtf5swv5F0axEhsIf6tEY", "provider"=>"google_oauth2"}
+  [1m[35mGoogleUser Load (0.8ms)[0m  SELECT  "google_users".* FROM "google_users" WHERE "google_users"."provider" = $1 AND "google_users"."uid" = $2  ORDER BY "google_users"."id" ASC LIMIT 1  [["provider", "google_oauth2"], ["uid", "102302283442418311234"]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "google_users" SET "oauth_token" = $1, "oauth_expires_at" = $2, "updated_at" = $3 WHERE "google_users"."id" = $4  [["oauth_token", "ya29.GlxNBb6Q91y2ao2oPtWBJLX_VVuIDhIpzBnyi5tU3zAbVu68XS9Qlm_6M0z6I99hgkt29vQBfeIpsmrg1sOQQxKWLLkd_0Fcz6FWkbU5d6HWZ8nhMWW88YlskWeS9Q"], ["oauth_expires_at", "2018-01-26 00:25:04.000000"], ["updated_at", "2018-01-25 23:25:04.645609"], ["id", 1]]
+  [1m[36m (12.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 41ms (ActiveRecord: 17.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:25:04 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  [1m[35mGoogleUser Load (0.4ms)[0m  SELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_register.html.erb (0.1ms)
+  Rendered layouts/_jumbotron.erb (0.8ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-01-25 17:25:07 -0600
+Processing by StartupController#help as HTML
+  Rendered startup/help.html.erb within layouts/application (0.3ms)
+  [1m[36mGoogleUser Load (0.6ms)[0m  [1mSELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 17:25:09 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  [1m[35mGoogleUser Load (0.6ms)[0m  SELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_register.html.erb (0.2ms)
+  Rendered layouts/_jumbotron.erb (1.2ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-01-25 17:26:44 -0600
+
+ActionController::RoutingError (uninitialized constant HomesController):
+  activesupport (4.2.8) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.8) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.8) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.8) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.8) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  omniauth (1.8.1) lib/omniauth/strategy.rb:190:in `call!'
+  omniauth (1.8.1) lib/omniauth/strategy.rb:168:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  omniauth (1.8.1) lib/omniauth/builder.rb:63:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/rack/browser_monitoring.rb:32:in `traced_call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+  puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+  puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+  puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.6ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-01-25 17:27:01 -0600
+
+ActionController::RoutingError (uninitialized constant HomesController):
+  activesupport (4.2.8) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.8) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.8) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.8) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.8) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  omniauth (1.8.1) lib/omniauth/strategy.rb:190:in `call!'
+  omniauth (1.8.1) lib/omniauth/strategy.rb:168:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  omniauth (1.8.1) lib/omniauth/builder.rb:63:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/rack/browser_monitoring.rb:32:in `traced_call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+  puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+  puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+  puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.9ms)
