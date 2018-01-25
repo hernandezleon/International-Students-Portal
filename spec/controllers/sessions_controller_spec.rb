@@ -1,4 +1,4 @@
-require 'rails_helper'
+# require 'rails_helper'
 
 # RSpec.describe SessionsController, type: :controller do
 
@@ -16,4 +16,4 @@ require 'rails_helper'
 #     end
 #   end
 
-end
+# end
