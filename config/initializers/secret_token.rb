@@ -1,0 +1,1 @@
+RubyGettingStarted::Application.config.secret_key_base = 'e9888b85057d5f571d0049152d3a379674e9e35b2062b017166c497ef1852b85d0ef57fceab0fb176b4a8a567f722961b7d61f71873aec218cfad9fa7404dc83'
