@@ -11,7 +11,7 @@ $ heroku run rake db:migrate
 
 ## Running Locally
 
-Make sure you have Ruby installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
+Use RVM to install correct Ruby and Rails version.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
 ```sh
 $ git clone git@github.com:heroku/ruby-getting-started.git
@@ -67,6 +67,11 @@ You can also use Docker to release to Heroku:
 
 ## Documentation
 
+For more documentation related to International Students Portal see:
+
+- [International Students Portal Documentation](https://international-students-portal.herokuapp.com/)
+
 For more information about using Ruby on Heroku, see these Dev Center articles:
 
 - [Ruby on Heroku](https://devcenter.heroku.com/categories/ruby)
+JSFiddle: https://jsfiddle.net/azdb1ub9/ 
