@@ -1,6 +1,13 @@
 # International-Students-Portal
 
-
+# If CSS is working on localhost but not Heroku, try:
+```sh
+$ bundle exec rake assets:precompile
+```
+# To manulaly migrate local database changes, try:
+```sh
+$ heroku run rake db:migrate
+```
 
 ## Running Locally
 
