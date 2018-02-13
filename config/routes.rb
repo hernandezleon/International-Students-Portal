@@ -10,8 +10,8 @@ Rails.application.routes.draw do
   resources :layouts
   resources :startup
   resources :microposts
-  resources :users
   resources :google_user
+  resources :messages
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
 
   root 'startup#index'
+  #messageRoot 'messages#index'
   
   #get 'starutp/help', to: 'startup#help', as: :help
   match '/help', to: 'startup#help', :via => [:get, :post]

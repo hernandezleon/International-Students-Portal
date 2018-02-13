@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 
 ruby '2.4.1'
 
+gem 'simple_form', '~> 3.1.0'
+
+gem 'therubyracer'
+
 gem 'rake','12.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
