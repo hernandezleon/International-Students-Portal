@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  devise_for :users
+  devise_for :users do get '/users/sign_out' => 'devise/sessions#destroy' end
+  # devise_for :users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   require 'omniauth-google-oauth2'
   get 'sessions/create'

@@ -39,11 +39,38 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
-      <% if current_google_user %>
-        <%= render 'layouts/loggedin' %>     
-      <% else %>
-        <%= render 'layouts/signin' %>     
-      <% end %>
+        <ul class="nav navbar-nav navbar-right">
+          <li><p class="navbar-text">Already have an account?</p></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+              <ul id="login-dp" class="dropdown-menu">
+                <li>
+                  <div class="row">
+                    <div class="col-md-12">
+                      Login via
+                      <div class="social-buttons">
+                        <a href="/auth/google_oauth2" class="btn btn-fb" style="float:left;" ><i class="fa fa-facebook"></i> Facebook</a>
+                        <a href="/auth/google_oauth2" class="btn btn-googleplus" style="float:right;"><i class="fa fa-google-plus fa-fw"></i> Google+</a>
+                      </div>
+                        or
+                       <% if user_signed_in? %>
+                        <%=link_to "Sign Out", sessions_destroy %>
+                       <% else %>
+                        <%= link_to "Log In", new_user_session_path %>
+                        <% end %>   
+                      </div>
+                      <div class="bottom text-center">
+                        New here ? <b><%= link_to "Sign Up", new_user_registration_path %> </b>
+                      </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+        </ul>
+
+
+
+      
       <!-- <ul class="nav navbar-nav navbar-right">
         <li><p class="navbar-text">Already have an account?</p></li>
         <li class="dropdown">

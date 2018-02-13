@@ -54864,3 +54864,1637 @@ Started GET "/assets/application.self-31ad89595851d3a5cf8231e789a0e95fac55f9d978
 
 
 Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-02-05 18:24:13 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGoogleUsers (20180123223533)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (54.1ms)[0m  [1mCREATE TABLE "google_users" ("id" serial primary key, "provider" character varying, "uid" character varying, "name" character varying, "oauth_token" character varying, "oauth_expires_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20180123223533"]]
+  [1m[36m (10.9ms)[0m  [1mCOMMIT[0m
+Migrating to DeviseCreateUsers (20180205234913)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "admin" boolean, "type" character varying) [0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (38.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (39.8ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMicroposts (20171219153856)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (60.7ms)[0m  [1mCREATE TABLE "microposts" ("id" serial primary key, "content" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20171219153856"]]
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateGoogleUsers (20180123223533)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (51.3ms)[0m  [1mCREATE TABLE "google_users" ("id" serial primary key, "provider" character varying, "uid" character varying, "name" character varying, "oauth_token" character varying, "oauth_expires_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20180123223533"]]
+  [1m[36m (3.6ms)[0m  [1mCOMMIT[0m
+Migrating to DeviseCreateUsers (20180205234913)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (49.7ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "admin" boolean, "type" character varying) [0m
+  [1m[35m (21.9ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (22.4ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20180205234913"]]
+  [1m[36m (10.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (3.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'google_users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.2ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'microposts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 12:36:13 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (1.4ms)
+  [1m[35mGoogleUser Load (0.3ms)[0m  SELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (15.6ms)
+Completed 401 Unauthorized in 299ms (ActiveRecord: 2.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find GoogleUser with 'id'=1):
+  app/controllers/application_controller.rb:8:in `current_google_user'
+  app/views/layouts/_header.html.erb:42:in `_app_views_layouts__header_html_erb___2881548611724599344_25987800'
+  app/views/layouts/application.html.erb:23:in `_app_views_layouts_application_html_erb__2419630391615634709_27699920'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 12:40:51 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (1.5ms)
+  [1m[35mGoogleUser Load (0.3ms)[0m  SELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_signin.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (9.4ms)
+  Rendered layouts/_jumbotron.html.erb (0.3ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 293ms (Views: 278.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.self-31ad89595851d3a5cf8231e789a0e95fac55f9d9786ad5b0ef22dc76ebcbd7c6.css?body=1" for 127.0.0.1 at 2018-02-13 12:40:52 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-02-13 12:40:52 -0600
+
+
+Started GET "/users" for 127.0.0.1 at 2018-02-13 12:41:02 -0600
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant UsersController::User):
+  app/controllers/users_controller.rb:7:in `index'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20180213184551)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20180213184551)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (2.2ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20180213184551)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (2.2ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (40.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (38.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMicroposts (20171219153856)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (56.1ms)[0m  [1mCREATE TABLE "microposts" ("id" serial primary key, "content" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20171219153856"]]
+  [1m[36m (6.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateGoogleUsers (20180123223533)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (49.2ms)[0m  [1mCREATE TABLE "google_users" ("id" serial primary key, "provider" character varying, "uid" character varying, "name" character varying, "oauth_token" character varying, "oauth_expires_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20180123223533"]]
+  [1m[36m (4.9ms)[0m  [1mCOMMIT[0m
+Migrating to DeviseCreateUsers (20180213184551)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (48.2ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (22.5ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (23.0ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20180213184551"]]
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (5.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'google_users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'microposts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:11:18 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (1.2ms)
+  [1m[35mGoogleUser Load (0.4ms)[0m  SELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_signin.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (9.9ms)
+  Rendered layouts/_jumbotron.html.erb (0.3ms)
+  Rendered layouts/_footer.erb (0.3ms)
+Completed 200 OK in 299ms (Views: 288.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:12:58 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (1.2ms)
+  [1m[35mGoogleUser Load (0.4ms)[0m  SELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_signin.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (9.9ms)
+  Rendered layouts/_jumbotron.html.erb (0.3ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 293ms (Views: 282.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.self-31ad89595851d3a5cf8231e789a0e95fac55f9d9786ad5b0ef22dc76ebcbd7c6.css?body=1" for 127.0.0.1 at 2018-02-13 13:12:59 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-02-13 13:12:59 -0600
+
+
+Started POST "/login" for 127.0.0.1 at 2018-02-13 13:13:04 -0600
+
+ActionController::RoutingError (No route matches [POST] "/login"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+  puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+  puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+  puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.5ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-02-13 13:14:37 -0600
+
+ActionController::RoutingError (No route matches [POST] "/login"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+  puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+  puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+  puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:17:29 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  [1m[36mGoogleUser Load (0.4ms)[0m  [1mSELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_signin.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-31ad89595851d3a5cf8231e789a0e95fac55f9d9786ad5b0ef22dc76ebcbd7c6.css?body=1" for 127.0.0.1 at 2018-02-13 13:17:29 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-02-13 13:17:29 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:18:20 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  [1m[36mGoogleUser Load (0.5ms)[0m  [1mSELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_signin.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-31ad89595851d3a5cf8231e789a0e95fac55f9d9786ad5b0ef22dc76ebcbd7c6.css?body=1" for 127.0.0.1 at 2018-02-13 13:18:20 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-02-13 13:18:20 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:18:23 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  [1m[35mGoogleUser Load (0.5ms)[0m  SELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_signin.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:21:31 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  [1m[36mGoogleUser Load (0.4ms)[0m  [1mSELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_signin.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:26:05 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  [1m[35mGoogleUser Load (0.5ms)[0m  SELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_signin.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-31ad89595851d3a5cf8231e789a0e95fac55f9d9786ad5b0ef22dc76ebcbd7c6.css?body=1" for 127.0.0.1 at 2018-02-13 13:26:05 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-02-13 13:26:05 -0600
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-02-13 13:26:08 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (84.1ms)
+  [1m[36mGoogleUser Load (0.4ms)[0m  [1mSELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_signin.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 113ms (Views: 96.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:28:33 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  [1m[35mGoogleUser Load (0.4ms)[0m  SELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_signin.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-02-13 13:28:38 -0600
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=3872b4ac77a2fe8960bac4149041f7ca2e3bb050a8802ced&code=4/AADxcmRneSFtdEb9p-P4l0qRn-1fgOGqudxbR4MQoLNFT-YQxT3c6JMo7b_LbXNwodO206px1422uGiWlnHmf88" for 127.0.0.1 at 2018-02-13 13:28:38 -0600
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"3872b4ac77a2fe8960bac4149041f7ca2e3bb050a8802ced", "code"=>"4/AADxcmRneSFtdEb9p-P4l0qRn-1fgOGqudxbR4MQoLNFT-YQxT3c6JMo7b_LbXNwodO206px1422uGiWlnHmf88", "provider"=>"google_oauth2"}
+  [1m[36mGoogleUser Load (0.8ms)[0m  [1mSELECT  "google_users".* FROM "google_users" WHERE "google_users"."provider" = $1 AND "google_users"."uid" = $2  ORDER BY "google_users"."id" ASC LIMIT 1[0m  [["provider", "google_oauth2"], ["uid", "102302283442418311234"]]
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "google_users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["provider", "google_oauth2"], ["uid", "102302283442418311234"], ["name", "Jay Jain"], ["oauth_token", "ya29.GlthBXHVlLixu-E0sjmcVlukVv46QL7QwC4964WJ3xTjJGZJFOX_eCa_chmcVppMFHFLGjGN0hOYwNMaAczB4hFsVVGwHE7KEHEzeAL---pWAfwZW5h4VgmnFkos"], ["oauth_expires_at", "2018-02-13 20:28:38.000000"], ["created_at", "2018-02-13 19:28:39.008169"], ["updated_at", "2018-02-13 19:28:39.008169"]]
+  [1m[35m (3.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 24ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:28:39 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  [1m[36mGoogleUser Load (0.5ms)[0m  [1mSELECT  "google_users".* FROM "google_users" WHERE "google_users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_jumbotron.html.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2018-02-13 13:28:41 -0600
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:28:41 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_signin.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-02-13 13:28:44 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_signin.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-02-13 13:28:51 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Etun5muTFZqzU4MCdYj0TmXOrNvMTHSq8Q+eJsfPAcTI5NCufQVXu4D46pHAJ2XKVrYs/iq9eH5OVpEukB9zow==", "user"=>{"email"=>"jjain654@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jjain654@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["email", "jjain654@gmail.com"], ["encrypted_password", "$2a$11$WdE3P0xO9JY9FLPj9c/ufOiB4scHCXgAGdQOT07SplXYNFixN1YgW"], ["created_at", "2018-02-13 19:28:51.843625"], ["updated_at", "2018-02-13 19:28:51.843625"]]
+  [1m[36m (11.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["last_sign_in_at", "2018-02-13 19:28:51.857009"], ["current_sign_in_at", "2018-02-13 19:28:51.857009"], ["last_sign_in_ip", "127.0.0.1/32"], ["current_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2018-02-13 19:28:51.858241"], ["id", 1]]
+  [1m[35m (4.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 229ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:28:51 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+Completed 401 Unauthorized in 11ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <ul class="nav navbar-nav navbar-right">
+    2:   
+    3:   <li class="dropdown">
+    4:     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Signed in as <strong><%= current_google_user.name %></strong>!</b> <span class="caret"></span></a>
+    5:     <ul id="login-dp" class="dropdown-menu">
+    6:       <li>
+    7:         <div class="row">
+  app/views/layouts/_loggedin.html.erb:4:in `_app_views_layouts__loggedin_html_erb__114199411711282274_69936535476020'
+  app/views/layouts/_header.html.erb:43:in `_app_views_layouts__header_html_erb___2592608047626356917_69936539725140'
+  app/views/layouts/application.html.erb:23:in `_app_views_layouts_application_html_erb__568716897172734671_34929680'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.5ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:34:36 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (2.9ms)
+  Rendered layouts/_header.html.erb (16.2ms)
+Completed 401 Unauthorized in 24ms (ActiveRecord: 2.0ms)
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <ul class="nav navbar-nav navbar-right">
+    2:   
+    3:   <li class="dropdown">
+    4:     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Signed in as <strong><%= current_google_user.name %></strong>!</b> <span class="caret"></span></a>
+    5:     <ul id="login-dp" class="dropdown-menu">
+    6:       <li>
+    7:         <div class="row">
+  app/views/layouts/_loggedin.html.erb:4:in `_app_views_layouts__loggedin_html_erb__114199411711282274_69936463129480'
+  app/views/layouts/_header.html.erb:43:in `_app_views_layouts__header_html_erb___2592608047626356917_69936547643820'
+  app/views/layouts/application.html.erb:23:in `_app_views_layouts_application_html_erb__568716897172734671_34970500'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:35:22 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (4.6ms)
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <ul class="nav navbar-nav navbar-right">
+    2:   
+    3:   <li class="dropdown">
+    4:     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Signed in as <strong><%= current_google_user.name or current_user.name%></strong>!</b> <span class="caret"></span></a>
+    5:     <ul id="login-dp" class="dropdown-menu">
+    6:       <li>
+    7:         <div class="row">
+  app/views/layouts/_loggedin.html.erb:4:in `_app_views_layouts__loggedin_html_erb__114199411711282274_69936430317420'
+  app/views/layouts/_header.html.erb:43:in `_app_views_layouts__header_html_erb___2592608047626356917_69936539725140'
+  app/views/layouts/application.html.erb:23:in `_app_views_layouts_application_html_erb__568716897172734671_34929680'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:35:38 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-31ad89595851d3a5cf8231e789a0e95fac55f9d9786ad5b0ef22dc76ebcbd7c6.css?body=1" for 127.0.0.1 at 2018-02-13 13:35:38 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-02-13 13:35:38 -0600
+
+
+Started GET "/signout" for 127.0.0.1 at 2018-02-13 13:35:41 -0600
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:35:41 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:36:24 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-31ad89595851d3a5cf8231e789a0e95fac55f9d9786ad5b0ef22dc76ebcbd7c6.css?body=1" for 127.0.0.1 at 2018-02-13 13:36:24 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-02-13 13:36:24 -0600
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:36:25 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.5ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:37:18 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.5ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:37:19 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.1ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:37:20 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.9ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:37:33 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.7ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:37:35 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:37:37 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:37:42 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:37:59 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:38:03 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_loggedin.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:38:05 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.6ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:39:03 -0600
+
+SyntaxError (/home/jjain/Desktop/International-Students-Portal/config/routes.rb:93: syntax error, unexpected end-of-input, expecting keyword_end):
+  config/routes.rb:93: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.5ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:39:25 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 1.8ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.4ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:51:19 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:51:23 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-02-13 13:51:27 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:51:27 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:52:17 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (11.1ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-02-13 13:52:23 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 11ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:52:23 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:52:27 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:55:43 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 13:55:48 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-31ad89595851d3a5cf8231e789a0e95fac55f9d9786ad5b0ef22dc76ebcbd7c6.css?body=1" for 127.0.0.1 at 2018-02-13 13:55:48 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-02-13 13:55:48 -0600
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:55:52 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.2ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:57:14 -0600
+
+AbstractController::ActionNotFound (The action 'sign_out' could not be found for UsersController):
+  actionpack (4.2.8) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  omniauth (1.8.1) lib/omniauth/strategy.rb:190:in `call!'
+  omniauth (1.8.1) lib/omniauth/strategy.rb:168:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  omniauth (1.8.1) lib/omniauth/builder.rb:63:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/rack/browser_monitoring.rb:32:in `traced_call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+  puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+  puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+  puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.8ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:58:54 -0600
+
+AbstractController::ActionNotFound (The action 'sign_out' could not be found for UsersController):
+  actionpack (4.2.8) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  omniauth (1.8.1) lib/omniauth/strategy.rb:190:in `call!'
+  omniauth (1.8.1) lib/omniauth/strategy.rb:168:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  omniauth (1.8.1) lib/omniauth/builder.rb:63:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/rack/browser_monitoring.rb:32:in `traced_call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+  puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+  puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+  puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:59:00 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 2.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.6ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 13:59:58 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 3.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.3ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 14:02:58 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 14:03:01 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (588.9ms)
+Completed 401 Unauthorized in 597ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined local variable or method `signout' for #<#<Class:0x007f36bddfdb30>:0x007f36bddec470>
+Did you mean?  signout_url):
+    54:                       </div>
+    55:                         or
+    56:                        <% if user_signed_in? %>
+    57:                         <%=link_to "Sign Out", signout  %>
+    58:                        <% else %>
+    59:                         <%= link_to "Log In", new_user_session_path %>
+    60:                         <% end %>   
+  app/views/layouts/_header.html.erb:57:in `_app_views_layouts__header_html_erb___2592608047626356917_69936544028760'
+  app/views/layouts/application.html.erb:23:in `_app_views_layouts_application_html_erb__568716897172734671_34929680'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.2ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 14:03:12 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-31ad89595851d3a5cf8231e789a0e95fac55f9d9786ad5b0ef22dc76ebcbd7c6.css?body=1" for 127.0.0.1 at 2018-02-13 14:03:12 -0600
+
+
+Started GET "/assets/application.self-acd82791767d525c734c8f3aaa740d6513bf03414f229c259bd2d2efd4b60c6e.js?body=1" for 127.0.0.1 at 2018-02-13 14:03:12 -0600
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 14:03:14 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.1ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 14:04:47 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+[Devise] Could not find devise mapping for path "/users/sign_out".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+
+Completed 401 Unauthorized in 11ms (ActiveRecord: 2.0ms)
+
+AbstractController::ActionNotFound (Could not find devise mapping for path "/users/sign_out".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+):
+  devise (4.4.1) app/controllers/devise_controller.rb:90:in `unknown_action!'
+  devise (4.4.1) app/controllers/devise_controller.rb:65:in `assert_is_devise_resource!'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  omniauth (1.8.1) lib/omniauth/strategy.rb:190:in `call!'
+  omniauth (1.8.1) lib/omniauth/strategy.rb:168:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  omniauth (1.8.1) lib/omniauth/builder.rb:63:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/rack/browser_monitoring.rb:32:in `traced_call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (4.7.1.340) lib/new_relic/agent/instrumentation/middleware_tracing.rb:92:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+  puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+  puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+  puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 14:04:58 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 2.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.1ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 14:06:44 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 1.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.2ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 14:06:46 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.7ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 14:07:32 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (8.0ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 14:07:37 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.6ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 14:09:14 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.7ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 14:09:15 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 14:09:18 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (7.6ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 14:09:21 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.3ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-02-13 14:09:24 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 14:09:24 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_jumbotron.html.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 14:09:27 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.6ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-13 14:09:47 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 14:09:51 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (629.6ms)
+Completed 401 Unauthorized in 640ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `sessions_destroy' for #<#<Class:0x007f36b0044f50>:0x007f36b40b2ab0>
+Did you mean?  sessions_destroy_url):
+    54:                       </div>
+    55:                         or
+    56:                        <% if user_signed_in? %>
+    57:                         <%=link_to "Sign Out", sessions_destroy, method: :get %>
+    58:                        <% else %>
+    59:                         <%= link_to "Log In", new_user_session_path %>
+    60:                         <% end %>   
+  app/views/layouts/_header.html.erb:57:in `_app_views_layouts__header_html_erb___2592608047626356917_69936462485320'
+  app/views/layouts/application.html.erb:23:in `_app_views_layouts_application_html_erb__568716897172734671_34929680'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-13 14:10:04 -0600
+Processing by StartupController#index as HTML
+  Rendered startup/index.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (621.6ms)
+Completed 401 Unauthorized in 630ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined local variable or method `sessions_destroy' for #<#<Class:0x007f36b0044f50>:0x007f369023b158>
+Did you mean?  sessions_destroy_url):
+    54:                       </div>
+    55:                         or
+    56:                        <% if user_signed_in? %>
+    57:                         <%=link_to "Sign Out", sessions_destroy %>
+    58:                        <% else %>
+    59:                         <%= link_to "Log In", new_user_session_path %>
+    60:                         <% end %>   
+  app/views/layouts/_header.html.erb:57:in `_app_views_layouts__header_html_erb___2592608047626356917_69936463739380'
+  app/views/layouts/application.html.erb:23:in `_app_views_layouts_application_html_erb__568716897172734671_34929680'
+
+
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jjain/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.4ms)
