@@ -9,4 +9,7 @@ class SessionsController < ApplicationController
     session[:google_user_id] = nil
     redirect_to root_path
   end
+
+  def user
+  end
 end

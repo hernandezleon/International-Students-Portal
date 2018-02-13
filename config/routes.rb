@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
-  
+
+  devise_for :users do get '/users/sign_out' => 'devise/sessions#destroy' end
+  # devise_for :users
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   require 'omniauth-google-oauth2'
   get 'sessions/create'
 
   get 'sessions/destroy'
+
+  get 'sessions/user'
 
   get 'home/show'
 
@@ -77,11 +82,11 @@ Rails.application.routes.draw do
     get 'auth/:provider/callback', to: 'sessions#create'
     get 'auth/failure', to: redirect('startup')
     get 'signout', to: 'sessions#destroy', as: 'signout'
-
     resources :sessions, only: [:create, :destroy]
     resource :home, only: [:show]
 
-    #root to: "home#show"
+    post ':controller(/:action(/:id(.:format)))'
+    get ':controller(/:action(/:id(.:format)))'
   
  
 

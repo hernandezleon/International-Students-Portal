@@ -59,7 +59,6 @@ gem 'rspec'
 gem 'rspec-core'
 
 # Heroku Addons
-
 gem 'newrelic_rpm'
 
 # Google authentication gem
@@ -69,3 +68,6 @@ gem 'google-api-client'
 gem 'devise'
 gem 'browserify-rails'
 # gem "oa-oauth", :require => "omniauth/oauth"
+
+
+gem 'rails_admin', '~> 1.2'

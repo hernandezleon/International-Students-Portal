@@ -6,5 +6,6 @@ class ApplicationController < ActionController::Base
 
   def current_google_user
     @current_google_user ||= GoogleUser.find(session[:google_user_id]) if session[:google_user_id]
+    rescue ActiveRecord::RecordNotFound
   end
 end
