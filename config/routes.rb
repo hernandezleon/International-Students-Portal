@@ -1,16 +1,18 @@
 Rails.application.routes.draw do
   
-  require 'omniauth-google-oauth2'
-  get 'sessions/create'
+  devise_for :users
+  #require 'omniauth-google-oauth2'
+  #get 'sessions/create'
 
-  get 'sessions/destroy'
+  #get 'sessions/destroy'
 
-  get 'home/show'
-
+  #get 'home/show'
+  #get 'sessions/user'
+  
   resources :layouts
   resources :startup
   resources :microposts
-  resources :google_user
+  #resources :google_user
   resources :messages
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -79,7 +81,7 @@ Rails.application.routes.draw do
     get 'auth/failure', to: redirect('startup')
     get 'signout', to: 'sessions#destroy', as: 'signout'
 
-    resources :sessions, only: [:create, :destroy]
+    #resources :sessions, only: [:create, :destroy]
     resource :home, only: [:show]
 
     #root to: "home#show"

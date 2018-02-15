@@ -70,6 +70,6 @@ gem 'newrelic_rpm'
 gem "omniauth-google-oauth2", "~> 0.2.1",:require => 'google/api_client'
 gem 'omniauth-facebook'
 gem 'google-api-client'
-gem 'devise'
+gem 'devise', '~> 3.4.1'
 gem 'browserify-rails'
 # gem "oa-oauth", :require => "omniauth/oauth"

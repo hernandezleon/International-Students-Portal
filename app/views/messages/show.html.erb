@@ -8,10 +8,11 @@
 <!--h3> Reply to Message </h3-->
 <!--%= render 'comments/form' %-->
 
-<!--%= link_to "Back", root_path %-->
+<%= link_to "Back", messages_path %>
 <!--% if user_signed_in? %-->
 	<!--% if @message.user_id == current_user.id %-->
-		<!--%= link_to "Edit", edit_message_path(@message) %-->
-		<!--%= link_to "Delete", message_path(@message), method: :delete, data: {confirm: "Are You Sure"} %-->
+		<%= link_to "Edit", edit_message_path(@message) %>
+		<%= link_to "Delete", message_path(@message), method: :delete, data: {confirm: "Are You Sure"} %>
+		<%= button_to "Delete", messages_path(@message), :method=>:delete, :class=>:destroy, data: {confirm: "are you sure"} %>
 	<!--% end %-->
 <!--% end %-->
