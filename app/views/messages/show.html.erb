@@ -1,18 +1,21 @@
 <h2><%= @message.title %></h2>
-<p>Posted by <!--%= @message.user.email %--> <!--%= time_ago_in_words(@message.created_at) %--> ago</p>
+<p>Posted by <%= @message.user.email %> <%= time_ago_in_words(@message.created_at) %> ago</p>
 <h4><%= @message.description %></h4>
+<br />
+<h3> Comments: </h3>
+<br />
+<%= render @message.comments %>
 
-<!--h3> Comments: </h3-->
-<!--%= render @message.comments %-->
-
-<!--h3> Reply to Message </h3-->
-<!--%= render 'comments/form' %-->
+<% if user_signed_in? %>	
+	<h3> Reply to Message </h3>
+	<%= render 'comments/form' %>
+<% end %>
 
 <%= link_to "Back", messages_path %>
-<!--% if user_signed_in? %-->
-	<!--% if @message.user_id == current_user.id %-->
+<% if user_signed_in? %>
+	<% if @message.user_id == current_user.id %>
 		<%= link_to "Edit", edit_message_path(@message) %>
 		<%= link_to "Delete", message_path(@message), method: :delete, data: {confirm: "Are You Sure"} %>
-		<%= button_to "Delete", messages_path(@message), :method=>:delete, :class=>:destroy, data: {confirm: "are you sure"} %>
-	<!--% end %-->
-<!--% end %-->
+		<!--%= button_to "Delete", messages_path(@message), :method=>:delete, :class=>:destroy, data: {confirm: "are you sure"} %-->
+	<% end %>
+<% end %>

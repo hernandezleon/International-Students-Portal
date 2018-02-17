@@ -13,7 +13,9 @@ Rails.application.routes.draw do
   resources :startup
   resources :microposts
   #resources :google_user
-  resources :messages
+  resources :messages do
+    resources :comments
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

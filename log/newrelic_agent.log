@@ -2838,3 +2838,150 @@
 [2018-02-15 02:59:52 -0600 sglennon-HP-ENVY-x360-m6-Convertible (6837)] INFO : Starting Agent shutdown
 [2018-02-15 02:59:52 -0600 sglennon-HP-ENVY-x360-m6-Convertible (6848)] INFO : Starting Agent shutdown
 [2018-02-15 02:59:52 -0600 sglennon-HP-ENVY-x360-m6-Convertible (6830)] INFO : Starting Agent shutdown
+[2018-02-15 16:46:15 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-02-15 16:46:15 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-02-15 16:46:15 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : Reading configuration from config/newrelic.yml (/home/sglennon/rails_projects/International-Students-Portal)
+[2018-02-15 16:46:15 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : Environment: development
+[2018-02-15 16:46:15 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : No known dispatcher detected.
+[2018-02-15 16:46:15 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : Application: My Application (Development)
+[2018-02-15 16:46:16 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : Installing ActiveJob instrumentation
+[2018-02-15 16:46:16 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-02-15 16:46:16 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-02-15 16:46:16 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-02-15 16:46:16 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-02-15 16:46:16 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : Installing Net instrumentation
+[2018-02-15 16:46:16 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : Installing Rails 4 Controller instrumentation
+[2018-02-15 16:46:16 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : Installing Rails 4 view instrumentation
+[2018-02-15 16:46:16 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : Finished instrumentation
+[2018-02-15 16:46:16 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-15 16:46:19 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-15 16:46:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2861)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-02-15 16:46:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2861)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-02-15 16:46:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2861)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-02-15 16:46:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2861)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-15 16:46:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2861)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-02-15 16:46:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2861)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-02-15 16:46:27 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2861)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-15 17:11:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3651)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-02-15 17:11:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3651)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-02-15 17:11:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3651)] INFO : Reading configuration from config/newrelic.yml (/home/sglennon/rails_projects/International-Students-Portal)
+[2018-02-15 17:11:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3651)] INFO : Environment: development
+[2018-02-15 17:11:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3651)] INFO : No known dispatcher detected.
+[2018-02-15 17:11:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3651)] INFO : Application: My Application (Development)
+[2018-02-15 17:11:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3651)] INFO : Installing ActiveJob instrumentation
+[2018-02-15 17:11:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3651)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-02-15 17:11:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3651)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-02-15 17:11:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3651)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-02-15 17:11:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3651)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-02-15 17:11:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3651)] INFO : Installing Net instrumentation
+[2018-02-15 17:11:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3651)] INFO : Installing Rails 4 Controller instrumentation
+[2018-02-15 17:11:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3651)] INFO : Installing Rails 4 view instrumentation
+[2018-02-15 17:11:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3651)] INFO : Finished instrumentation
+[2018-02-15 17:11:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3651)] INFO : Starting Agent shutdown
+[2018-02-15 17:18:22 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2865)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-02-15 17:18:22 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2865)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-02-15 17:18:22 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2865)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-02-15 17:18:23 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2865)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-15 17:18:23 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2865)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-02-15 17:18:23 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2865)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-02-15 17:18:25 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2865)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-15 17:42:13 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2861)] INFO : Starting Agent shutdown
+[2018-02-15 17:42:13 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2865)] INFO : Starting Agent shutdown
+[2018-02-15 17:42:13 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2852)] INFO : Starting Agent shutdown
+[2018-02-15 21:37:55 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-02-15 21:37:55 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-02-15 21:37:55 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : Reading configuration from config/newrelic.yml (/home/sglennon/rails_projects/International-Students-Portal)
+[2018-02-15 21:37:55 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : Environment: development
+[2018-02-15 21:37:55 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : No known dispatcher detected.
+[2018-02-15 21:37:55 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : Application: My Application (Development)
+[2018-02-15 21:37:56 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : Installing ActiveJob instrumentation
+[2018-02-15 21:37:56 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-02-15 21:37:56 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-02-15 21:37:56 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-02-15 21:37:56 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-02-15 21:37:56 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : Installing Net instrumentation
+[2018-02-15 21:37:56 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : Installing Rails 4 Controller instrumentation
+[2018-02-15 21:37:56 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : Installing Rails 4 view instrumentation
+[2018-02-15 21:37:56 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : Finished instrumentation
+[2018-02-15 21:37:57 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-15 21:37:59 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-15 21:42:17 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2706)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-02-15 21:42:17 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2706)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-02-15 21:42:17 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2706)] INFO : Reading configuration from config/newrelic.yml (/home/sglennon/rails_projects/International-Students-Portal)
+[2018-02-15 21:42:17 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2706)] INFO : Environment: development
+[2018-02-15 21:42:17 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2706)] INFO : No known dispatcher detected.
+[2018-02-15 21:42:17 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2706)] INFO : Application: My Application (Development)
+[2018-02-15 21:42:18 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2706)] INFO : Installing ActiveJob instrumentation
+[2018-02-15 21:42:18 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2706)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-02-15 21:42:18 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2706)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-02-15 21:42:18 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2706)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-02-15 21:42:18 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2706)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-02-15 21:42:18 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2706)] INFO : Installing Net instrumentation
+[2018-02-15 21:42:18 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2706)] INFO : Installing Rails 4 Controller instrumentation
+[2018-02-15 21:42:18 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2706)] INFO : Installing Rails 4 view instrumentation
+[2018-02-15 21:42:18 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2706)] INFO : Finished instrumentation
+[2018-02-15 21:42:18 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2706)] INFO : Starting Agent shutdown
+[2018-02-15 21:44:21 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2392)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-02-15 21:44:21 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2392)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-02-15 21:44:21 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2392)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-02-15 21:44:30 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2392)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-15 21:44:38 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2392)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-15 21:44:38 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2392)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-02-15 21:44:38 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2392)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-02-15 21:44:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2396)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-02-15 21:44:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2396)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-02-15 21:44:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2396)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-02-15 21:44:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2396)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-15 21:44:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2396)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-02-15 21:44:39 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2396)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-02-15 21:44:42 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2396)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-15 21:50:53 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2977)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-02-15 21:50:53 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2977)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-02-15 21:50:53 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2977)] INFO : Reading configuration from config/newrelic.yml (/home/sglennon/rails_projects/International-Students-Portal)
+[2018-02-15 21:50:53 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2977)] INFO : Environment: development
+[2018-02-15 21:50:53 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2977)] INFO : No known dispatcher detected.
+[2018-02-15 21:50:53 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2977)] INFO : Application: My Application (Development)
+[2018-02-15 21:50:53 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2977)] INFO : Installing ActiveJob instrumentation
+[2018-02-15 21:50:53 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2977)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-02-15 21:50:53 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2977)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-02-15 21:50:53 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2977)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-02-15 21:50:53 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2977)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-02-15 21:50:53 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2977)] INFO : Installing Net instrumentation
+[2018-02-15 21:50:53 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2977)] INFO : Installing Rails 4 Controller instrumentation
+[2018-02-15 21:50:53 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2977)] INFO : Installing Rails 4 view instrumentation
+[2018-02-15 21:50:53 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2977)] INFO : Finished instrumentation
+[2018-02-15 21:50:53 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2977)] INFO : Starting Agent shutdown
+[2018-02-15 23:24:14 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2392)] INFO : Starting Agent shutdown
+[2018-02-15 23:24:14 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2396)] INFO : Starting Agent shutdown
+[2018-02-15 23:24:15 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2331)] INFO : Starting Agent shutdown
+[2018-02-16 19:35:57 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-02-16 19:35:57 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-02-16 19:35:57 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : Reading configuration from config/newrelic.yml (/home/sglennon/rails_projects/International-Students-Portal)
+[2018-02-16 19:35:57 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : Environment: development
+[2018-02-16 19:35:57 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : No known dispatcher detected.
+[2018-02-16 19:35:57 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : Application: My Application (Development)
+[2018-02-16 19:35:58 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : Installing ActiveJob instrumentation
+[2018-02-16 19:35:58 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-02-16 19:35:58 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-02-16 19:35:58 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-02-16 19:35:58 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-02-16 19:35:58 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : Installing Net instrumentation
+[2018-02-16 19:35:58 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : Installing Rails 4 Controller instrumentation
+[2018-02-16 19:35:58 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : Installing Rails 4 view instrumentation
+[2018-02-16 19:35:58 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : Finished instrumentation
+[2018-02-16 19:35:59 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-16 19:36:01 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-16 19:36:11 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2910)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-02-16 19:36:11 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2910)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-02-16 19:36:11 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2910)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-02-16 19:36:12 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2910)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-16 19:36:12 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2910)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-02-16 19:36:12 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2910)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-02-16 19:36:14 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2910)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-16 19:38:04 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2919)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-02-16 19:38:04 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2919)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-02-16 19:38:04 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2919)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-02-16 19:38:05 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2919)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-16 19:38:05 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2919)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-02-16 19:38:05 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2919)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-02-16 19:38:07 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2919)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480

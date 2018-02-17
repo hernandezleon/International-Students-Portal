@@ -11,13 +11,13 @@ class MessagesController < ApplicationController
 	end
 
 	def new
-		#@message = current_user.messages.build
-		@message = Message.new
+		@message = current_user.messages.build
+		#@message = Message.new
 	end
 
 	def create
-		#@message = current_user.messages.build(message_params)
-		@message = Message.new(message_params)
+		@message = current_user.messages.build(message_params)
+		#@message = Message.new(message_params)
 		if @message.save
 			redirect_to '/messages'
 		else
@@ -38,7 +38,7 @@ class MessagesController < ApplicationController
 
 	def destroy
 		@message.destroy
-		redirect_to root_path
+		redirect_to '/messages'
 	end
 	
 	private
