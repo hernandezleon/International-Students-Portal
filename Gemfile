@@ -12,7 +12,7 @@ gem 'rake','12.3.0'
 gem 'rails', '4.2.8'
 
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 0.20.0'
+gem 'pg', '~> 0.20.0', group: :production
 gem 'rails_12factor', group: :production
 
 # Use SCSS for stylesheets

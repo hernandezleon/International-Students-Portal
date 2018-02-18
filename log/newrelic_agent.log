@@ -2985,3 +2985,6 @@
 [2018-02-16 19:38:05 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2919)] INFO : Installing deferred Puma::Rack::Builder instrumentation
 [2018-02-16 19:38:05 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2919)] INFO : Installing Puma::Rack::Builder middleware instrumentation
 [2018-02-16 19:38:07 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2919)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-16 20:03:30 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2919)] INFO : Starting Agent shutdown
+[2018-02-16 20:03:31 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2910)] INFO : Starting Agent shutdown
+[2018-02-16 20:03:31 -0600 sglennon-HP-ENVY-x360-m6-Convertible (2772)] INFO : Starting Agent shutdown
