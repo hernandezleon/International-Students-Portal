@@ -54,7 +54,7 @@
                       </div>
                         or
                        <% if user_signed_in? %>
-                        <%=link_to "Sign Out", sessions %>
+                        <%=link_to "Sign Out", destroy user_session_path, method: :delete %>
                        <% else %>
                         <%= link_to "Log In", new_user_session_path %>
                         <% end %>   
