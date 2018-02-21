@@ -21,3 +21,8 @@
 //= require modernizr-2.8.3-respond-1.4.2.min
 //= require jquery-1.11.2.min
 //= require npm
+
+// Fixes dropdown
+$(document).ready(function() {
+    $(".dropdown-toggle").dropdown();
+});

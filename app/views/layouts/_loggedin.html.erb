@@ -1,11 +1,11 @@
 <ul class="nav navbar-nav navbar-right">
   
   <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Signed in as <strong><%= current_google_user.name %></strong>!</b> <span class="caret"></span></a>
+    <a href="/messages" class="dropdown-toggle" data-toggle="dropdown"><b>Signed in as <strong><%= current_user.email %></strong></b> <span class="caret"></span></a>
     <ul id="login-dp" class="dropdown-menu">
       <li>
         <div class="row">
-          <div class="col-md-12">
+          <!-- <div class="col-md-12">
             Login via
             <div class="social-buttons">
               <a href="/auth/google_oauth2" class="btn btn-fb" style="float:left;" ><i class="fa fa-facebook"></i> Facebook</a>
@@ -31,9 +31,10 @@
                   </label>
                 </div>
               </form>
-            </div>
+            </div> -->
             <div class="bottom text-center">
-              <%= link_to "Sign out", signout_path, id: "sign_out" %>
+              <a href="/dashboard">Dashboard</a> <br />
+              <%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
             </div>
         </div>
       </li>

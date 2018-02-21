@@ -29,6 +29,8 @@ Rails.application.routes.draw do
   match '/help', to: 'startup#help', :via => [:get, :post]
   match '/startup',to:'startup#index',:via => [:get, :post]
   match '/contactus',to:'startup#contactus',:via => [:get, :post]
+  get '/dashboard' => "startup#dashboard", as: :user_root  
+  get '/lsus' => "schools#lsus"  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
