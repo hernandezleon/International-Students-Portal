@@ -1,4 +1,5 @@
 class Message < ActiveRecord::Base
-	#elongs_to :user
+	belongs_to :user
 	has_many :comments, dependent: :destroy
+	has_many :users
 end
