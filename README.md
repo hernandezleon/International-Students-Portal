@@ -9,6 +9,17 @@ $ bundle exec rake assets:precompile
 $ heroku run rake db:migrate
 ```
 
+# If database migration fails due to timeout try:
+```sh
+$  heroku run:detached rake db:migrate
+```
+
+# If you are unable to start rails server, try killing the server and do:
+```sh
+$  rake db:drop db:create db:migrate
+```
+
+
 ## Running Locally
 
 Use RVM to install correct Ruby and Rails version.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
