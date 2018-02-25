@@ -38,8 +38,7 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   #config.include Capybara::DSL
-<<<<<<< HEAD
-=======
+
 
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
@@ -59,5 +58,3 @@ Rails.application.configure do
   :port    => 25,
   :domain  => 'international-students-portal.herokuapp.com'
   }  
->>>>>>> parent of a8d2615... changed db migration file for confirmable
-end

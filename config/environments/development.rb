@@ -32,10 +32,6 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
-<<<<<<< HEAD
-  # Raises error for missing translations
-  # config.action_view.raise_on_missing_translations = true
-=======
 
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
@@ -53,5 +49,4 @@ Rails.application.configure do
   :port    => 25,
   :domain  => 'international-students-portal.herokuapp.com'
   }
->>>>>>> parent of a8d2615... changed db migration file for confirmable
 end
