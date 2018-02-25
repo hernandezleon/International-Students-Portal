@@ -58,3 +58,4 @@ Rails.application.configure do
   :port    => 25,
   :domain  => 'international-students-portal.herokuapp.com'
   }  
+end
