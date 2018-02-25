@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'school_admin/index'
+
   devise_for :users
   #require 'omniauth-google-oauth2'
   #get 'sessions/create'
@@ -13,6 +15,7 @@ Rails.application.routes.draw do
   resources :startup
   resources :microposts
   #resources :google_user
+  resources :schools
   resources :messages do
     resources :comments
   end
@@ -30,7 +33,7 @@ Rails.application.routes.draw do
   match '/startup',to:'startup#index',:via => [:get, :post]
   match '/contactus',to:'startup#contactus',:via => [:get, :post]
   get '/dashboard' => "startup#dashboard", as: :user_root  
-  get '/lsus' => "schools#lsus"  
+  get '/new_school' => "schools#new"  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180221231344) do
+ActiveRecord::Schema.define(version: 20180225212336) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,16 +27,6 @@ ActiveRecord::Schema.define(version: 20180221231344) do
   add_index "comments", ["message_id"], name: "index_comments_on_message_id", using: :btree
   add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
 
-  create_table "google_users", force: :cascade do |t|
-    t.string   "provider"
-    t.string   "uid"
-    t.string   "name"
-    t.string   "oauth_token"
-    t.datetime "oauth_expires_at"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-  end
-
   create_table "messages", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
@@ -50,6 +40,21 @@ ActiveRecord::Schema.define(version: 20180221231344) do
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "schools", force: :cascade do |t|
+    t.string   "name"
+    t.string   "abbreviation"
+    t.text     "description"
+    t.string   "city"
+    t.string   "state"
+    t.integer  "semester_tuition"
+    t.text     "athletics"
+    t.text     "school_contact_name"
+    t.text     "school_contact_email"
+    t.text     "address"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
   create_table "users", force: :cascade do |t|
@@ -68,6 +73,7 @@ ActiveRecord::Schema.define(version: 20180221231344) do
     t.string   "name"
     t.datetime "date_of_birth"
     t.boolean  "is_female",              default: false
+    t.boolean  "confirmable",            default: false
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
