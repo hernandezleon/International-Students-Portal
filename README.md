@@ -9,6 +9,12 @@ $ bundle exec rake assets:precompile
 $ heroku run rake db:migrate
 ```
 
+
+ # To manulaly migrate local database changes, try:
+```sh
+$  heroku run:detached rake db:migrate
+```
+
 ## Running Locally
 
 Use RVM to install correct Ruby and Rails version.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).

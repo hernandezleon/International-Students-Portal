@@ -34,6 +34,7 @@ Rails.application.routes.draw do
   match '/contactus',to:'startup#contactus',:via => [:get, :post]
   get '/dashboard' => "startup#dashboard", as: :user_root  
   get '/new_school' => "schools#new"  
+  get '/schools/:id', to: 'schools#show'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

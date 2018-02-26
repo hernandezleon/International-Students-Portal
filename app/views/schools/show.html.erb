@@ -1,0 +1,20 @@
+<center><h3><%= @school.name %></h3></center>
+<br />
+<b> Abbreviation: </b>  <%= @school.abbreviation %>
+<br />
+<b> Description: </b> <%= @school.description %>
+<br />
+<b> City: </b> <%= @school.city %>
+<br />
+<b> State: </b> <%= @school.state %>
+<br />
+<b> Semester Tuition: </b> <%= @school.semester_tuition %>
+<br />
+<b> Athletics: </b> <%= @school.athletics %>
+<br />
+<b> School Contact: </b> <%= @school.school_contact_name %>
+<br />
+<b> School Contact E-mail: </b> <%= @school.school_contact_email %>
+<br />
+
+<%= button_to "Delete school", school_path(@school), data: { confirm: "Are you sure?" }, method: :delete %></p>

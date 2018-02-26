@@ -14,8 +14,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require bootstrap-sprockets
 //= require_tree .
+//= require bootstrap-sprockets
 //= require bootstrap
 //= require bootstrap.min
 //= require modernizr-2.8.3-respond-1.4.2.min
