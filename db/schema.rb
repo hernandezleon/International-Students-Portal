@@ -53,6 +53,8 @@ ActiveRecord::Schema.define(version: 20180225212336) do
     t.text     "school_contact_name"
     t.text     "school_contact_email"
     t.text     "address"
+    t.integer  "zip_code"
+    t.integer  "phone_number"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
   end

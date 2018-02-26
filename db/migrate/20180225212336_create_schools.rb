@@ -11,6 +11,8 @@ class CreateSchools < ActiveRecord::Migration
       t.text :school_contact_name
       t.text :school_contact_email
       t.text :address
+      t.integer :zip_code
+      t.integer :phone_number
 
       t.timestamps null: false
     end

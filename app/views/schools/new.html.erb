@@ -1,6 +1,6 @@
 <center><h1>Create a New School<h1></center>
 <%= form_for(School.new) do |f| %>
-  
+  <div class="form-group"
   <p>
   <%= f.label :name %><br>
   <%= f.text_field :name %>
@@ -15,7 +15,9 @@
   <%= f.label :description %><br>
   <%= f.text_area :description %>
   </p>
+  </div>
 
+  <div class="form-group">
   <p>
   <%= f.label :city %><br>
   <%= f.text_field :city %>
@@ -30,7 +32,8 @@
   <%= f.label :semester_tuition %><br>
   <%= f.text_field :semester_tuition %>
   </p>
-  
+  </div>
+
   <p>
   <%= f.label :athletics %> 
   <%= f.text_area :athletics %>
@@ -45,6 +48,17 @@
   <%= f.label :school_contact_email %> 
   <%= f.text_field :school_contact_email %>
   </p>
+
+  <p>
+  <%= f.label :zip_code %> 
+  <%= f.text_field :zip_code %>
+  </p>
+
+  <p>
+  <%= f.label :phone_number %> 
+  <%= f.text_field :phone_number %>
+  </p>
+
   
   <p>
   <%= f.submit %>
