@@ -48,7 +48,9 @@ class SchoolsController < ApplicationController
 	private
 
 		def school_params
-			params.require(:school).permit(:id, :name, :abbreviation, :description, :city, :state, :semester_tuition, :athletics, :school_contact_name, :school_contact_email)
+			params.require(:school).permit(:id, :name, :abbreviation, :description,
+											:city, :state, :semester_tuition, :athletics,
+											 :school_contact_name, :school_contact_email)
 		end
 		def find_school
 			@school = School.find(params[:id])
