@@ -1,1 +1,8 @@
 <center><h1>List of Schools</h1></center>
+
+<% count = 1 %>
+
+<% @school.each do |school| %>
+	<h2><%= count %>.&nbsp&nbsp<%= link_to school.name, school_path(school) %></h2>
+	<% count = count + 1 %>
+<% end %><br /><br />

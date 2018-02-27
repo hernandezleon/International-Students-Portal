@@ -4035,3 +4035,150 @@ Cont'
 [2018-02-26 11:58:41 -0600 LABi2 (6425)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
 [2018-02-26 11:58:42 -0600 LABi2 (6434)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
 [2018-02-26 11:58:44 -0600 LABi2 (6439)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+<<<<<<< HEAD
+[2018-02-26 17:14:37 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-02-26 17:14:37 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-02-26 17:14:37 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : Reading configuration from config/newrelic.yml (/home/sglennon/rails_projects/International-Students-Portal)
+[2018-02-26 17:14:37 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : Environment: development
+[2018-02-26 17:14:37 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : No known dispatcher detected.
+[2018-02-26 17:14:37 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : Application: My Application (Development)
+[2018-02-26 17:14:37 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : Installing ActiveJob instrumentation
+[2018-02-26 17:14:37 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-02-26 17:14:37 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-02-26 17:14:37 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-02-26 17:14:37 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-02-26 17:14:37 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : Installing Net instrumentation
+[2018-02-26 17:14:37 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : Installing Rails 4 Controller instrumentation
+[2018-02-26 17:14:38 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : Installing Rails 4 view instrumentation
+[2018-02-26 17:14:38 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : Finished instrumentation
+[2018-02-26 17:14:38 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-26 17:14:40 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-26 17:14:45 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3242)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-02-26 17:14:45 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3242)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-02-26 17:14:45 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3242)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-02-26 17:14:45 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3242)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-26 17:14:45 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3242)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-02-26 17:14:45 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3242)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-02-26 17:14:47 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3242)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-26 17:31:44 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3236)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-02-26 17:31:44 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3236)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-02-26 17:31:44 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3236)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-02-26 17:31:44 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3236)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-26 17:31:44 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3236)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-02-26 17:31:44 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3236)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-02-26 17:31:47 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3236)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-26 17:34:28 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3236)] INFO : Starting Agent shutdown
+[2018-02-26 17:34:28 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3242)] INFO : Starting Agent shutdown
+[2018-02-26 17:34:29 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3229)] INFO : Starting Agent shutdown
+[2018-02-26 21:12:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3642)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-02-26 21:12:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3642)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-02-26 21:12:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3642)] INFO : Reading configuration from config/newrelic.yml (/home/sglennon/rails_projects/International-Students-Portal)
+[2018-02-26 21:12:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3642)] INFO : Environment: development
+[2018-02-26 21:12:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3642)] INFO : No known dispatcher detected.
+[2018-02-26 21:12:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3642)] INFO : Application: My Application (Development)
+[2018-02-26 21:12:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3642)] INFO : Installing ActiveJob instrumentation
+[2018-02-26 21:12:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3642)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-02-26 21:12:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3642)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-02-26 21:12:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3642)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-02-26 21:12:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3642)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-02-26 21:12:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3642)] INFO : Installing Net instrumentation
+[2018-02-26 21:12:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3642)] INFO : Installing Rails 4 Controller instrumentation
+[2018-02-26 21:12:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3642)] INFO : Installing Rails 4 view instrumentation
+[2018-02-26 21:12:24 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3642)] INFO : Finished instrumentation
+[2018-02-26 21:12:25 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3642)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-26 21:12:27 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3642)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-26 21:12:35 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3654)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-02-26 21:12:35 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3654)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-02-26 21:12:35 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3654)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-02-26 21:12:35 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3654)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-26 21:12:35 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3654)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-02-26 21:12:35 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3654)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-02-26 21:12:37 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3654)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-26 21:14:01 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3649)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-02-26 21:14:01 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3649)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-02-26 21:14:01 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3649)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-02-26 21:14:01 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3649)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-26 21:14:01 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3649)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-02-26 21:14:01 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3649)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-02-26 21:14:04 -0600 sglennon-HP-ENVY-x360-m6-Convertible (3649)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+=======
+[2018-02-26 18:05:26 -0600 LABi2 (18807)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-02-26 18:05:26 -0600 LABi2 (18807)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-02-26 18:05:26 -0600 LABi2 (18807)] INFO : Reading configuration from config/newrelic.yml (/home/jjain/Desktop/International-Students-Portal)
+[2018-02-26 18:05:26 -0600 LABi2 (18807)] INFO : Environment: development
+[2018-02-26 18:05:26 -0600 LABi2 (18807)] INFO : No known dispatcher detected.
+[2018-02-26 18:05:26 -0600 LABi2 (18807)] INFO : Application: My Application (Development)
+[2018-02-26 18:05:26 -0600 LABi2 (18807)] INFO : Installing Net instrumentation
+[2018-02-26 18:05:26 -0600 LABi2 (18807)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-02-26 18:05:26 -0600 LABi2 (18807)] INFO : Installing ActiveJob instrumentation
+[2018-02-26 18:05:26 -0600 LABi2 (18807)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-02-26 18:05:26 -0600 LABi2 (18807)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-02-26 18:05:26 -0600 LABi2 (18807)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-02-26 18:05:26 -0600 LABi2 (18807)] INFO : Installing Rails 4 Controller instrumentation
+[2018-02-26 18:05:26 -0600 LABi2 (18807)] INFO : Installing Rails 4 view instrumentation
+[2018-02-26 18:05:26 -0600 LABi2 (18807)] INFO : Finished instrumentation
+[2018-02-26 18:05:26 -0600 LABi2 (18807)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-26 18:05:28 -0600 LABi2 (18807)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-26 18:05:31 -0600 LABi2 (18820)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-02-26 18:05:31 -0600 LABi2 (18820)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-02-26 18:05:31 -0600 LABi2 (18820)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-02-26 18:05:31 -0600 LABi2 (18820)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-26 18:05:31 -0600 LABi2 (18820)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-02-26 18:05:31 -0600 LABi2 (18820)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-02-26 18:05:32 -0600 LABi2 (18820)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+>>>>>>> 06b31f0743b696392a7dccad77b8c757cd265a14
+[2018-02-27 07:40:12 -0600 LABi2 (27040)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-02-27 07:40:12 -0600 LABi2 (27040)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-02-27 07:40:12 -0600 LABi2 (27040)] INFO : Reading configuration from config/newrelic.yml (/home/jjain/Desktop/International-Students-Portal)
+[2018-02-27 07:40:12 -0600 LABi2 (27040)] INFO : Environment: development
+[2018-02-27 07:40:12 -0600 LABi2 (27040)] INFO : No known dispatcher detected.
+[2018-02-27 07:40:12 -0600 LABi2 (27040)] INFO : Application: My Application (Development)
+[2018-02-27 07:40:12 -0600 LABi2 (27040)] INFO : Installing Net instrumentation
+[2018-02-27 07:40:12 -0600 LABi2 (27040)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-02-27 07:40:12 -0600 LABi2 (27040)] INFO : Installing ActiveJob instrumentation
+[2018-02-27 07:40:12 -0600 LABi2 (27040)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-02-27 07:40:12 -0600 LABi2 (27040)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-02-27 07:40:12 -0600 LABi2 (27040)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-02-27 07:40:12 -0600 LABi2 (27040)] INFO : Installing Rails 4 Controller instrumentation
+[2018-02-27 07:40:12 -0600 LABi2 (27040)] INFO : Installing Rails 4 view instrumentation
+[2018-02-27 07:40:12 -0600 LABi2 (27040)] INFO : Finished instrumentation
+[2018-02-27 07:40:13 -0600 LABi2 (27040)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-27 07:40:15 -0600 LABi2 (27040)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-27 07:47:17 -0600 LABi2 (27051)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-02-27 07:47:17 -0600 LABi2 (27051)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-02-27 07:47:17 -0600 LABi2 (27051)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-02-27 07:47:17 -0600 LABi2 (27051)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-27 07:47:17 -0600 LABi2 (27051)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-02-27 07:47:17 -0600 LABi2 (27051)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-02-27 07:47:20 -0600 LABi2 (27051)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-27 07:49:44 -0600 LABi2 (27047)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-02-27 07:49:44 -0600 LABi2 (27047)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-02-27 07:49:44 -0600 LABi2 (27047)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-02-27 07:49:45 -0600 LABi2 (27047)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-27 07:49:45 -0600 LABi2 (27047)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-02-27 07:49:45 -0600 LABi2 (27047)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-02-27 07:49:47 -0600 LABi2 (27047)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-27 10:44:14 -0600 LABi2 (4619)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-02-27 10:44:14 -0600 LABi2 (4619)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-02-27 10:44:14 -0600 LABi2 (4619)] INFO : Reading configuration from config/newrelic.yml (/home/jjain/Desktop/International-Students-Portal)
+[2018-02-27 10:44:14 -0600 LABi2 (4619)] INFO : Environment: development
+[2018-02-27 10:44:14 -0600 LABi2 (4619)] INFO : No known dispatcher detected.
+[2018-02-27 10:44:14 -0600 LABi2 (4619)] INFO : Application: My Application (Development)
+[2018-02-27 10:44:14 -0600 LABi2 (4619)] INFO : Installing Net instrumentation
+[2018-02-27 10:44:14 -0600 LABi2 (4619)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-02-27 10:44:14 -0600 LABi2 (4619)] INFO : Installing ActiveJob instrumentation
+[2018-02-27 10:44:14 -0600 LABi2 (4619)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-02-27 10:44:14 -0600 LABi2 (4619)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-02-27 10:44:14 -0600 LABi2 (4619)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-02-27 10:44:14 -0600 LABi2 (4619)] INFO : Installing Rails 4 Controller instrumentation
+[2018-02-27 10:44:14 -0600 LABi2 (4619)] INFO : Installing Rails 4 view instrumentation
+[2018-02-27 10:44:14 -0600 LABi2 (4619)] INFO : Finished instrumentation
+[2018-02-27 10:44:14 -0600 LABi2 (4619)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-27 10:44:16 -0600 LABi2 (4619)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-02-27 10:44:17 -0600 LABi2 (4626)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-02-27 10:44:17 -0600 LABi2 (4626)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-02-27 10:44:17 -0600 LABi2 (4626)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-02-27 10:44:17 -0600 LABi2 (4626)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-02-27 10:44:17 -0600 LABi2 (4626)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-02-27 10:44:17 -0600 LABi2 (4626)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-02-27 10:44:18 -0600 LABi2 (4626)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
