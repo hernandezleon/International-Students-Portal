@@ -1,0 +1,52 @@
+<%= form_for(@school) do |f| %>
+      
+  
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+    
+
+    <p>
+    <%= f.label :abbreviation %><br>
+    <%= f.text_field :abbreviation %>
+    </p>
+
+    <p>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+    </p>
+  
+
+  
+    <p>
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+    </p> 
+    
+    <p>
+    <%= f.label :state %><br>
+    <%= f.text_field :state %>
+    </p>
+    
+    <p>
+    <%= f.label :semester_tuition %><br>
+    <%= f.text_field :semester_tuition %>
+    </p>
+  
+
+    <p>
+    <%= f.label :athletics %> 
+    <%= f.text_area :athletics %>
+    </p>
+    
+    <p>
+    <%= f.label :school_contact_name %> 
+    <%= f.text_field :school_contact_name %>
+    </p>
+    
+    <p>
+    <%= f.label :school_contact_email %> 
+    <%= f.text_field :school_contact_email %>
+    </p>
+
+      <%= f.submit "Save changes", class: "btn btn-primary" %>
+<% end %>

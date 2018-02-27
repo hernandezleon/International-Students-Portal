@@ -35,6 +35,10 @@ Rails.application.routes.draw do
   get '/dashboard' => "startup#dashboard", as: :user_root  
   get '/new_school' => "schools#new"  
   get '/schools/:id', to: 'schools#show'
+  get '/edit_school', to: 'schools#edit'
+  get '/edit_school', to: :edit, controller: 'schools'
+
+  # match '/schools/:id' => 'schools#edit', :via=> [:get, :post]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

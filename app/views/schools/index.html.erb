@@ -2,7 +2,7 @@
 
 <% count = 1 %>
 
-<% @schools.each do |school| %>
+<% @school.each do |school| %>
 	<h2><%= count %>.&nbsp&nbsp<%= link_to school.name, school_path(school) %></h2>
 	<% count = count + 1 %>
 <% end %><br /><br />

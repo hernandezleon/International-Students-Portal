@@ -17,4 +17,7 @@
 <b> School Contact E-mail: </b> <%= @school.school_contact_email %>
 <br />
 
-<%= button_to "Delete school", school_path(@school), data: { confirm: "Are you sure?" }, method: :delete %></p>
+<%= link_to "Delete school", school_path(@school), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-info" %></p>
+
+
+ <%= link_to "Edit Info", edit_school_path(@school), class: "btn btn-info" %>
