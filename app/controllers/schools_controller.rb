@@ -1,7 +1,7 @@
 class SchoolsController < ApplicationController
 	# before_action :find_school
 	def index
-		@school = School.all
+		@schools = School.all
 	end
 
 	def create
