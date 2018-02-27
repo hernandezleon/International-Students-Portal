@@ -39,7 +39,7 @@ class SchoolsController < ApplicationController
 		# if @school.present?
 		@school.destroy
 		# end
-		render 'index' 
+		redirect_to '/schools'
 	end
 
 	def show
