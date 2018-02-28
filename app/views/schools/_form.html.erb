@@ -18,7 +18,7 @@
         <!-- No. 2 -->
         <div class="col-sm-6 form-group">
           <%= f.label :name %><br>
-         <%= f.text_field :name %>
+         <%= f.text_field :name, :required => true %>
         </div>
 
         <!-- No. 2 -->
@@ -42,7 +42,7 @@
         <div class="col-sm-6 form-group">
 <!--           <div class="form-group"> -->
             <%= f.label :city %><br>
-            <%= f.text_field :city %>
+            <%= f.text_field :city, :required => true %>
         </div>
 
       </div>
@@ -53,12 +53,12 @@
         <!-- No. 2 -->
         <div class="col-sm-6 form-group">
           <%= f.label :state %><br>
-          <%= f.text_field :state %>
+          <%= f.text_field :state, :required => true %>
         </div>
 
         <div class="col-sm-6 form-group">
           <%= f.label :zip_code %><br>
-          <%= f.text_field :zip_code %>
+          <%= f.text_field :zip_code, :required => true %>
         </div>
 
       </div>
@@ -107,7 +107,7 @@
         <!-- No. 2 -->
         <div class="col-sm-6 form-group">      
           <%= f.label :school_contact_name %> 
-          <%= f.text_field :school_contact_name %>
+          <%= f.text_field :school_contact_name, :required => true %>
         </div>
 
         <!-- No. 2 -->
