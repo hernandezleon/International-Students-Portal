@@ -17,6 +17,12 @@
 <b> School Contact E-mail: </b> <%= @school.school_contact_email %>
 <br />
 
+<b> School ZIP Code: </b> <%= @school.zip_code %>
+<br />
+
+<b> Admission's Phone Number: </b> <%= @school.phone_number %>
+<br />
+
 <%= link_to "Delete school", school_path(@school), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-info" %></p>
 
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180225212336) do
+ActiveRecord::Schema.define(version: 20180228003329) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,10 +53,10 @@ ActiveRecord::Schema.define(version: 20180225212336) do
     t.text     "school_contact_name"
     t.text     "school_contact_email"
     t.text     "address"
-    t.integer  "zip_code"
-    t.integer  "phone_number"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
+    t.integer  "zip_code"
+    t.integer  "phone_number"
   end
 
   create_table "users", force: :cascade do |t|
@@ -70,6 +70,10 @@ ActiveRecord::Schema.define(version: 20180225212336) do
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string   "unconfirmed_email"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"

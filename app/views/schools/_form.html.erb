@@ -1,52 +1,130 @@
-<%= form_for(@school) do |f| %>
+<%= form_for @school do |f| %>
+  <div class="form-group"
+
+  <fieldset>
+  <legend>
+    <span 
+      class="number"> 1 
+    </span> School Basic Information
+  </legend>
+
+<center>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+
+      <!-- No. 1 -->
+      <div class="row">
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">
+          <%= f.label :name %><br>
+         <%= f.text_field :name, :required => true %>
+        </div>
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">
+          <%= f.label :abbreviation %><br>
+          <%= f.text_field :abbreviation %>
+        </div>
+
+      </div>
+
+      <!-- No. 1 -->
+      <div class="row">
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">
+          <%= f.label :description %><br>
+          <%= f.text_area :description %>
+        </div>
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">
+<!--           <div class="form-group"> -->
+            <%= f.label :city %><br>
+            <%= f.text_field :city, :required => true %>
+        </div>
+
+      </div>
+
+      <!-- No. 1 -->
+      <div class="row">
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">
+          <%= f.label :state %><br>
+          <%= f.text_field :state, :required => true %>
+        </div>
+
+        <div class="col-sm-6 form-group">
+          <%= f.label :zip_code %><br>
+          <%= f.text_field :zip_code, :required => true %>
+        </div>
+
+      </div>
+
+  </center>
+
+      <fieldset>
+      <legend>
+        <span 
+          class="number"> 2 
+        </span> School Detailed Information
+      </legend>
+
+<center>
+
+      <!-- No. 1 -->
+      <div class="row">
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">
+          <%= f.label :semester_tuition %><br>
+          <%= f.text_field :semester_tuition %>
+        </div>
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">        
+          <%= f.label :athletics %> 
+          <%= f.text_area :athletics %>
+        </div>
+
+      </div>
+
+</center>
       
-  
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-    
+    <fieldset>
+      <legend>
+        <span class="number"> 3 
+        </span> International Student Information
+      </legend>
 
-    <p>
-    <%= f.label :abbreviation %><br>
-    <%= f.text_field :abbreviation %>
-    </p>
+<center>
 
-    <p>
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
-    </p>
-  
+      <!-- No. 1 -->
+      <div class="row">
 
-  
-    <p>
-    <%= f.label :city %><br>
-    <%= f.text_field :city %>
-    </p> 
-    
-    <p>
-    <%= f.label :state %><br>
-    <%= f.text_field :state %>
-    </p>
-    
-    <p>
-    <%= f.label :semester_tuition %><br>
-    <%= f.text_field :semester_tuition %>
-    </p>
-  
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">      
+          <%= f.label :school_contact_name %> 
+          <%= f.text_field :school_contact_name, :required => true %>
+        </div>
 
-    <p>
-    <%= f.label :athletics %> 
-    <%= f.text_area :athletics %>
-    </p>
-    
-    <p>
-    <%= f.label :school_contact_name %> 
-    <%= f.text_field :school_contact_name %>
-    </p>
-    
-    <p>
-    <%= f.label :school_contact_email %> 
-    <%= f.text_field :school_contact_email %>
-    </p>
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">           
+          <%= f.label :school_contact_email %> 
+          <%= f.text_field :school_contact_email %>
+        </div>
 
-      <%= f.submit "Save changes", class: "btn btn-primary" %>
-<% end %>
+        <div class="col-sm-6 form-group">           
+          <%= f.label :phone_number %> 
+          <%= f.text_field :phone_number %>
+        </div>
+      </div>
+
+      <p>
+      <%= f.submit %>
+      </p>
+</center>
+    <% end %>
+
