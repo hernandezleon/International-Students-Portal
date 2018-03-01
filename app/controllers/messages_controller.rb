@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-	before_action :find_message, only: [:show, :edit, :update, :destroy]
+	before_action :find_message, only: [:edit, :update, :destroy]
 	#before_action :authenticate_user!, except: [:index, :show]
 	
 	def index
@@ -7,7 +7,12 @@ class MessagesController < ApplicationController
 	end
 
 	def show
-		#@message = Message.find(params[:id])
+		begin
+			@message = Message.find(params[:id])
+		rescue
+			redirect_to '/messages'
+		ensure
+		end
 	end
 
 	def new
