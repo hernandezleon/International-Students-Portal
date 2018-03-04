@@ -1,6 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-Checklist for  <%= @checklist.application_fee %>
+These are the requirements on your school's checklist: 
+
+<% @checklist.attributes.each do |k, v| %>
+	<% if v  == true %>
+		<h2> <%= k %></h2> <br />
+	<% else %>	
+	<% end %>
+<% end %>
+
+
+<br /><br />
+
 
 <%= link_to 'Edit', edit_checklist_path() %> |
 <%= link_to 'Back', checklists_path %>
