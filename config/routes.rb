@@ -32,11 +32,17 @@ Rails.application.routes.draw do
   match '/help', to: 'startup#help', :via => [:get, :post]
   match '/startup',to:'startup#index',:via => [:get, :post]
   match '/contactus',to:'startup#contactus',:via => [:get, :post]
-  get '/dashboard' => "startup#dashboard", as: :user_root  
   get '/new_school' => "schools#new"  
   get '/schools/:id', to: 'schools#show'
   get '/edit_school', to: 'schools#edit'
   get '/edit_school', to: :edit, controller: 'schools'
+  get '/dashboard' => "startup#dashboard", as: :user_root  
+
+
+  # User scope
+  # devise_scope :user do
+  #     get '/dashboard' => "registrations#show", as: :user_root  
+  # end
 
   # match '/schools/:id' => 'schools#edit', :via=> [:get, :post]
   # Example of regular route:
