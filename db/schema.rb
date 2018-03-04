@@ -11,10 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180304164111) do
+ActiveRecord::Schema.define(version: 20180304174145) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "checklists", force: :cascade do |t|
+    t.boolean  "act_score"
+    t.boolean  "sat_score"
+    t.boolean  "high_school_transcript"
+    t.boolean  "previous_college_transcript"
+    t.boolean  "i_20"
+    t.boolean  "visa_proof"
+    t.boolean  "application_fee"
+    t.boolean  "online_application"
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+  end
 
   create_table "comments", force: :cascade do |t|
     t.text     "content"

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :checklists
   get 'school_admin/index'
 
   devise_for :users
