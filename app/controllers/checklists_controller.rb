@@ -10,6 +10,12 @@ class ChecklistsController < ApplicationController
   # GET /checklists/1
   # GET /checklists/1.json
   def show
+    begin
+      @checklist = Checklist.find(params[:id])
+    rescue
+      redirect_to '/checklists'
+    ensure
+    end
   end
 
   # GET /checklists/new
@@ -64,12 +70,12 @@ class ChecklistsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_checklist
-      # @checklist = Checklist.find(params[:id])
+      @checklist = Checklist.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def checklist_params
-      params.require(:checklist).permit(:act_score, :sat_score, :high_school_transcript, :previous_college_transcript, :i_20, :visa_proof,
+      params.require(:checklist).permit(:id, :act_score, :sat_score, :high_school_transcript, :previous_college_transcript, :i_20, :visa_proof,
                                         :application_fee, :online_application)
     end
 end

@@ -4454,3 +4454,34 @@ Cont'
 [2018-03-04 12:24:35 -0600 multiverse76 (5402)] INFO : Installing Puma::Rack::Builder middleware instrumentation
 [2018-03-04 12:24:36 -0600 multiverse76 (5396)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
 [2018-03-04 12:24:37 -0600 multiverse76 (5402)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-04 14:31:25 -0600 LABi2 (28721)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-03-04 14:31:25 -0600 LABi2 (28721)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-03-04 14:31:25 -0600 LABi2 (28721)] INFO : Reading configuration from config/newrelic.yml (/home/jjain/Desktop/International-Students-Portal)
+[2018-03-04 14:31:25 -0600 LABi2 (28721)] INFO : Environment: development
+[2018-03-04 14:31:25 -0600 LABi2 (28721)] INFO : No known dispatcher detected.
+[2018-03-04 14:31:25 -0600 LABi2 (28721)] INFO : Application: My Application (Development)
+[2018-03-04 14:31:25 -0600 LABi2 (28721)] INFO : Installing Net instrumentation
+[2018-03-04 14:31:25 -0600 LABi2 (28721)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-03-04 14:31:25 -0600 LABi2 (28721)] INFO : Installing ActiveJob instrumentation
+[2018-03-04 14:31:25 -0600 LABi2 (28721)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-03-04 14:31:25 -0600 LABi2 (28721)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-03-04 14:31:25 -0600 LABi2 (28721)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-03-04 14:31:25 -0600 LABi2 (28721)] INFO : Installing Rails 4 Controller instrumentation
+[2018-03-04 14:31:25 -0600 LABi2 (28721)] INFO : Installing Rails 4 view instrumentation
+[2018-03-04 14:31:25 -0600 LABi2 (28721)] INFO : Finished instrumentation
+[2018-03-04 14:31:26 -0600 LABi2 (28721)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-04 14:31:28 -0600 LABi2 (28721)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-04 14:33:05 -0600 LABi2 (28738)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-03-04 14:33:05 -0600 LABi2 (28738)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-03-04 14:33:05 -0600 LABi2 (28738)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-03-04 14:33:05 -0600 LABi2 (28738)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-04 14:33:05 -0600 LABi2 (28738)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-03-04 14:33:05 -0600 LABi2 (28738)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-03-04 14:33:06 -0600 LABi2 (28728)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-03-04 14:33:06 -0600 LABi2 (28728)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-03-04 14:33:06 -0600 LABi2 (28728)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-03-04 14:33:06 -0600 LABi2 (28728)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-04 14:33:06 -0600 LABi2 (28728)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-03-04 14:33:06 -0600 LABi2 (28728)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-03-04 14:33:07 -0600 LABi2 (28738)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-04 14:33:08 -0600 LABi2 (28728)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480

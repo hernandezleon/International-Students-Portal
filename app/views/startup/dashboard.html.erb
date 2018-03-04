@@ -22,8 +22,9 @@
 <b> Gender: </b> <%= current_user.gender %>
 <br />
 
-<%= link_to "Checklists", checklist_path(current_user) %>
+<%= link_to "Create New Checklist", new_checklist_path %>
 
+<br />
 
 <%= link_to "Edit Account Info", edit_user_registration_path %>
 
