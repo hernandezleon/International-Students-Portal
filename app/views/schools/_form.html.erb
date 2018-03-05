@@ -1,24 +1,26 @@
 <%= form_for @school do |f| %>
-  <div class="form-group"
 
-  <fieldset>
-  <legend>
-    <span 
-      class="number"> 1 
-    </span> School Basic Information
-  </legend>
-
-<center>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
+    <div class="form-group">
 
-      <!-- No. 1 -->
+<!-- fieldset #1 -->
+  <fieldset>
+    <legend>
+      <span 
+        class="number"> <b>&#9312;</b>
+      </span> <i> School Basic Information </i>
+    </legend>
+  </fieldset>
+
+<center>
+      <!--  #1 -->
       <div class="row">
 
         <!-- No. 2 -->
         <div class="col-sm-6 form-group">
           <%= f.label :name %><br>
-         <%= f.text_field :name, :required => true %>
+          <%= f.text_field :name, :required => true %>
         </div>
 
         <!-- No. 2 -->
@@ -29,10 +31,10 @@
 
       </div>
 
-      <!-- No. 1 -->
+      <!--  #1 -->
       <div class="row">
 
-        <!-- No. 2 -->
+        <!-- No. 1 -->
         <div class="col-sm-6 form-group">
           <%= f.label :description %><br>
           <%= f.text_area :description %>
@@ -40,22 +42,21 @@
 
         <!-- No. 2 -->
         <div class="col-sm-6 form-group">
-<!--           <div class="form-group"> -->
             <%= f.label :city %><br>
             <%= f.text_field :city, :required => true %>
         </div>
 
       </div>
 
-      <!-- No. 1 -->
+      <!-- #1 -->
       <div class="row">
 
-        <!-- No. 2 -->
+        <!-- No. 1 -->
         <div class="col-sm-6 form-group">
           <%= f.label :state %><br>
           <%= f.text_field :state, :required => true %>
         </div>
-
+        <!-- No. 2 -->
         <div class="col-sm-6 form-group">
           <%= f.label :zip_code %><br>
           <%= f.text_field :zip_code, :required => true %>
@@ -65,19 +66,21 @@
 
   </center>
 
-      <fieldset>
-      <legend>
-        <span 
-          class="number"> 2 
-        </span> School Detailed Information
-      </legend>
+<!-- fieldset #2 -->
+  <fieldset>
+    <legend>
+      <span 
+        class="number"> <b>&#9313;</b>
+      </span> <i> School Detailed Information </i>
+    </legend>
+  </fieldset>
 
 <center>
 
-      <!-- No. 1 -->
+      <!-- #1 -->
       <div class="row">
 
-        <!-- No. 2 -->
+        <!-- No. 1 -->
         <div class="col-sm-6 form-group">
           <%= f.label :semester_tuition %><br>
           <%= f.text_field :semester_tuition %>
@@ -85,26 +88,87 @@
 
         <!-- No. 2 -->
         <div class="col-sm-6 form-group">        
-          <%= f.label :athletics %> 
-          <%= f.text_area :athletics %>
+          <%= f.label :living_expense %> 
+          <%= f.text_area :living_expense%>
+        </div>    
+            
+      </div>
+
+      <!-- #1 -->
+      <div class="row">
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">        
+          <%= f.label :athletics %> <br>
+          <%= f.text_area :athletics%>
+        </div>
+
+      </div> 
+
+</center>
+  
+<!-- fieldset #3 -->
+  <fieldset>
+    <legend>
+      <span 
+        class="number"> <b>&#9314;</b>
+      </span> <i> International Students Information </i>
+    </legend>
+  </fieldset>
+
+<center>
+
+      <!-- # 1 -->
+      <div class="row">
+
+        <!-- No. 1 -->
+        <div class="col-sm-6 form-group">      
+          <%= f.label :steps %> <br>
+          <%= f.text_area :steps, :required => true %>
+        </div>
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">           
+          <%= f.label :number_students%> <br>
+          <%= f.text_field :num_students %>
         </div>
 
       </div>
 
+      <!-- #1 -->
+      <div class="row">
+
+        <!-- No. 1 -->
+        <div class="col-sm-6 form-group">        
+          <%= f.label :requirements %> <br>
+          <%= f.text_area :requirements%>
+        </div>
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">        
+          <%= f.label :countries %> <br>
+          <%= f.text_area :countries_of_international_students %>
+        </div>
+
+      </div> 
+
 </center>
-      
-    <fieldset>
-      <legend>
-        <span class="number"> 3 
-        </span> International Student Information
-      </legend>
+
+<!-- fieldset #4 -->
+  <fieldset>
+    <legend>
+      <span 
+        class="number"> <b>&#9315;</b>
+      </span> <i> International Student Services </i>
+    </legend>
+  </fieldset>
 
 <center>
 
-      <!-- No. 1 -->
+      <!-- # 1 -->
       <div class="row">
 
-        <!-- No. 2 -->
+        <!-- No. 1 -->
         <div class="col-sm-6 form-group">      
           <%= f.label :school_contact_name %> 
           <%= f.text_field :school_contact_name, :required => true %>
@@ -117,14 +181,55 @@
         </div>
 
         <div class="col-sm-6 form-group">           
-          <%= f.label :phone_number %> 
+          <%= f.label :phone_number %> <br>
           <%= f.text_field :phone_number %>
         </div>
+
       </div>
 
-      <p>
-      <%= f.submit %>
-      </p>
 </center>
-    <% end %>
+
+<!-- https://websitebuilders.com/tools/html-codes/numbers/ -->
+<!-- fieldset #5 -->
+  <fieldset>
+    <legend>
+      <span 
+        class="number"> <b>&#9316;</b> 
+      </span> <i> Things To Do For International Students </i>
+    </legend>
+  </fieldset>
+
+<center>
+
+      <!-- # 1 -->
+      <div class="row">
+
+        <!-- No. 1 -->
+        <div class="col-sm-6 form-group">      
+          <%= f.label :organizations %> <br>
+          <%= f.text_area :organizations, :required => true %>
+        </div>
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">           
+          <%= f.label :things_to_do_near %> 
+          <%= f.text_area :things_to_do_near %>
+        </div>
+
+      </div>
+
+<!-- Submit  -->
+
+  <div class="row">
+    <div class="col-sm-12 form-group">
+      <%= f.submit "SUBMIT" , :style => 'padding-top: 3px' %>
+    </div>
+  </div>
+
+</center>
+
+    </div>
+  </div>
+</div>
+<% end %>
 
