@@ -1,0 +1,85 @@
+<form class="pure-form"
+<%= simple_form_for(@checklist) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+
+      <div class="field">
+        <%= f.label :school_name %><br>
+        <%= f.text_field :school_name, :required => true %>
+      </div>
+    
+      <div class="field" >  
+      	<%= f.label :online_application %> <br />
+      	<%= f.label :online_application,"Yes", :value => true %>
+        <%= f.radio_button :online_application, true %><br />
+        <%= f.label :online_application,"No", :value => false %>
+        <%= f.radio_button :online_application, false, :checked => true %><br />
+      </div>
+
+      <div class="field">  
+        <%= f.label :application_fee %> <br />
+        <%= f.label :application_fee,"Yes", :value => true %>
+        <%= f.radio_button :application_fee, true %><br />
+        <%= f.label :application_fee,"No", :value => false %>
+        <%= f.radio_button :application_fee, false, :checked => true %><br />
+      </div>
+
+      <div class="field">  
+        <%= f.label :visa_proof %> <br />
+        <%= f.label :visa_proof,"Yes", :value => true %>
+        <%= f.radio_button :visa_proof, true %><br />
+        <%= f.label :visa_proof,"No", :value => false %>
+        <%= f.radio_button :visa_proof, false, :checked => true %><br />
+      </div>
+    
+    <div class="field">  
+      <%= f.label :i_20 %> <br />
+      <%= f.label :i_20,"Yes", :value => true %>
+      <%= f.radio_button :i_20, true %><br />
+      <%= f.label :i_20,"No", :value => false %>
+      <%= f.radio_button :i_20, false, :checked => true %><br />
+    </div>
+
+    <div class="field">  
+      <%= f.label :previous_college_transcript %> <br />
+      <%= f.label :previous_college_transcript,"Yes", :value => true %>
+      <%= f.radio_button :previous_college_transcript, true %><br />
+      <%= f.label :previous_college_transcript,"No", :value => false %>
+      <%= f.radio_button :previous_college_transcript, false, :checked => true %><br />
+    </div>
+
+    <div class="field">  
+      <%= f.label :high_school_transcript %> <br />
+      <%= f.label :high_school_transcript,"Yes", :value => true %>
+      <%= f.radio_button :high_school_transcript, true %><br />
+      <%= f.label :high_school_transcript,"No", :value => false %>
+      <%= f.radio_button :high_school_transcript, false, :checked => true %><br />
+    </div>
+
+
+    <div class="field">  
+      <%= f.label :act_score %> <br />
+      <%= f.label :act_score,"Yes", :value => true %>
+      <%= f.radio_button :act_score, true %><br />
+      <%= f.label :act_score,"No", :value => false %>
+      <%= f.radio_button :act_score, false, :checked => true %><br />
+    </div>
+
+    <div class="field">  
+      <%= f.label :sat_score %> <br />
+      <%= f.label :sat_score,"Yes", :value => true %>
+      <%= f.radio_button :sat_score, true %><br />
+      <%= f.label :sat_score,"No", :value => false %>
+      <%= f.radio_button :sat_score, false, :checked => true %><br />
+    </div>
+
+
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+</form>

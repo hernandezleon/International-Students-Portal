@@ -25,6 +25,7 @@ class ChecklistsController < ApplicationController
 
   # GET /checklists/1/edit
   def edit
+    @checklist = Checklist.find(params[:id])
   end
 
   # POST /checklists
@@ -76,7 +77,7 @@ class ChecklistsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def checklist_params
       params.require(:checklist).permit(:id, :act_score, :sat_score, :high_school_transcript, :previous_college_transcript, :i_20, :visa_proof,
-                                        :application_fee, :online_application)
+                                        :application_fee, :online_application, :school_name)
     end
 end
 
