@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+<center><h1> <%= @checklist.school_name %> Admissions Checklist</h1></center>
+
+These are the requirements on the <b><%= @checklist.school_name %></b> checklist: 
+
+<% @checklist.attributes.each do |k, v| %>
+	<% if v  == true %>
+		<h2> <%= k %></h2> <br />
+	<% else %>	
+	<% end %>
+<% end %>
+
+
+<br /><br />
+
+
+<%= link_to 'Edit', edit_checklist_path() %> |
+<%= link_to 'Back', checklists_path %>

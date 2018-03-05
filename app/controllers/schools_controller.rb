@@ -44,7 +44,12 @@ class SchoolsController < ApplicationController
 
 	def show
 		 # @school = School.first 
-		 @school = School.find(params[:id])
+		begin
+			@school = School.find(params[:id])
+		rescue
+			redirect_to '/schools'
+		ensure
+		end
 	end	
 
 	def new

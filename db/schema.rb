@@ -11,10 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180228003329) do
+ActiveRecord::Schema.define(version: 20180304233050) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "checklists", force: :cascade do |t|
+    t.boolean  "act_score"
+    t.boolean  "sat_score"
+    t.boolean  "high_school_transcript"
+    t.boolean  "previous_college_transcript"
+    t.boolean  "i_20"
+    t.boolean  "visa_proof"
+    t.boolean  "application_fee"
+    t.boolean  "online_application"
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.string   "school_name"
+  end
 
   create_table "comments", force: :cascade do |t|
     t.text     "content"
@@ -70,16 +84,12 @@ ActiveRecord::Schema.define(version: 20180228003329) do
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
-    t.string   "confirmation_token"
-    t.datetime "confirmed_at"
-    t.datetime "confirmation_sent_at"
-    t.string   "unconfirmed_email"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
-    t.datetime "date_of_birth"
-    t.boolean  "is_female",              default: false
+    t.date     "date_of_birth"
     t.boolean  "confirmable",            default: false
+    t.string   "gender"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
