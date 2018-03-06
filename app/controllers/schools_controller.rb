@@ -64,6 +64,11 @@ class SchoolsController < ApplicationController
 											:city, :state, :semester_tuition, :athletics,
 											 :school_contact_name, :school_contact_email, :zip_code, :phone_number)
 	end
+	
+	def google_map(center)
+		"https://maps.googleapis.com/maps/api/staticmap?center=#{center}&size=300x300&zoom=8&markers=color:red%7C#{center}&key= AIzaSyCYIEX21DxZA8VaQfL0dceu-Kql7_ygoGw"
+	end
+	helper_method :google_map
 
 	# def find_school
 	# 	@school = School.find(params[:id])
