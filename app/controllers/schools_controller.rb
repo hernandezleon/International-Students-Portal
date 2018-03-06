@@ -66,7 +66,7 @@ class SchoolsController < ApplicationController
 	end
 	
 	def google_map(center)
-		"https://maps.googleapis.com/maps/api/staticmap?center=#{center}&size=300x300&zoom=8&key= AIzaSyBwO1EzkdnkYm6gLZW1bN2ziLNRvOmdCP0 "
+		"https://maps.googleapis.com/maps/api/staticmap?center=#{center}&size=300x300&zoom=8&key=AIzaSyBwO1EzkdnkYm6gLZW1bN2ziLNRvOmdCP0"
 	end
 	helper_method :google_map
 
