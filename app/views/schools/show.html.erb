@@ -26,6 +26,6 @@
 <%= link_to "Delete school", school_path(@school), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-info" %></p>
 
 
- <%= link_to "Edit Info", edit_school_path(@school), class: "btn btn-info" %>
+ <%= link_to "Edit Info", edit_school_path(@school), class: "btn btn-info" %><br />
 
 <%= image_tag google_map(center: @school.city) %>
