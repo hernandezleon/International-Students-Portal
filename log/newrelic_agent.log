@@ -4992,3 +4992,55 @@ Cont'
 [2018-03-05 17:48:48 -0600 Karlas-MacBook-Air.local (3613)] INFO : Installing deferred Puma::Rack::Builder instrumentation
 [2018-03-05 17:48:48 -0600 Karlas-MacBook-Air.local (3613)] INFO : Installing Puma::Rack::Builder middleware instrumentation
 [2018-03-05 17:48:51 -0600 Karlas-MacBook-Air.local (3613)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-05 19:27:11 -0600 multiverse76 (21818)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-03-05 19:27:11 -0600 multiverse76 (21818)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-03-05 19:27:11 -0600 multiverse76 (21818)] INFO : Reading configuration from config/newrelic.yml (/home/jay/Desktop/International-Students-Portal)
+[2018-03-05 19:27:11 -0600 multiverse76 (21818)] INFO : Environment: development
+[2018-03-05 19:27:11 -0600 multiverse76 (21818)] INFO : No known dispatcher detected.
+[2018-03-05 19:27:11 -0600 multiverse76 (21818)] INFO : Application: My Application (Development)
+[2018-03-05 19:27:12 -0600 multiverse76 (21818)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-03-05 19:27:12 -0600 multiverse76 (21818)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-03-05 19:27:12 -0600 multiverse76 (21818)] INFO : Installing Net instrumentation
+[2018-03-05 19:27:12 -0600 multiverse76 (21818)] INFO : Installing ActiveJob instrumentation
+[2018-03-05 19:27:12 -0600 multiverse76 (21818)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-03-05 19:27:12 -0600 multiverse76 (21818)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-03-05 19:27:12 -0600 multiverse76 (21818)] INFO : Installing Rails 4 view instrumentation
+[2018-03-05 19:27:12 -0600 multiverse76 (21818)] INFO : Installing Rails 4 Controller instrumentation
+[2018-03-05 19:27:12 -0600 multiverse76 (21818)] INFO : Finished instrumentation
+[2018-03-05 19:27:12 -0600 multiverse76 (21818)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-05 19:27:14 -0600 multiverse76 (21818)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-05 19:27:19 -0600 multiverse76 (21826)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-03-05 19:27:19 -0600 multiverse76 (21826)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-03-05 19:27:19 -0600 multiverse76 (21826)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-03-05 19:27:22 -0600 multiverse76 (21826)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-05 19:28:00 -0600 multiverse76 (22011)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-03-05 19:28:00 -0600 multiverse76 (22011)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-03-05 19:28:00 -0600 multiverse76 (22011)] INFO : Reading configuration from config/newrelic.yml (/home/jay/Desktop/International-Students-Portal)
+[2018-03-05 19:28:00 -0600 multiverse76 (22011)] INFO : Environment: development
+[2018-03-05 19:28:00 -0600 multiverse76 (22011)] INFO : No known dispatcher detected.
+[2018-03-05 19:28:00 -0600 multiverse76 (22011)] INFO : Application: My Application (Development)
+[2018-03-05 19:28:00 -0600 multiverse76 (22011)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-03-05 19:28:00 -0600 multiverse76 (22011)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-03-05 19:28:00 -0600 multiverse76 (22011)] INFO : Installing Net instrumentation
+[2018-03-05 19:28:00 -0600 multiverse76 (22011)] INFO : Installing ActiveJob instrumentation
+[2018-03-05 19:28:00 -0600 multiverse76 (22011)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-03-05 19:28:00 -0600 multiverse76 (22011)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-03-05 19:28:00 -0600 multiverse76 (22011)] INFO : Installing Rails 4 view instrumentation
+[2018-03-05 19:28:00 -0600 multiverse76 (22011)] INFO : Installing Rails 4 Controller instrumentation
+[2018-03-05 19:28:00 -0600 multiverse76 (22011)] INFO : Finished instrumentation
+[2018-03-05 19:28:00 -0600 multiverse76 (22011)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-05 19:28:00 -0600 multiverse76 (22022)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-03-05 19:28:00 -0600 multiverse76 (22022)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-03-05 19:28:00 -0600 multiverse76 (22022)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-03-05 19:28:00 -0600 multiverse76 (22022)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-05 19:28:00 -0600 multiverse76 (22022)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-03-05 19:28:00 -0600 multiverse76 (22022)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-03-05 19:28:03 -0600 multiverse76 (22011)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-05 19:28:03 -0600 multiverse76 (22029)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-03-05 19:28:03 -0600 multiverse76 (22029)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-03-05 19:28:03 -0600 multiverse76 (22029)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-03-05 19:28:03 -0600 multiverse76 (22029)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-05 19:28:03 -0600 multiverse76 (22029)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-03-05 19:28:03 -0600 multiverse76 (22029)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-03-05 19:28:04 -0600 multiverse76 (22022)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-05 19:28:06 -0600 multiverse76 (22029)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
