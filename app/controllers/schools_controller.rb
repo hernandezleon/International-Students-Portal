@@ -62,7 +62,8 @@ class SchoolsController < ApplicationController
 	def school_params
 		params.require(:school).permit(:id, :name, :abbreviation, :description,
 											:city, :state, :semester_tuition, :athletics,
-											 :school_contact_name, :school_contact_email, :zip_code, :phone_number)
+											:school_contact_name, :school_contact_email, :zip_code, :phone_number, :steps, 
+											:things_to_do_near, :organizations, :countries_of_international_students, :requirements)
 	end
 	
 	def google_map(center)
