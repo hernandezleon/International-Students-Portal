@@ -14,13 +14,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
 //= require bootstrap-sprockets
 //= require bootstrap
 //= require bootstrap.min
 //= require modernizr-2.8.3-respond-1.4.2.min
 //= require jquery-1.11.2.min
 //= require npm
+//= require_tree .
 
 // Fixes dropdown
 $(document).ready(function() {
@@ -29,18 +29,18 @@ $(document).ready(function() {
 
 
 // Makes navbar scroll
-$(document).ready(function() {
+// $(document).ready(function() {
   
-  $(window).scroll(function () {
-      //if you hard code, then use console
-      //.log to determine when you want the 
-      //nav bar to stick.  
-      console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 280) {
-      $('#nav_bar').addClass('navbar-fixed');
-    }
-    if ($(window).scrollTop() < 281) {
-      $('#nav_bar').removeClass('navbar-fixed');
-    }
-  });
-});
+//   $(window).scroll(function () {
+//       //if you hard code, then use console
+//       //.log to determine when you want the 
+//       //nav bar to stick.  
+//       console.log($(window).scrollTop())
+//     if ($(window).scrollTop() > 280) {
+//       $('#nav_bar').addClass('navbar-fixed');
+//     }
+//     if ($(window).scrollTop() < 281) {
+//       $('#nav_bar').removeClass('navbar-fixed');
+//     }
+//   });
+// });
