@@ -1,31 +1,224 @@
 <center><h3><%= @school.name %></h3></center>
 <br />
-<b> Abbreviation: </b>  <%= @school.abbreviation %>
-<br />
-<b> Description: </b> <%= @school.description %>
-<br />
-<b> City: </b> <%= @school.city %>
-<br />
-<b> State: </b> <%= @school.state %>
-<br />
-<b> Semester Tuition: </b> <%= @school.semester_tuition %>
-<br />
-<b> Athletics: </b> <%= @school.athletics %>
-<br />
-<b> School Contact: </b> <%= @school.school_contact_name %>
-<br />
-<b> School Contact E-mail: </b> <%= @school.school_contact_email %>
-<br />
 
-<b> School ZIP Code: </b> <%= @school.zip_code %>
-<br />
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+  	
+<!-- fieldset #1 -->
+  <fieldset>
+    <legend>
+      <span 
+        class="number"> <b>&#9312;</b>
+      </span> <i> School Basic Information </i>
+    </legend>
+  </fieldset>
 
-<b> Admission's Phone Number: </b> <%= @school.phone_number %>
-<br />
+<center>
+      <!--  #1 -->
+      <div class="row">
 
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">
+			<b> Abbreviation: </b> <br><%= @school.abbreviation %>
+				<br />
+        </div>
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">
+			<b> Description: </b> <br><%= @school.description %>
+				<br />
+        </div>
+
+      </div>
+
+      <!--  #1 -->
+      <div class="row">
+
+        <!-- No. 1 -->
+        <div class="col-sm-6 form-group">
+			<b> City: </b> <br><%= @school.city %>
+				<br />
+        </div>
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">
+			<b> State: </b> <br><%= @school.state %>
+				<br />
+        </div>
+
+      </div>
+
+      <!-- #1 -->
+      <div class="row">
+
+        <!-- No. 1 -->
+        <div class="col-sm-6 form-group">
+			<b> Zip Code: </b> <br><%= @school.zip_code %>
+				<br />
+        </div>
+
+      </div>
+
+</center>
+  <center>
+  <!-- Map -->
+  <%= image_tag google_map(center: @school.city) %>
+  </center>
+  <br>
+  
+<!-- fieldset #2 -->
+  <fieldset>
+    <legend>
+      <span 
+        class="number"> <b>&#9313;</b>
+      </span> <i> School Detailed Information </i>
+    </legend>
+  </fieldset>
+
+<center>
+
+      <!-- #1 -->
+      <div class="row">
+
+        <!-- No. 1 -->
+        <div class="col-sm-6 form-group">
+			<b> Semester Tuition: </b> <br><%= @school.semester_tuition %>
+				<br />
+        </div>
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">  
+			<b> Living Expense: </b> <br><%= @school.living_expense %>
+				<br />              
+        </div>    
+            
+      </div>
+
+      <!-- #1 -->
+      <div class="row">
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">        
+			<b> Athletics: </b> <br><%= @school.athletics %>
+				<br />
+        </div>
+
+      </div> 
+
+</center>
+  
+<!-- fieldset #3 -->
+  <fieldset>
+    <legend>
+      <span 
+        class="number"> <b>&#9314;</b>
+      </span> <i> International Students Information </i>
+    </legend>
+  </fieldset>
+
+<center>
+
+      <!-- # 1 -->
+      <div class="row">
+
+        <!-- No. 1 -->
+        <div class="col-sm-6 form-group">      
+			<b> Steps: </b> <br><%= @school.steps %>
+				<br />
+        </div>
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">           
+			<b> International Students Enrolled: </b> <br><%= @school.num_students %>
+				<br />
+        </div>
+
+      </div>
+
+      <!-- #1 -->
+      <div class="row">
+
+        <!-- No. 1 -->
+        <div class="col-sm-6 form-group">        
+			<b> Requirements: </b> <br><%= @school.requirements %>
+				<br />
+        </div>
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">        
+			<b> Countries of International Students Enrolled: </b> <br><%= @school.countries_of_international_students %>
+				<br />
+        </div>
+
+      </div> 
+
+</center>
+
+<!-- fieldset #4 -->
+  <fieldset>
+    <legend>
+      <span 
+        class="number"> <b>&#9315;</b>
+      </span> <i> International Student Services </i>
+    </legend>
+  </fieldset>
+
+<center>
+
+      <!-- # 1 -->
+      <div class="row">
+
+        <!-- No. 1 -->
+        <div class="col-sm-6 form-group">      
+			<b> Director: </b> <br><%= @school.school_contact_name %>
+				<br />
+        </div>
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">           
+			<b> Email: </b> <br><%= @school.school_contact_email %>
+				<br />
+        </div>
+
+        <div class="col-sm-6 form-group">           
+			<b> Phone Number: </b> <br><%= @school.phone_number %>
+				<br />
+        </div>
+
+      </div>
+
+</center>
+
+<!-- https://websitebuilders.com/tools/html-codes/numbers/ -->
+<!-- fieldset #5 -->
+  <fieldset>
+    <legend>
+      <span 
+        class="number"> <b>&#9316;</b> 
+      </span> <i> Things To Do For International Students </i>
+    </legend>
+  </fieldset>
+
+<center>
+
+      <!-- # 1 -->
+      <div class="row">
+
+        <!-- No. 1 -->
+        <div class="col-sm-6 form-group">      
+			<b> Organizations: </b> <br><%= @school.organizations %>
+				<br />
+        </div>
+
+        <!-- No. 2 -->
+        <div class="col-sm-6 form-group">           
+			<b> Things To Do: </b> <br><%= @school.things_to_do_near %>
+				<br />
+        </div>
+
+      </div>
+
+
+<!-- Buttons -->
 <%= link_to "Delete school", school_path(@school), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-info" %></p>
-
-
- <%= link_to "Edit Info", edit_school_path(@school), class: "btn btn-info" %><br />
-
-<%= image_tag google_map(center: @school.city) %>
+<%= link_to "Edit Info", edit_school_path(@school), class: "btn btn-info" %><br />
