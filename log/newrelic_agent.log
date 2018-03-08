@@ -5168,3 +5168,54 @@ Cont'
 [2018-03-05 22:45:32 -0600 Karlas-MacBook-Air.local (5276)] INFO : Starting Agent shutdown
 [2018-03-05 22:45:32 -0600 Karlas-MacBook-Air.local (5277)] INFO : Starting Agent shutdown
 [2018-03-05 22:45:32 -0600 Karlas-MacBook-Air.local (5258)] INFO : Starting Agent shutdown
+[2018-03-07 23:28:08 -0600 Karlas-MacBook-Air.local (7358)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-03-07 23:28:08 -0600 Karlas-MacBook-Air.local (7358)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-03-07 23:28:08 -0600 Karlas-MacBook-Air.local (7358)] INFO : Reading configuration from config/newrelic.yml (/Users/KarlaLucia/International-Students-Portal)
+[2018-03-07 23:28:08 -0600 Karlas-MacBook-Air.local (7358)] INFO : Environment: development
+[2018-03-07 23:28:08 -0600 Karlas-MacBook-Air.local (7358)] INFO : No known dispatcher detected.
+[2018-03-07 23:28:08 -0600 Karlas-MacBook-Air.local (7358)] INFO : Application: My Application (Development)
+[2018-03-07 23:28:08 -0600 Karlas-MacBook-Air.local (7358)] INFO : Installing ActiveJob instrumentation
+[2018-03-07 23:28:08 -0600 Karlas-MacBook-Air.local (7358)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-03-07 23:28:08 -0600 Karlas-MacBook-Air.local (7358)] INFO : Installing Net instrumentation
+[2018-03-07 23:28:08 -0600 Karlas-MacBook-Air.local (7358)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-03-07 23:28:08 -0600 Karlas-MacBook-Air.local (7358)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-03-07 23:28:08 -0600 Karlas-MacBook-Air.local (7358)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-03-07 23:28:08 -0600 Karlas-MacBook-Air.local (7358)] INFO : Installing Rails 4 Controller instrumentation
+[2018-03-07 23:28:08 -0600 Karlas-MacBook-Air.local (7358)] INFO : Installing Rails 4 view instrumentation
+[2018-03-07 23:28:08 -0600 Karlas-MacBook-Air.local (7358)] INFO : Finished instrumentation
+[2018-03-07 23:28:09 -0600 Karlas-MacBook-Air.local (7358)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-07 23:28:09 -0600 Karlas-MacBook-Air.local (7358)] INFO : Starting Agent shutdown
+[2018-03-07 23:32:45 -0600 Karlas-MacBook-Air.local (786)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-03-07 23:32:45 -0600 Karlas-MacBook-Air.local (786)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-03-07 23:32:45 -0600 Karlas-MacBook-Air.local (786)] INFO : Reading configuration from config/newrelic.yml (/Users/KarlaLucia/International-Students-Portal)
+[2018-03-07 23:32:45 -0600 Karlas-MacBook-Air.local (786)] INFO : Environment: development
+[2018-03-07 23:32:45 -0600 Karlas-MacBook-Air.local (786)] INFO : No known dispatcher detected.
+[2018-03-07 23:32:45 -0600 Karlas-MacBook-Air.local (786)] INFO : Application: My Application (Development)
+[2018-03-07 23:32:46 -0600 Karlas-MacBook-Air.local (786)] INFO : Installing ActiveJob instrumentation
+[2018-03-07 23:32:46 -0600 Karlas-MacBook-Air.local (786)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-03-07 23:32:46 -0600 Karlas-MacBook-Air.local (786)] INFO : Installing Net instrumentation
+[2018-03-07 23:32:46 -0600 Karlas-MacBook-Air.local (786)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-03-07 23:32:46 -0600 Karlas-MacBook-Air.local (786)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-03-07 23:32:46 -0600 Karlas-MacBook-Air.local (786)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-03-07 23:32:46 -0600 Karlas-MacBook-Air.local (786)] INFO : Installing Rails 4 Controller instrumentation
+[2018-03-07 23:32:46 -0600 Karlas-MacBook-Air.local (786)] INFO : Installing Rails 4 view instrumentation
+[2018-03-07 23:32:46 -0600 Karlas-MacBook-Air.local (786)] INFO : Finished instrumentation
+[2018-03-07 23:32:48 -0600 Karlas-MacBook-Air.local (786)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-07 23:32:49 -0600 Karlas-MacBook-Air.local (818)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-03-07 23:32:49 -0600 Karlas-MacBook-Air.local (818)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-03-07 23:32:49 -0600 Karlas-MacBook-Air.local (818)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-03-07 23:32:50 -0600 Karlas-MacBook-Air.local (786)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-07 23:32:51 -0600 Karlas-MacBook-Air.local (818)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-07 23:32:51 -0600 Karlas-MacBook-Air.local (818)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-03-07 23:32:51 -0600 Karlas-MacBook-Air.local (818)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-03-07 23:32:52 -0600 Karlas-MacBook-Air.local (818)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-07 23:36:07 -0600 Karlas-MacBook-Air.local (819)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-03-07 23:36:07 -0600 Karlas-MacBook-Air.local (819)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-03-07 23:36:07 -0600 Karlas-MacBook-Air.local (819)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-03-07 23:36:07 -0600 Karlas-MacBook-Air.local (819)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-07 23:36:07 -0600 Karlas-MacBook-Air.local (819)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-03-07 23:36:07 -0600 Karlas-MacBook-Air.local (819)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-03-07 23:36:07 -0600 Karlas-MacBook-Air.local (819)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-08 00:18:02 -0600 Karlas-MacBook-Air.local (819)] INFO : Starting Agent shutdown
+[2018-03-08 00:18:02 -0600 Karlas-MacBook-Air.local (818)] INFO : Starting Agent shutdown
+[2018-03-08 00:18:02 -0600 Karlas-MacBook-Air.local (786)] INFO : Starting Agent shutdown
