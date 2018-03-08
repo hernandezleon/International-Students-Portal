@@ -218,7 +218,10 @@
 
       </div>
 
+<center>
 
 <!-- Buttons -->
-<%= link_to "Delete school", school_path(@school), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-info" %></p>
-<%= link_to "Edit Info", edit_school_path(@school), class: "btn btn-info" %><br />
+<br>
+<%= link_to "Edit Info", edit_school_path(@school), class: "btn btn-lg btn-warning btn-block" %><br />
+
+<%= link_to "Delete school", school_path(@school), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-lg btn-danger btn-block" %></p>
