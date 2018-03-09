@@ -78,7 +78,6 @@ ActiveRecord::Schema.define(version: 20180307054955) do
     t.text     "countries_of_international_students"
     t.text     "organizations"
     t.text     "things_to_do_near"
-    t.integer  "number_intl_students"
   end
 
   create_table "users", force: :cascade do |t|

@@ -39,14 +39,19 @@ Rails.application.configure do
   # Local host email configuration
   # config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
  
-  # config.action_mailer.delivery_method = :smtp
+  config.action_mailer.delivery_method = :smtp
   # config.action_mailer.smtp_settings = {:address => "localhost", :port => 1025}
 
   config.action_mailer.default_url_options = {:host => 'international-students-portal.herokuapp.com'}
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-  :address => "127.0.0.1",
+  :enable_starttls_auto => true,  
+  :address => "smtp.gmail.com",
   :port    => 25,
-  :domain  => 'international-students-portal.herokuapp.com'
+  :tls => true,
+  :domain => 'gmail.com',
+  :authentication => :plain,
+  :user_name => ENV["GMAIL_USERNAME"],
+  :password => ENV["GMAIL_PASSWORD"]
   }
 end
