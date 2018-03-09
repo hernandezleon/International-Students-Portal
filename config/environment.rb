@@ -1,7 +1,7 @@
 # Load the Rails application.
 require File.expand_path('../application', __FILE__)
-require 'tlsmail'
-require 'openssl'
+# require 'tlsmail'
+# require 'openssl'
 
 # Initialize the Rails application.
 Rails.application.initialize!
