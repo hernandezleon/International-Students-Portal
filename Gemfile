@@ -74,3 +74,4 @@ gem 'devise', '~> 3.4.1'
 gem 'browserify-rails'
 # gem "oa-oauth", :require => "omniauth/oauth"
 gem 'table_print'
+gem 'tlsmail'
