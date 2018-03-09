@@ -5,9 +5,19 @@ require 'tlsmail'
 # Initialize the Rails application.
 Rails.application.initialize!
 
-ActionMailer::Base.action_mailer.default_url_options = { :host => 'international-students-portal.herokuapp.com' }
+require 'net/smtp'
+Net.instance_eval {remove_const :SMTPSession} if defined?(Net::SMTPSession)
 
-# Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
+require 'net/pop'
+Net::POP.instance_eval {remove_const :Revision} if defined?(Net::POP::Revision)
+Net.instance_eval {remove_const :POP} if defined?(Net::POP)
+Net.instance_eval {remove_const :POPSession} if defined?(Net::POPSession)
+Net.instance_eval {remove_const :POP3Session} if defined?(Net::POP3Session)
+Net.instance_eval {remove_const :APOPSession} if defined?(Net::APOPSession)
+
+# ActionMailer::Base.action_mailer.default_url_options = { :host => 'international-students-portal.herokuapp.com' }
+
+Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
 
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.perform_deliveries = true
