@@ -75,3 +75,4 @@ gem 'browserify-rails'
 # gem "oa-oauth", :require => "omniauth/oauth"
 gem 'table_print'
 gem 'tlsmail',require: false
+gem 'openssl'
