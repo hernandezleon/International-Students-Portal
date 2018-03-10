@@ -16,7 +16,7 @@ Net.instance_eval {remove_const :POPSession} if defined?(Net::POPSession)
 Net.instance_eval {remove_const :POP3Session} if defined?(Net::POP3Session)
 Net.instance_eval {remove_const :APOPSession} if defined?(Net::APOPSession)
 
-config.action_mailer.default_url_options = { :host => 'international-students-portal.herokuapp.com' }
+ActionMailer::Base.default_url_options = { :host => 'international-students-portal.herokuapp.com' }
 
 Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
 
