@@ -78,5 +78,7 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = {:host => 'international-students-portal.herokuapp.com'}
 
+  # Actually send emails
+   config.action_mailer.perform_deliveries = true
   
 end

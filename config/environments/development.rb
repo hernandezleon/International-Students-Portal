@@ -42,6 +42,9 @@ Rails.application.configure do
   # config.action_mailer.delivery_method = :smtp
   # config.action_mailer.smtp_settings = {:address => "localhost", :port => 1025}
 
+  # Actually send emails
+   config.action_mailer.perform_deliveries = true
+
   config.action_mailer.default_url_options = {:host => 'international-students-portal.herokuapp.com'}
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
