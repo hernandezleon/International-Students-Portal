@@ -42,6 +42,9 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
 
+  # Actually send emails
+   config.action_mailer.perform_deliveries = true
+
   # Local host email configuration
   # config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
  

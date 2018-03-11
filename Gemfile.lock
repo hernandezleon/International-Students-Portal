@@ -213,6 +213,7 @@ GEM
       rspec-mocks (~> 3.7.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.0)
+    rubysl-net-smtp (2.0.1)
     sass (3.5.5)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -278,6 +279,7 @@ DEPENDENCIES
   google-api-client
   jbuilder (~> 2.0)
   jquery-rails
+  mail
   newrelic_rpm
   omniauth-facebook
   omniauth-google-oauth2 (~> 0.2.1)
@@ -290,6 +292,7 @@ DEPENDENCIES
   rspec
   rspec-core
   rspec-rails (= 3.7.2)
+  rubysl-net-smtp
   sass-rails (~> 5.0.7)
   sdoc (~> 0.4.0)
   simple_form (~> 3.1.0)
