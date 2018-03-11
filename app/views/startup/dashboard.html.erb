@@ -1,6 +1,10 @@
 <center><h1>DASHBOARD</h1></center>
 <h2> Welcome <%= current_user.name %> !</h2>
-
+<% if current_user.admin? %>
+	<h3> You are an administrator.</h3>
+<% else %>
+	<h3> You are a student user.</h3>	
+<% end %>
 
 <h3><a href= '/schools'>Featured Universities</a></h3>
 <li> LSUS</li>
@@ -8,7 +12,10 @@
 <br />
 
 <h3><a href="/schools">List of Current Schools</a></h3>
-<h3><a href="/new_school">Add a New School</a></h3>
+
+<% if can? :manage, School %>
+	<h3><a href="/new_school">Add a New School</a></h3>
+<% end %>
 <br>
 
 <h3>Your Information</h3>
@@ -21,14 +28,19 @@
 <br />
 <b> Gender: </b> <%= current_user.gender %>
 <br />
+<% if current_user.admin? %>
+<b> Your School: </b> <%= current_user.school %>
+<% end %>
+<br />
 
 
 <%= link_to "Edit Account Info", edit_user_registration_path %>
 
 <br />
 
+<% if can? :manage, Checklist %>
 <%= link_to "Create New Checklist for your School", new_checklist_path %>
-
+<% end %>
 <br />
 
 

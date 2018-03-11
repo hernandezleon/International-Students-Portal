@@ -23,6 +23,10 @@
     <%= f.text_field :last_name, autofocus: true %>
   </div>
 
+  <div><%= f.label :school %><br />
+    <%= f.text_field :school, autofocus: true %>
+  </div>
+
   <div>
     <%= f.label :gender %><br />
     <%= f.select :gender, %w{Male Female}, :prompt => 'Select', required: true, placeholder: 'Gender', class: 'form-control' %>

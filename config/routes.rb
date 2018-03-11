@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   get 'school_admin/index'
 
   devise_for :users
+  devise_scope :user do
+    get 'landing', to: 'devise/registrations#landing'
+    get 'new_admin', to: 'devise/registrations#new_admin'
+  end  
   #require 'omniauth-google-oauth2'
   #get 'sessions/create'
 
@@ -38,6 +42,7 @@ Rails.application.routes.draw do
   get '/edit_school', to: 'schools#edit'
   get '/edit_school', to: :edit, controller: 'schools'
   get '/dashboard' => "startup#dashboard", as: :user_root  
+  # get 'landing', to: 'devise/registrations#landing'
 
 
   # User scope

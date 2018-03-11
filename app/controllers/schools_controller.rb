@@ -18,6 +18,7 @@ class SchoolsController < ApplicationController
 
 	def edit
 		 # @school = School.name 
+		 authorize! :update, @school
 		 @school = School.find(params[:id])
 		 # render 'edit'
 	end
@@ -43,7 +44,8 @@ class SchoolsController < ApplicationController
 	end
 
 	def show
-		 # @school = School.first 
+		authorize! :update, @school
+		# @school = School.first 
 		begin
 			@school = School.find(params[:id])
 		rescue

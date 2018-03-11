@@ -10,6 +10,7 @@ class ChecklistsController < ApplicationController
   # GET /checklists/1
   # GET /checklists/1.json
   def show
+    authorize! :update, @school
     begin
       @checklist = Checklist.find(params[:id])
     rescue
@@ -25,6 +26,7 @@ class ChecklistsController < ApplicationController
 
   # GET /checklists/1/edit
   def edit
+    authorize! :update, @school
     @checklist = Checklist.find(params[:id])
   end
 

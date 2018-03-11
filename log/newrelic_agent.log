@@ -5310,3 +5310,136 @@ Cont'
 [2018-03-11 15:02:18 -0500 LABi2 (16206)] INFO : Finished instrumentation
 [2018-03-11 15:02:19 -0500 LABi2 (16206)] INFO : Doing deferred dependency-detection before Rack startup
 [2018-03-11 15:02:21 -0500 LABi2 (16206)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-11 16:06:24 -0500 LABi2 (16222)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-03-11 16:06:24 -0500 LABi2 (16222)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-03-11 16:06:24 -0500 LABi2 (16222)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-03-11 16:06:24 -0500 LABi2 (16222)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-11 16:06:24 -0500 LABi2 (16222)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-03-11 16:06:24 -0500 LABi2 (16222)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-03-11 16:06:24 -0500 LABi2 (16217)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-03-11 16:06:24 -0500 LABi2 (16217)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-03-11 16:06:24 -0500 LABi2 (16217)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-03-11 16:06:24 -0500 LABi2 (16217)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-11 16:06:24 -0500 LABi2 (16217)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-03-11 16:06:24 -0500 LABi2 (16217)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-03-11 16:06:26 -0500 LABi2 (16222)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-11 16:06:27 -0500 LABi2 (16217)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-11 16:43:46 -0500 LABi2 (21518)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-03-11 16:43:46 -0500 LABi2 (21518)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-03-11 16:43:46 -0500 LABi2 (21518)] INFO : Reading configuration from config/newrelic.yml (/home/jjain/Desktop/International-Students-Portal)
+[2018-03-11 16:43:46 -0500 LABi2 (21518)] INFO : Environment: development
+[2018-03-11 16:43:46 -0500 LABi2 (21518)] INFO : No known dispatcher detected.
+[2018-03-11 16:43:46 -0500 LABi2 (21518)] INFO : Application: My Application (Development)
+[2018-03-11 16:43:46 -0500 LABi2 (21518)] INFO : Installing Net instrumentation
+[2018-03-11 16:43:46 -0500 LABi2 (21518)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-03-11 16:43:46 -0500 LABi2 (21518)] INFO : Installing ActiveJob instrumentation
+[2018-03-11 16:43:46 -0500 LABi2 (21518)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-03-11 16:43:46 -0500 LABi2 (21518)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-03-11 16:43:46 -0500 LABi2 (21518)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-03-11 16:43:46 -0500 LABi2 (21518)] INFO : Installing Rails 4 Controller instrumentation
+[2018-03-11 16:43:46 -0500 LABi2 (21518)] INFO : Installing Rails 4 view instrumentation
+[2018-03-11 16:43:46 -0500 LABi2 (21518)] INFO : Finished instrumentation
+[2018-03-11 16:43:46 -0500 LABi2 (21518)] INFO : Starting Agent shutdown
+[2018-03-11 16:44:25 -0500 LABi2 (21552)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-03-11 16:44:25 -0500 LABi2 (21552)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-03-11 16:44:25 -0500 LABi2 (21552)] INFO : Reading configuration from config/newrelic.yml (/home/jjain/Desktop/International-Students-Portal)
+[2018-03-11 16:44:25 -0500 LABi2 (21552)] INFO : Environment: development
+[2018-03-11 16:44:25 -0500 LABi2 (21552)] INFO : No known dispatcher detected.
+[2018-03-11 16:44:25 -0500 LABi2 (21552)] INFO : Application: My Application (Development)
+[2018-03-11 16:44:25 -0500 LABi2 (21552)] INFO : Installing Net instrumentation
+[2018-03-11 16:44:25 -0500 LABi2 (21552)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-03-11 16:44:25 -0500 LABi2 (21552)] INFO : Installing ActiveJob instrumentation
+[2018-03-11 16:44:25 -0500 LABi2 (21552)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-03-11 16:44:25 -0500 LABi2 (21552)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-03-11 16:44:25 -0500 LABi2 (21552)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-03-11 16:44:25 -0500 LABi2 (21552)] INFO : Installing Rails 4 Controller instrumentation
+[2018-03-11 16:44:25 -0500 LABi2 (21552)] INFO : Installing Rails 4 view instrumentation
+[2018-03-11 16:44:25 -0500 LABi2 (21552)] INFO : Finished instrumentation
+[2018-03-11 16:44:26 -0500 LABi2 (21552)] INFO : Starting Agent shutdown
+[2018-03-11 16:46:03 -0500 LABi2 (16217)] INFO : Starting Agent shutdown
+[2018-03-11 16:46:03 -0500 LABi2 (16222)] INFO : Starting Agent shutdown
+[2018-03-11 16:46:03 -0500 LABi2 (16206)] INFO : Starting Agent shutdown
+[2018-03-11 16:51:51 -0500 LABi2 (21964)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-03-11 16:51:51 -0500 LABi2 (21964)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-03-11 16:51:51 -0500 LABi2 (21964)] INFO : Reading configuration from config/newrelic.yml (/home/jjain/Desktop/International-Students-Portal)
+[2018-03-11 16:51:51 -0500 LABi2 (21964)] INFO : Environment: development
+[2018-03-11 16:51:51 -0500 LABi2 (21964)] INFO : No known dispatcher detected.
+[2018-03-11 16:51:51 -0500 LABi2 (21964)] INFO : Application: My Application (Development)
+[2018-03-11 16:51:51 -0500 LABi2 (21964)] INFO : Installing Net instrumentation
+[2018-03-11 16:51:51 -0500 LABi2 (21964)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-03-11 16:51:51 -0500 LABi2 (21964)] INFO : Installing ActiveJob instrumentation
+[2018-03-11 16:51:51 -0500 LABi2 (21964)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-03-11 16:51:51 -0500 LABi2 (21964)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-03-11 16:51:51 -0500 LABi2 (21964)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-03-11 16:51:51 -0500 LABi2 (21964)] INFO : Installing Rails 4 Controller instrumentation
+[2018-03-11 16:51:51 -0500 LABi2 (21964)] INFO : Installing Rails 4 view instrumentation
+[2018-03-11 16:51:51 -0500 LABi2 (21964)] INFO : Finished instrumentation
+[2018-03-11 16:51:52 -0500 LABi2 (21964)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-11 16:51:54 -0500 LABi2 (21964)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-11 16:51:59 -0500 LABi2 (21976)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-03-11 16:51:59 -0500 LABi2 (21976)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-03-11 16:51:59 -0500 LABi2 (21976)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-03-11 16:51:59 -0500 LABi2 (21976)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-11 16:51:59 -0500 LABi2 (21976)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-03-11 16:51:59 -0500 LABi2 (21976)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-03-11 16:52:01 -0500 LABi2 (21976)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-11 16:53:48 -0500 LABi2 (21972)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-03-11 16:53:48 -0500 LABi2 (21972)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-03-11 16:53:48 -0500 LABi2 (21972)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-03-11 16:53:48 -0500 LABi2 (21972)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-11 16:53:48 -0500 LABi2 (21972)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-03-11 16:53:48 -0500 LABi2 (21972)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-03-11 16:53:51 -0500 LABi2 (21972)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-11 17:58:08 -0500 LABi2 (28374)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-03-11 17:58:08 -0500 LABi2 (28374)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-03-11 17:58:08 -0500 LABi2 (28374)] INFO : Reading configuration from config/newrelic.yml (/home/jjain/Desktop/International-Students-Portal)
+[2018-03-11 17:58:08 -0500 LABi2 (28374)] INFO : Environment: development
+[2018-03-11 17:58:08 -0500 LABi2 (28374)] INFO : No known dispatcher detected.
+[2018-03-11 17:58:08 -0500 LABi2 (28374)] INFO : Application: My Application (Development)
+[2018-03-11 17:58:08 -0500 LABi2 (28374)] INFO : Installing Net instrumentation
+[2018-03-11 17:58:08 -0500 LABi2 (28374)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-03-11 17:58:08 -0500 LABi2 (28374)] INFO : Installing ActiveJob instrumentation
+[2018-03-11 17:58:08 -0500 LABi2 (28374)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-03-11 17:58:08 -0500 LABi2 (28374)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-03-11 17:58:08 -0500 LABi2 (28374)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-03-11 17:58:08 -0500 LABi2 (28374)] INFO : Installing Rails 4 Controller instrumentation
+[2018-03-11 17:58:08 -0500 LABi2 (28374)] INFO : Installing Rails 4 view instrumentation
+[2018-03-11 17:58:08 -0500 LABi2 (28374)] INFO : Finished instrumentation
+[2018-03-11 17:58:08 -0500 LABi2 (28374)] INFO : Starting Agent shutdown
+[2018-03-11 18:01:28 -0500 LABi2 (21976)] INFO : Starting Agent shutdown
+[2018-03-11 18:01:28 -0500 LABi2 (21972)] INFO : Starting Agent shutdown
+[2018-03-11 18:01:29 -0500 LABi2 (21964)] INFO : Starting Agent shutdown
+[2018-03-11 18:01:49 -0500 LABi2 (28594)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-03-11 18:01:49 -0500 LABi2 (28594)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-03-11 18:01:49 -0500 LABi2 (28594)] INFO : Reading configuration from config/newrelic.yml (/home/jjain/Desktop/International-Students-Portal)
+[2018-03-11 18:01:49 -0500 LABi2 (28594)] INFO : Environment: development
+[2018-03-11 18:01:49 -0500 LABi2 (28594)] INFO : No known dispatcher detected.
+[2018-03-11 18:01:49 -0500 LABi2 (28594)] INFO : Application: My Application (Development)
+[2018-03-11 18:01:49 -0500 LABi2 (28594)] INFO : Installing Net instrumentation
+[2018-03-11 18:01:49 -0500 LABi2 (28594)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-03-11 18:01:49 -0500 LABi2 (28594)] INFO : Installing ActiveJob instrumentation
+[2018-03-11 18:01:49 -0500 LABi2 (28594)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-03-11 18:01:49 -0500 LABi2 (28594)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-03-11 18:01:49 -0500 LABi2 (28594)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-03-11 18:01:49 -0500 LABi2 (28594)] INFO : Installing Rails 4 Controller instrumentation
+[2018-03-11 18:01:49 -0500 LABi2 (28594)] INFO : Installing Rails 4 view instrumentation
+[2018-03-11 18:01:49 -0500 LABi2 (28594)] INFO : Finished instrumentation
+[2018-03-11 18:01:49 -0500 LABi2 (28594)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-11 18:01:50 -0500 LABi2 (28604)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-03-11 18:01:50 -0500 LABi2 (28604)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-03-11 18:01:50 -0500 LABi2 (28604)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-03-11 18:01:50 -0500 LABi2 (28604)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-11 18:01:50 -0500 LABi2 (28604)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-03-11 18:01:50 -0500 LABi2 (28604)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-03-11 18:01:52 -0500 LABi2 (28594)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-11 18:01:53 -0500 LABi2 (28604)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-11 18:04:38 -0500 LABi2 (28608)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-03-11 18:04:38 -0500 LABi2 (28608)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-03-11 18:04:38 -0500 LABi2 (28608)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-03-11 18:04:38 -0500 LABi2 (28608)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-11 18:04:38 -0500 LABi2 (28608)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-03-11 18:04:38 -0500 LABi2 (28608)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-03-11 18:04:40 -0500 LABi2 (28608)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-11 18:08:34 -0500 LABi2 (28604)] INFO : Starting Agent shutdown
+[2018-03-11 18:08:34 -0500 LABi2 (28608)] INFO : Starting Agent shutdown
+[2018-03-11 18:08:34 -0500 LABi2 (28594)] INFO : Starting Agent shutdown
