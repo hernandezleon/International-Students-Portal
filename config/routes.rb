@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :microposts
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :checklists
   get 'school_admin/index'
 
@@ -18,11 +20,10 @@ Rails.application.routes.draw do
   
   resources :layouts
   resources :startup
-  resources :microposts
   #resources :google_user
   resources :schools
   resources :messages do
-    resources :comments
+  resources :comments
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

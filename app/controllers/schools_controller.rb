@@ -44,7 +44,7 @@ class SchoolsController < ApplicationController
 	end
 
 	def show
-		authorize! :update, @school
+		# authorize! :update, @school
 		# @school = School.first 
 		begin
 			@school = School.find(params[:id])
