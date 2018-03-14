@@ -1,6 +1,6 @@
 # Load the Rails application.
 require File.expand_path('../application', __FILE__)
-require 'tlsmail'
+# require 'tlsmail'
 require 'openssl'
 
 # Initialize the Rails application.
@@ -24,6 +24,9 @@ ActionMailer::Base.default_url_options = { :host => 'international-students-port
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.perform_deliveries = true
 # ActionMailer::Base.raise_delivery_errors = true
+
+require 'tlsmail'
+  Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
 
 ActionMailer::Base.smtp_settings = {
   # :address => 'smtp.sendgrid.net',
