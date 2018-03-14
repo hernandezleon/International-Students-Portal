@@ -5758,3 +5758,6 @@ Cont'
 [2018-03-13 19:04:51 -0500 multiverse76 (25133)] INFO : Installing deferred Puma::Rack::Builder instrumentation
 [2018-03-13 19:04:51 -0500 multiverse76 (25133)] INFO : Installing Puma::Rack::Builder middleware instrumentation
 [2018-03-13 19:04:53 -0500 multiverse76 (25133)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-13 19:06:16 -0500 multiverse76 (25133)] INFO : Starting Agent shutdown
+[2018-03-13 19:06:16 -0500 multiverse76 (25119)] INFO : Starting Agent shutdown
+[2018-03-13 19:06:16 -0500 multiverse76 (25107)] INFO : Starting Agent shutdown
