@@ -1,6 +1,6 @@
 # Load the Rails application.
 require File.expand_path('../application', __FILE__)
-require 'tlsmail'
+# require 'tlsmail'
 require 'openssl'
 
 # Initialize the Rails application.
@@ -23,16 +23,25 @@ ActionMailer::Base.default_url_options = { :host => 'international-students-port
 
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.perform_deliveries = true
-ActionMailer::Base.raise_delivery_errors = true
-# Actually send emails
-ActionMailer::Base.perform_deliveries = true
+# ActionMailer::Base.raise_delivery_errors = true
+
+require 'tlsmail'
+  Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
+
 ActionMailer::Base.smtp_settings = {
-	:enable_starttls_auto => true,  
-	:address => "smtp.gmail.com",
-  	:port    => 587,
-  	:tls => true,
-  	:domain => 'gmail.com',
-  	:authentication => :login,
-  	:user_name => 'international-students-portal18@gmail.com',
-  	:password => "sliarybur"
+  # :address => 'smtp.sendgrid.net',
+  :address => 'smtp.gmail.com',
+  :port => 587,
+  :domain => 'gmail.com',
+  # :user_name => "app80241724@heroku.com",
+  :user_name => "internationalstudentsportal18@gmail.com",
+  # :password => "ahizspny9445",
+  :password => "sliarybur",
+  # :domain => 'localhost:3000',
+  
+  :authentication => :login,
+  :enable_starttls_auto => true
+  # :ssl => true
+  # :tls => false,
+  # :openssl_verify_mode => 'none'
 }
