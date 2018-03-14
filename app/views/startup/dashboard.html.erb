@@ -76,10 +76,10 @@
                                 <span class="pull-left">List of Current Schools </span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>                               
-									<% if can? :manage, School %>
-										<h3><a href="/new_school">Add a New School</a></h3>
-									<% end %>
-									<br> 
+					<% if can? :manage, School %>
+						<a href="/new_school">Add a New School</a>
+					<% end %>
+				<br> 
                             </div>
                         </a>
                     </div>
