@@ -1,7 +1,7 @@
 <h2>Sign up</h2>
 <h3>Your account will have to be confirmed by a website administrator after you finish this form.</h3>
 
-<%= form_for User.new do |f| %>
+<%= simple_form_for User.new, :url => new_admin_path do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
@@ -14,7 +14,7 @@
       <%= f.text_field :last_name, autofocus: true %>
     </div>
 
-    <div><%= f.label :school %><br />
+    <div>What school are you associated with? <br />
       <%= f.text_field :school, autofocus: true, require: true %>
     </div>
 

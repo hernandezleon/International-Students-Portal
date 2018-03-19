@@ -5,10 +5,14 @@ Rails.application.routes.draw do
   resources :checklists
   get 'school_admin/index'
 
-  devise_for :users
+  devise_for :users, :controllers => {:registrations => "registrations"}
   devise_scope :user do
-    get 'landing', to: 'devise/registrations#landing'
-    get 'new_admin', to: 'devise/registrations#new_admin'
+    get '/users/landing', to: 'devise/registrations#landing'
+    # get '/new_admin', to: 'devise/registrations#new_admin'
+    # get '/dashboard' => "devise/registrations#dashboard", as: :user_root  
+
+    match '/new_admin', :controller => 'registrations', :action => 'new_admin', :via => :get    # post "devise/registrations#new_admin"
+    match '/new_admin', :controller => 'registrations', :action => 'create_admin', :via => :post    # post "devise/registrations#new_admin"
   end  
   #require 'omniauth-google-oauth2'
   #get 'sessions/create'
@@ -43,6 +47,8 @@ Rails.application.routes.draw do
   get '/edit_school', to: 'schools#edit'
   get '/edit_school', to: :edit, controller: 'schools'
   get '/dashboard' => "startup#dashboard", as: :user_root  
+  get '/landing', to: 'startup#landing'
+
   # get 'landing', to: 'devise/registrations#landing'
 
 

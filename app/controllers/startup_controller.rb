@@ -5,6 +5,9 @@ class StartupController < ApplicationController
 	def help
   	end
 
+  	def dashboard
+  	end
+
 
 end
 
