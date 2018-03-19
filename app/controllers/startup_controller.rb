@@ -1,5 +1,5 @@
 class StartupController < ApplicationController
-	before_action :find_school, only: ['dashboard']
+	# before_action :find_school, only: ['dashboard']
 
 	def index
   	end

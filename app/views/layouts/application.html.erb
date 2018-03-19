@@ -6,39 +6,36 @@
 	<%= javascript_include_tag	'application', 'data-turbolinks-track' => true %>
 	<%= csrf_meta_tags %>
 
-	
-	<!-- <link href="https://getbootstrap.com/docs/3.3/examples/jumbotron/jumbotron.css" rel="stylesheet"> -->
-	<!-- BOOTSTRAP -->
-	<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.7/jquery.min.js"></script>-->	
+<!-- bootstrap -->
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"></script> -->
 	
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<!-- <script type="text/javascript" src="../../vendor/assets/javascripts/jquery-1.11.2.min.js"></script> -->
 
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	
 	
 </head>
 <body>
+<!-- nav bar -->
   <%= render 'layouts/header' %>
   
   <!-- Only render jumbtron on start page -->
-  <% if current_page?(root_path) %>
-  	<%= render 'layouts/jumbotron' %>
-  <% end %>  	
+	<% if current_page?(root_path) %> 
+  		<%= render 'layouts/jumbotron' %>
+ 	<% end %>  	 
 
-  <div class="container">
+  	<div class="container">
+  		<p class="notice"><%= notice %></p>
+  		<p class="alert"><%= alert %></p>
+  	<%= yield %> 
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-  
-  <%= yield %>  
       <hr>
       <%= render 'layouts/footer' %>     
-  </div> <!-- /container -->
+ 	</div> <!-- /container -->
   
 </body>
 </html>

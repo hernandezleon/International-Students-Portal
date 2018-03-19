@@ -485,8 +485,8 @@
   margin:0px;
   padding:0px;
   height: 350px;
-  color: white;
-  text-shadow: black 0.3em 0.3em 0.3em;
+  color: inherit;
+  text-shadow: black 0.5em 0.5em 0.5em;
   background:transparent;
 }
 html,body{margin:0}
