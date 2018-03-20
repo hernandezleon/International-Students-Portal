@@ -1,9 +1,9 @@
   <center><h1>DASHBOARD</h1></center>
 <h2> Welcome <%= current_user.name %> !</h2>
 <% if current_user.admin? %>
-	<h3> You are an administrator.</h3>
+    <h3> You are an administrator.</h3>
 <% else %>
-	<h3> You are a student user.</h3>	
+    <h3> You are a student user.</h3>   
 <% end %>
 <br>
 
@@ -16,7 +16,7 @@
 <h3><a href="/schools">List of Current Schools</a></h3>
 
 <% if can? :manage, School %>
-	<h3><a href="/new_school">Add a New School</a></h3>
+    <h3><a href="/new_school">Add a New School</a></h3>
 <% end %>
 <br>
 
@@ -52,10 +52,10 @@
 <center><h1>DASHBOARD</h1></center>
 <h2> Welcome <%= current_user.name %>!</h2>
 <% if current_user.admin? %>
-	<h3> You are an administrator.</h3>
+    <h3> You are an administrator.</h3>
 <% else %>
-	<h4> You are a student user.</h4>	
-	<br>
+    <h4> You are a student user.</h4>   
+    <br>
 <% end %> -->
 
 <!-- View -->
@@ -78,10 +78,10 @@
                                 <span class="pull-left">List of Current Schools </span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>                               
-					<% if can? :manage, School %>
-						<a href="/new_school">Add a New School</a>
-					<% end %>
-				    <br> 
+                                    <% if can? :manage, School %>
+                                        <a href="/new_school">Add a New School</a>
+                                    <% end %>
+                                    <br> 
                             </div>
                         </a>
                     </div>
@@ -102,18 +102,18 @@
                             <div class="panel-footer">
                             <b> Name: </b> <%= current_user.name %> <%= current_user.last_name %>
                             <br />
-				<b> Email: </b>  <%= current_user.email %>
-				<br />
-				<b> Birthday: </b> <%= current_user.date_of_birth %>
-				<br />
-				<b> Gender: </b> <%= current_user.gender %>
-				<br />
-				<b> Last Sign In: </b> : <%= current_user.last_sign_in_at %>
-				<br />							
-				<% if current_user.admin? %>
-				<b> Your School: </b> <%= current_user.school %>
-				<% end %>
-				<br />
+                <b> Email: </b>  <%= current_user.email %>
+                <br />
+                <b> Birthday: </b> <%= current_user.date_of_birth %>
+                <br />
+                <b> Gender: </b> <%= current_user.gender %>
+                <br />
+                <b> Last Sign In: </b> : <%= current_user.last_sign_in_at %>
+                <br />                          
+                <% if current_user.admin? %>
+                <b> Your School: </b> <%= current_user.school %>
+                <% end %>
+                <br />
                             </div>
                     </div>
                 </div>
@@ -131,10 +131,10 @@
                             </div>
                         </div>
                             <div class="panel-footer">
-				<% if can? :manage, Checklist %>
-				<%= link_to "Create New Checklist for your School", new_checklist_path %>
-				<% end %>
-				<br />
+                <% if can? :manage, Checklist %>
+                <%= link_to "Create New Checklist for your School", new_checklist_path %>
+                <% end %>
+                <br />
                             </div>
                     </div>
                 </div>
@@ -152,10 +152,10 @@
                             </div>
                         </div>
                             <div class="panel-footer">
-                            	<%= link_to "Edit Account Info", edit_user_registration_path %>
-					               <br>
+                                <%= link_to "Edit Account Info", edit_user_registration_path %>
                                    <br>
-				                    <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-danger" %>
+                                   <br>
+                                    <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-danger" %>
                                             <p style="font-size:11px">*This action is irreversible</p>
                             </div>
                     </div>

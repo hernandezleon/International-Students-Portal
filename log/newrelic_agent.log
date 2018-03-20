@@ -5761,6 +5761,39 @@ Cont'
 [2018-03-13 19:06:16 -0500 multiverse76 (25133)] INFO : Starting Agent shutdown
 [2018-03-13 19:06:16 -0500 multiverse76 (25119)] INFO : Starting Agent shutdown
 [2018-03-13 19:06:16 -0500 multiverse76 (25107)] INFO : Starting Agent shutdown
+<<<<<<< HEAD
+[2018-03-14 13:35:52 -0500 LABi2 (10844)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-03-14 13:35:52 -0500 LABi2 (10844)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-03-14 13:35:52 -0500 LABi2 (10844)] INFO : Reading configuration from config/newrelic.yml (/home/jjain/Desktop/International-Students-Portal)
+[2018-03-14 13:35:52 -0500 LABi2 (10844)] INFO : Environment: development
+[2018-03-14 13:35:52 -0500 LABi2 (10844)] INFO : No known dispatcher detected.
+[2018-03-14 13:35:52 -0500 LABi2 (10844)] INFO : Application: My Application (Development)
+[2018-03-14 13:35:52 -0500 LABi2 (10844)] INFO : Installing Net instrumentation
+[2018-03-14 13:35:52 -0500 LABi2 (10844)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-03-14 13:35:52 -0500 LABi2 (10844)] INFO : Installing ActiveJob instrumentation
+[2018-03-14 13:35:52 -0500 LABi2 (10844)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-03-14 13:35:52 -0500 LABi2 (10844)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-03-14 13:35:52 -0500 LABi2 (10844)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-03-14 13:35:52 -0500 LABi2 (10844)] INFO : Installing Rails 4 Controller instrumentation
+[2018-03-14 13:35:52 -0500 LABi2 (10844)] INFO : Installing Rails 4 view instrumentation
+[2018-03-14 13:35:52 -0500 LABi2 (10844)] INFO : Finished instrumentation
+[2018-03-14 13:35:52 -0500 LABi2 (10844)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-14 13:35:55 -0500 LABi2 (10844)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-14 13:35:57 -0500 LABi2 (10856)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-03-14 13:35:57 -0500 LABi2 (10856)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-03-14 13:35:57 -0500 LABi2 (10856)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-03-14 13:35:57 -0500 LABi2 (10856)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-14 13:35:57 -0500 LABi2 (10856)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-03-14 13:35:57 -0500 LABi2 (10856)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-03-14 13:35:59 -0500 LABi2 (10856)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-14 13:36:46 -0500 LABi2 (10852)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-03-14 13:36:46 -0500 LABi2 (10852)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-03-14 13:36:46 -0500 LABi2 (10852)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-03-14 13:36:46 -0500 LABi2 (10852)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-14 13:36:46 -0500 LABi2 (10852)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-03-14 13:36:46 -0500 LABi2 (10852)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-03-14 13:36:48 -0500 LABi2 (10852)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+=======
 [2018-03-17 22:04:56 -0500 Karlas-MacBook-Air.local (15225)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
 [2018-03-17 22:04:56 -0500 Karlas-MacBook-Air.local (15225)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
 [2018-03-17 22:04:56 -0500 Karlas-MacBook-Air.local (15225)] INFO : Reading configuration from config/newrelic.yml (/Users/KarlaLucia/Desktop/International-Students-Portal)
@@ -6017,6 +6050,7 @@ Cont'
 [2018-03-18 22:48:49 -0500 Karlas-MacBook-Air.local (7615)] INFO : Installing deferred Puma::Rack::Builder instrumentation
 [2018-03-18 22:48:49 -0500 Karlas-MacBook-Air.local (7615)] INFO : Installing Puma::Rack::Builder middleware instrumentation
 [2018-03-18 22:48:52 -0500 Karlas-MacBook-Air.local (7615)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+<<<<<<< HEAD
 [2018-03-18 23:03:52 -0500 Karlas-MacBook-Air.local (7615)] INFO : Starting Agent shutdown
 [2018-03-18 23:03:52 -0500 Karlas-MacBook-Air.local (7616)] INFO : Starting Agent shutdown
 [2018-03-18 23:03:53 -0500 Karlas-MacBook-Air.local (7597)] INFO : Starting Agent shutdown
@@ -6094,3 +6128,6 @@ Cont'
 [2018-03-19 20:12:24 -0500 Karlas-MacBook-Air.local (8580)] INFO : Installing deferred Puma::Rack::Builder instrumentation
 [2018-03-19 20:12:24 -0500 Karlas-MacBook-Air.local (8580)] INFO : Installing Puma::Rack::Builder middleware instrumentation
 [2018-03-19 20:12:27 -0500 Karlas-MacBook-Air.local (8580)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+=======
+>>>>>>> d8b76b8ccb8458d9520477f8327948d5aaf0fca2
+>>>>>>> MessageBranch
