@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   # helper_method :current_google_user
   before_action :configure_permitted_parameters, if: :devise_controller?
+  $global_temp_id = 0
 
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to schools_url :alert => exception.message
@@ -18,6 +19,6 @@ class ApplicationController < ActionController::Base
      devise_parameter_sanitizer.for(:account_update) << :name << :email << :gender << :date_of_birth << :last_name << :school
   end
 
- #  helper_method :current_user 
 
+  
 end

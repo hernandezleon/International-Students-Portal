@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180319235012) do
+ActiveRecord::Schema.define(version: 20180320031204) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,7 +28,10 @@ ActiveRecord::Schema.define(version: 20180319235012) do
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
     t.string   "school_name"
+    t.integer  "school_id"
   end
+
+  add_index "checklists", ["school_id"], name: "index_checklists_on_school_id", unique: true, using: :btree
 
   create_table "comments", force: :cascade do |t|
     t.text     "content"
@@ -47,11 +50,6 @@ ActiveRecord::Schema.define(version: 20180319235012) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "user_id"
-  end
-
-  create_table "microposts", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "schools", force: :cascade do |t|

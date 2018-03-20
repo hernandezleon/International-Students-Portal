@@ -2,8 +2,10 @@ Rails.application.routes.draw do
   
   resources :microposts
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :checklists
+  resources :checklists 
   get 'school_admin/index'
+  #get 'checklists/checklists_index'
+
 
   devise_for :users, :controllers => {:registrations => "registrations"}
   devise_scope :user do
@@ -49,7 +51,11 @@ Rails.application.routes.draw do
   get '/dashboard' => "startup#dashboard", as: :user_root  
   get '/landing', to: 'startup#landing'
 
+
+  get '/checklists_index', to: 'checklists#checklists_index'
+  get '/ch_list_school_id', to: 'schools#ch_list_school_id', as: 'ch_list_school_id'
   # get 'landing', to: 'devise/registrations#landing'
+
 
 
   # User scope
@@ -111,6 +117,7 @@ Rails.application.routes.draw do
     get 'auth/:provider/callback', to: 'sessions#create'
     get 'auth/failure', to: redirect('startup')
     get 'signout', to: 'sessions#destroy', as: 'signout'
+    #get 'checklists/checklists_index', to: 'checklists#checklists_index'
 
     #resources :sessions, only: [:create, :destroy]
     resource :home, only: [:show]

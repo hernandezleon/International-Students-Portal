@@ -1,4 +1,6 @@
 module ApplicationHelper
+  $global_test = 'globaltest'
+  $temp_school_id = 0;
 
   #Returns the full title on a per-page basis.
   def full_title(page_title)
@@ -22,5 +24,9 @@ module ApplicationHelper
 
   def devise_mapping
     @devise_mapping ||= Devise.mappings[:user]
+  end
+
+  def change_temp_school_id(num)
+    $temp_school_id = num
   end
 end

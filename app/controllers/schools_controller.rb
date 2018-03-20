@@ -56,6 +56,12 @@ class SchoolsController < ApplicationController
 
 	def new
 		@school = School.new
+		#@schoolEdit = School.last
+		#@checklist = Checklist.new
+		#@checklistEdit = Checklist.last
+		#@checklist.school_id = @schoolEdit.id + 1
+		#@checklist.save
+		#@checklist.school_name = School.find(@schoolEdit.id + 1).name
 		# @school = School.find(:all)
 	end
 
@@ -72,6 +78,12 @@ class SchoolsController < ApplicationController
 		"https://maps.googleapis.com/maps/api/staticmap?center=#{center}&size=300x300&zoom=8&key=AIzaSyBwO1EzkdnkYm6gLZW1bN2ziLNRvOmdCP0"
 	end
 	helper_method :google_map
+
+	def ch_list_school_id
+		#redirect_to schools_path
+		$global_temp_id = 10
+		redirect_to checklists_index_path
+	end
 
 	# def find_school
 	# 	@school = School.find(params[:id])

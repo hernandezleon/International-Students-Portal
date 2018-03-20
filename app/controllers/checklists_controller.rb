@@ -4,7 +4,13 @@ class ChecklistsController < ApplicationController
   # GET /checklists
   # GET /checklists.json
   def index
-    @checklists = Checklist.all
+    if params[:school].blank?
+      @checklists = Checklist.all.order("school_name")
+    else
+      @school_id = School.find_by(name: params[:school]).id
+      @checklist = Checklist.where(school_id: @school_id).order("name")
+    #@checklists = Checklist.all
+    end
   end
 
   # GET /checklists/1
@@ -16,6 +22,12 @@ class ChecklistsController < ApplicationController
     rescue
       redirect_to '/checklists'
     ensure
+    end
+    @checklists = Checklist.all
+    @checklists.each do |c|
+      school = School.find(c.school_id)
+      c.school_name = school.name
+      c.save
     end
   end
 
@@ -34,6 +46,7 @@ class ChecklistsController < ApplicationController
   # POST /checklists.json
   def create
     @checklist = Checklist.new(checklist_params)
+    #@school = School.find(params[:id])
 
     respond_to do |format|
       if @checklist.save
@@ -70,6 +83,18 @@ class ChecklistsController < ApplicationController
     end
   end
 
+  def checklists_index
+    @array = []
+    @school = School.all.order('name')
+    @school.each do |s|
+      checklist = Checklist.where("school_id = s.id")
+      @array << checklist
+    end
+    
+  end
+
+  
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_checklist
@@ -79,7 +104,7 @@ class ChecklistsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def checklist_params
       params.require(:checklist).permit(:id, :act_score, :sat_score, :high_school_transcript, :previous_college_transcript, :i_20, :visa_proof,
-                                        :application_fee, :online_application, :school_name)
+                                        :application_fee, :online_application, :school_name, :school_id)
     end
 end
 

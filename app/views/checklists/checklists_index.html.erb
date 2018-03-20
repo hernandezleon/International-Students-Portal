@@ -1,0 +1,8 @@
+<center><h1>Edit School Checklist</h1></center>
+
+<% count = 1 %>
+
+<% @school.each do |schl| %>
+	<h2><%= count %>.&nbsp&nbsp<%= link_to schl.name, ch_list_school_id_path, method: :get %></h2>
+	<% count = count + 1 %>
+<% end %><br /><br />
