@@ -1,8 +1,8 @@
-# class CreateMicroposts < ActiveRecord::Migration
-#   def change
-#     create_table :microposts do |t|
+class CreateMicroposts < ActiveRecord::Migration
+  def change
+    create_table :microposts do |t|
 
-#       t.timestamps null: false
-#     end
-#   end
-# end
+      t.timestamps null: false
+    end
+  end
+end
