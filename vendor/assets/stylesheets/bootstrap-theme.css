@@ -471,7 +471,7 @@
 
 /*.bg is same height as jumbotron */
 .bg {
-  background: url('/assets/images/intl-static-jumbo.jpeg') no-repeat center center;
+  background: url('/assets/stylesheets/here.jpg') no-repeat center center;
   position: fixed;
   width: 100%;
   height: 350px; 
