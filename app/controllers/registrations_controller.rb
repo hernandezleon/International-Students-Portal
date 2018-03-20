@@ -15,8 +15,14 @@ class RegistrationsController < Devise::RegistrationsController
     super
   end
 
+  def approve
+    user.approve = true
+    user.save
+  end
+
   def create
     @user = User.new(user_params)
+    @user.approved = true # Approve all student users
 	  if @user.save
 		  flash[:success] = "Student User successfully created."
       sign_in(@user)

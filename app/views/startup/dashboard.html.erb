@@ -7,6 +7,23 @@
 <% end %>
 <br>
 
+<% if current_user.email == "jjain654@gmail.com" %>
+    <h3> School Admin Accounts Awaiting Approval </h3>
+    <table>
+        <% @users.each do |user| %>
+        <td>
+            <% if user.approved == false %>
+                <tr><%= user.name %>
+                <tr><%= user.school %>
+                <tr><%= user.email %> 
+                <tr><%= link_to "Approve Account", edit_user_registration_path(:id => user.id, "user[approved]" => true) , :style => 'color:#FFFFFF;' ,:class => "btn btn-primary btn-sm", :method => :put %>
+            <% end %>
+        </td>
+        <% end %>
+    </table>
+<% end %>    
+<br >
+
 <!--
 <h3><a href= '/schools'>Featured Universities</a></h3>
 <li> LSUS</li>
