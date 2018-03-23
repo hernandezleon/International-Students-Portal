@@ -2939,7 +2939,7 @@ fieldset[disabled] .btn-success.active {
   background-color: #fff;
 }
 .btn-info {
-  color: #fff;
+  color: #fff !important;
   background-color: #5bc0de;
   border-color: #46b8da;
 }

@@ -12,7 +12,8 @@ Rails.application.routes.draw do
     get '/users/landing', to: 'devise/registrations#landing'
     # get '/new_admin', to: 'devise/registrations#new_admin'
     # get '/dashboard' => "devise/registrations#dashboard", as: :user_root  
-    match '/edit_user_registration'  , :controller => 'registrations', :action => 'approve'  , :via => :put
+    # match '/edit_user_registration'  , :controller => 'registrations', :action => 'edit'  , :via => :put
+    patch '/users/:id/edit', to: 'registrations#edit'
     match '/new_admin', :controller => 'registrations', :action => 'new_admin', :via => :get    # post "devise/registrations#new_admin"
     match '/new_admin', :controller => 'registrations', :action => 'create_admin', :via => :post    # post "devise/registrations#new_admin"
   end  

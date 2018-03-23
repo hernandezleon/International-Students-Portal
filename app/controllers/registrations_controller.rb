@@ -15,10 +15,12 @@ class RegistrationsController < Devise::RegistrationsController
     super
   end
 
-  def approve
-    user.approve = true
-    user.save
-  end
+  # def approve
+  #   # user.approve = true
+  #   # user.save
+  #         @user = User.find(params[:id])
+  # put '/users', :to => 'users/registrations#update'
+  # end
 
   def create
     @user = User.new(user_params)
@@ -64,14 +66,38 @@ class RegistrationsController < Devise::RegistrationsController
   end  
 
   def update
-    super
+    # Find object using form parameters
+    @user = User.find(params[:id])
+    # Update the object
+    if @user.update_attributes(params[:user])
+      # If update succeeds, redirect to the list action
+      flash[:notice] = "Sauce updated."
+      redirect_to(:action => 'dashboard')
+    else
+      # If save fails, redisplay the form so user can fix problems
+      redirect_to(:action => 'dashboard')
+    end      
   end
 
   def landing
   end
 
+  def edit
+    # @user = User.find(params[:id])
+     @user = current_user
+  end
+
+  def dashboard
+      # @users = User.all
+      if params[:approved] == "false"
+          @users = User.where(approved: false)
+      else
+          @users = User.all
+      end
+  end
+
   def user_params
-		params.require(:user).permit(:id, :email, :password, :password_confirmation, :encrypted_password, :name, :date_of_birth, :school)
+		params.require(:user).permit(:id, :email, :password, :password_confirmation, :encrypted_password, :name, :date_of_birth, :school, :approved)
   end	
 end 
 
