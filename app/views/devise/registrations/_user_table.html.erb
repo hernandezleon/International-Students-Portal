@@ -1,0 +1,43 @@
+<!-- <table class="table table-inverse">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">School</th>
+      <th scope="col">Email</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody> -->
+  <% @users.each do |user| %>
+    <% if user.approved == false %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.school %></td>
+        <td><%= user.email %></td>
+        <td>
+          <div class="btn-toolbar">     
+            <%= link_to "Approve User", approve_user_path(user.id), :method => :patch, class: "btn btn-success" %>
+            <%= link_to "Reject and Delete User", reject_user_path(user.id), :method => :destroy, class: "btn btn-danger" %>
+          </div> 
+        </td>   
+      </tr> 
+    <% end %>  
+  <% end %>  
+<!--   </tbody>  
+</table> -->
+
+
+<div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                Reject will also <b>DELETE</b> this account forcing them to create a new account! <br>
+                 Cancel will take you back to your dashboard.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-danger btn-ok">Reject and Delete</a>
+            </div>
+        </div>
+    </div>
+</div>

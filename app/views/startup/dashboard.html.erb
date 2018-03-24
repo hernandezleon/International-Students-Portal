@@ -81,14 +81,29 @@
                             </div>
                         </div>
                     </div>
-                    <table>
+                    <table class ="table table-inverse">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">School</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>                        
+                        
+                        <tbody>
                         <% @users.each do |user| %>
-                        <td>
                         <% if user.approved == false %>
-                            <tr><%= user.name %>
-                            <tr><%= user.school %>
-                            <tr><%= user.email %> 
-                            <tr> <%= link_to "Approve Account", edit_user_registration_path(:id => user.id, "user[approved]" => true) , :style => 'color:#FFFFFF;' ,:class => "btn btn-success btn-sm", :method => :patch %>
+                            <tr>
+                            <td><%= user.name %>
+                            <td><%= user.school %>
+                            <td><%= user.email %> 
+                            <tr> <%= form_for(edit_user_registration_path) do |f| %>
+                                    <div class="form-group" >
+                                        <%= f.submit "Approve Account", class: "btn btn-primary" %>
+                                    </div>
+                                <% end %>
+                            <%#= link_to "Approve Account", edit_user_registration_path(:id => user.id, "user[approved]" => true) , :style => 'color:#FFFFFF;' ,:class => "btn btn-success btn-sm", :method => :patch %>
                             <%# render :partial => 'update',locals: {user: @user} %>
                         <% end %>
                         </td>
