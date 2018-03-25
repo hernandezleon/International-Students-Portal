@@ -1,0 +1,8 @@
+$('#confirm-delete').on('show.bs.modal', function(e) {
+    $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
+});
+
+$('footer').on('shown.bs.modal', '#confirm-delete', function (e) {
+  var user = $(e.relatedTarget).data('user');
+  $('#user').val(user);
+ });

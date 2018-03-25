@@ -16,19 +16,19 @@ Rails.application.initialize!
 # Net.instance_eval {remove_const :POP3Session} if defined?(Net::POP3Session)
 # Net.instance_eval {remove_const :APOPSession} if defined?(Net::APOPSession)
 
-# ActionMailer::Base.default_url_options = { :host => 'international-students-portal.herokuapp.com' }
-ActionMailer::Base.default_url_options = { :host => 'localhost:3000' }
-
+ActionMailer::Base.default_url_options = { :host => 'international-students-portal.herokuapp.com' }
 
 # Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
 # OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
+
+
+require 'tlsmail'
+Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
 
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.perform_deliveries = true
 # ActionMailer::Base.raise_delivery_errors = true
 
-require 'tlsmail'
-  Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
 
 ActionMailer::Base.smtp_settings = {
   # :address => 'smtp.sendgrid.net',

@@ -10,16 +10,9 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//require("jquery3")
+
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require bootstrap-sprockets
-//= require bootstrap
-//= require bootstrap.min
-//= require modernizr-2.8.3-respond-1.4.2.min
-//= require jquery-1.11.2.min
-//= require npm
 //= require_tree .
 
 // Fixes dropdown

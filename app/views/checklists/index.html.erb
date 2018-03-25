@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
-
+ <div  class = "page-header"> 
 <center><h1>Your Checklists</h1></center>
-
+</div>
 <table>
   <thead>
     <tr>
@@ -13,13 +13,16 @@
     <% @checklists.each do |checklist| %>
       <tr>
         <h2><%= link_to checklist.school_name, checklist_path(checklist) %></h2>
-        <%= link_to 'Edit', edit_checklist_path(checklist) %> <br >
-        <%= link_to 'Destroy', checklist, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% if can? :manage, Checklist %>
+          <%= button_to 'Edit', edit_checklist_path(checklist), :method => :get, class: "btn btn-warning" %> <br >
+          <%= button_to 'Destroy', checklist, method: :delete, class: "btn btn-danger", data: { confirm: 'Do you really want to delete this checklist?' } %>
+        <% end %>  
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Checklist', new_checklist_path %>
+<% if can? :manage, Checklist %>
+  <%= button_to 'New Checklist', new_checklist_path, :method => :get, class: "btn btn-success" %>
+<% end %>

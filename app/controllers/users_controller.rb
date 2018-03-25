@@ -20,10 +20,15 @@ class UsersController < ApplicationController
     redirect_to :back
   end
 
+  # def get_modal
+  #   @user = User.find(params[:id])
+  # end
+
   def reject_user
     user = User.find(params[:id])
     user.approved = false
     user.delete
+
     # if user.save
     #   flash[:notice] = "#{user.name} approved"
     # else

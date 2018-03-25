@@ -35,6 +35,7 @@ Rails.application.routes.draw do
   # This is used for approving and rejecting users
   match 'users/:id/approve'=> 'users#approve_user', as: 'approve_user', :via => :patch
   match 'users/:id/reject'=> 'users#reject_user', as: 'reject_user', :via => :delete
+  # match 'users/:id/get_modal' => 'users#get_modal', as: 'get_modal', :via => :get
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
