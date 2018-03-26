@@ -1,3 +1,4 @@
+<!-- Page Header -->
 <div class="container">
   <div class="page-header">
     <center><h1>Dashboard</h1></center>
@@ -6,139 +7,164 @@
 </div>
 
 
-<br>
+<!-- Dashboard Panels -->   
 
-
-
-<!-- View -->   
-
-    <!-- School Management -->
-        <div class="col-lg-6 col-md-3">
-            <div class="panel panel-success">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-5">
-                            <i class="fa fa-comments fa-7x"></i>
-                        </div>
-                        <div class="col-xs-11 text-center">
-                            <div><b><p style="font-size:27px">School Management</p></b></div>
-                        </div>
+<!-- School Management -->
+    <div class="col-lg-6 col-md-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-5">
+                        <i class="fa fa-comments fa-7x"></i>
+                    </div>
+                    <div class="col-xs-11 text-center">
+                        <div><b><p style="font-size:27px">School Management</p></b></div>
                     </div>
                 </div>
-                
-                
-                <div class="panel-footer">
-                    <%= button_to "Show Universities", schools_path,  :method => :get ,class: "btn btn-info" %>
-                    <!-- <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span> -->
-                    <!-- <div class="clearfix"></div>                                -->
-                    <br>
-                    <% if can? :manage, School %>
-                        <!-- <a href="/new_school">Add a New School</a> -->
-                        <%= button_to "Add Your University's Information ", new_school_path,  :method => :get ,class: "btn btn-success" %>
-                        <br >
-                        <%= button_to "Edit Your University's Information ", edit_school_path(current_user.id),  :method => :get ,class: "btn btn-warning" %>
-                    <% end %>
-                </div>                
             </div>
-        </div>
-    <!--Your Information -->
-        <div class="col-lg-6 col-md-3">
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-5">
-                            <i class="fa fa-tasks fa-7x"></i>
-                        </div>
-                        <div class="col-xs-11 text-center">
-                            <div><b><p style="font-size:27px">Profile</p></b></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-footer">
-                <b> Name: </b> <%= current_user.name %> <%= current_user.last_name %>
-                <br />
-                <% if current_user.email == "jjain654@gmail.com" %>
-                    <b>Role</b>: System Administrator
-                <% elsif current_user.admin? %>
-                    <b>Role</b>: School Administrator 
-                <% else %>
-                    <b>Role</b>: Student User.   
+            
+            
+            <div class="panel-footer">
+                <%= button_to "Show Universities", schools_path,  :method => :get ,class: "btn btn-info" %>
+                <!-- <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span> -->
+                <!-- <div class="clearfix"></div>                                -->
+                <br>
+                <% if can? :manage, School %>
+                    <!-- <a href="/new_school">Add a New School</a> -->
+                    <%= button_to "Add Your University's Information ", new_school_path,  :method => :get ,class: "btn btn-success" %>
+                    <br >
+                    <%= button_to "Edit Your University's Information ", edit_school_path(current_user.id),  :method => :get ,class: "btn btn-warning" %>
                 <% end %>
-                <br />
-                <b> Email: </b>  <%= current_user.email %>
-                <br />
-                <b> Birthday: </b> <%= current_user.date_of_birth %>
-                <br />
-                <b> Gender: </b> <%= current_user.gender %>
-                <br />
-                <b> Last Sign In: </b> : <%= current_user.last_sign_in_at %>
-                <br />                          
-                <% if current_user.admin? %>
-                <b> Your School: </b> <%= current_user.school %>
-                <% end %>
-                <br />
-                </div>
-            </div>
+            </div>                
         </div>
-        <!-- Checklist -->
-        <div class="col-lg-6 col-md-3">
-            <div class="panel panel-warning">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-5">
-                            <i class="fa fa-shopping-cart fa-7x"></i>
-                        </div>
-                        <div class="col-xs-11 text-center">
-                            <div><b><p style="font-size:27px">Checklist</p></b></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-footer">
-                    <% if can? :manage, Checklist %>
-                        <%= button_to "Create and View Checklists", checklists_path, :method => :get,class: "btn btn-success"  %>
-                        <br>
-                        <%= button_to "Edit Checklist for your University", edit_checklist_path(current_user.id), :method => :get,class: "btn btn-warning"  %>
-                    <% else %>
-                        <%= button_to "View Checklists", checklists_path, :method => :get,class: "btn btn-info"  %>        
-                    <% end %>
-        <br />
-                    </div>
-            </div>
-        </div>
+    </div>
 
-        <!-- Account Information -->
-        <div class="col-lg-6 col-md-3">
-            <div class="panel panel-danger">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-5">
-                            <i class="fa fa-support fa-7x"></i>
-                        </div>
-                        <div class="col-xs-11 text-center">
-                            <div><b><p style="font-size:27px">Account Management</p></b></div>
-                        </div>
-                    </div>
+<!--Profile -->
+<div class="col-lg-6 col-md-3">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-xs-5">
+                    <i class="fa fa-tasks fa-7x"></i>
                 </div>
-                <div class="panel-footer">
-                    <%= button_to "Edit Account Info", edit_user_registration_path(@user),:method => :get, class: "btn btn-warning" %>
-                    <br>
-                    <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure you want to delete your account? All your information will be deleted." }, method: :delete, class: "btn btn-danger" %>
-                    <p style="font-size:11px">*This action is irreversible</p>
+                <div class="col-xs-11 text-center">
+                    <div><b><p style="font-size:27px">Profile</p></b></div>
                 </div>
             </div>
         </div>
+        <div class="panel-footer">
+            <b> Name: </b> <%= current_user.name %> <%= current_user.last_name %>
+            <br />
+            <% if current_user.email == "jjain654@gmail.com" %>
+                <b>Role</b>: System Administrator
+            <% elsif current_user.admin? %>
+                <b>Role</b>: School Administrator 
+            <% else %>
+                <b>Role</b>: Student User.   
+            <% end %>
+            <br />
+            <b> Email: </b>  <%= current_user.email %>
+            <br />
+            <b> Birthday: </b> <%= current_user.date_of_birth %>
+            <br />
+            <b> Gender: </b> <%= current_user.gender %>
+            <br />
+            <b> Last Sign In: </b> : <%= current_user.last_sign_in_at %>
+            <br />                          
+            <% if current_user.admin? %>
+            <b> Your School: </b> <%= current_user.school %>
+            <% end %>
+            <br />
+        </div>
+    </div>
+</div>
+
+
+<!-- Checklist -->
+<div class="col-lg-6 col-md-3">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-xs-5">
+                    <i class="fa fa-shopping-cart fa-7x"></i>
+                </div>
+                <div class="col-xs-11 text-center">
+                    <div><b><p style="font-size:27px">Checklist</p></b></div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <% if can? :manage, Checklist %>
+                <%= button_to "Create and View Checklists", checklists_path, :method => :get,class: "btn btn-success"  %>
+                <br>
+                <%= button_to "Edit Checklist for your University", edit_checklist_path(current_user.id), :method => :get,class: "btn btn-warning"  %>
+            <% else %>
+                <%= button_to "View Checklists", checklists_path, :method => :get,class: "btn btn-info"  %>        
+            <% end %>
+            <br />
+        </div>
+    </div>
+</div>
+
+<!-- Recent Message Board Activity -->
+<div class="col-lg-6 col-md-3">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <div class="row">
+<!--            <div class="col-xs-5">
+                    <i class="fa fa-tasks fa-7x"></i>
+                </div> -->
+                <div class="col-xs-11 text-center">
+                    <div><b><p style="font-size:27px">Recent Message Board Activity</p></b></div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <% if current_user.messages.each do |message| %>
+                <p> Newest messages and comments </p>
+                <%= link_to message.title, message_path(message), :method => :get %> updated at <%= message.updated_at %>
+                <br>
+            <% end.empty? %>
+                <h3> You have no activity in the Message Board </h3>
+            <% end %>          
+        </div>
+    </div>
+</div>
+
+
+<!-- Account Information -->
+<div class="col-lg-6 col-md-3">
+    <div class="panel panel-warning">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-xs-5">
+                    <i class="fa fa-support fa-7x"></i>
+                </div>
+                <div class="col-xs-11 text-center">
+                    <div><b><p style="font-size:27px">Account Management</p></b></div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <%= button_to "Edit Account Info", edit_user_registration_path(@user),:method => :get, class: "btn btn-warning" %>
+            <br>
+            <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure you want to delete your account? All your information will be deleted." }, method: :delete, class: "btn btn-danger" %>
+            <p style="font-size:11px">*This action is irreversible</p>
+        </div>
+    </div>
+</div>
     
 
 <!--Confirm School Admin Accounts -->
 <center><div class="row">
 <% if current_user.email == "jjain654@gmail.com" %>
     <div class="col-lg-6 col-md-3">
-        <div class="panel panel-default">
+        <div class="panel panel-warning">
             <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-5">
-                            <i class="fa fa-comments fa-7x"></i>
-                        </div>
+                <div class="row">
+                    <div class="col-xs-5">
+                        <i class="fa fa-comments fa-7x"></i>
+                    </div>
                     <div class="col-xs-11 text-center">
                         <div><b><p style="font-size:27px">Approve School Admin Accounts </p></b></div>
                     </div>
@@ -153,31 +179,31 @@
                         <th scope="col"><center>Action</center></th>
                     </tr>
                 </thead>                                              
-            <tbody>
-              <% User.all.each do |user| %>
-                <% if user.approved == false %>
-                  <tr>
-                    <td><%= user.name %></td>
-                    <td><%= user.school %></td>
-                    <td><%= user.email %></td>
-                    <td>
-                      <div class="btn-toolbar">     
-                        <%= link_to "Approve User", approve_user_path(user.id), :method => :patch, class: "btn btn-success" %>
+                <tbody>
+                    <% User.all.each do |user| %>
+                        <% if user.approved == false %>
+                            <tr>
+                                <td><%= user.name %></td>
+                                <td><%= user.school %></td>
+                                <td><%= user.email %></td>
+                                <td>
+                                    <div class="btn-toolbar">     
+                                        <%= link_to "Approve User", approve_user_path(user.id), :method => :patch, class: "btn btn-success" %>
                         
-                        <%= link_to "Reject User", reject_user_path(user.id), data: { confirm: "Are you sure? Rejecting this account will also DELETE this account!" }, method: :delete, class: "btn btn-danger" %>
-                      </div> 
-                    </td>   
-                  </tr> 
-                <% end %>  
-              <% end %>
-              <!-- If there are no users to confirm, display message -->
-              <% if User.where.not(approved: true).count == 0 %>
-                  <center><h3>There are no users to confirm at this time.</h3></center>
-                  <hr>
-                </div> 
-              <% end %>  
-            </tbody>
-        </table>
+                                        <%= link_to "Reject User", reject_user_path(user.id), data: { confirm: "Are you sure? Rejecting this account will also DELETE this account!" }, method: :delete, class: "btn btn-danger" %>
+                                    </div> 
+                                </td>   
+                            </tr> 
+                        <% end %>  
+                    <% end %>
+                    <!-- If there are no users to confirm, display message -->
+                    <% if User.where.not(approved: true).count == 0 %>
+                        <center><h3>There are no users to confirm at this time.</h3></center>
+                        <hr>
+        </div> 
+                    <% end %>  
+                </tbody>
+            </table>
         </div>
     </div>
 

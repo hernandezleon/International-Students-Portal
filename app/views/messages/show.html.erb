@@ -11,11 +11,11 @@
 	<%= render 'comments/form' %>
 <% end %>
 
-<%= link_to "Back", messages_path %>
+<%= button_to "Back", messages_path,:method => :get,class: "btn btn-primary" %> <br>
 <% if user_signed_in? %>
 	<% if @message.user_id == current_user.id %>
-		<%= link_to "Edit", edit_message_path(@message) %>
-		<%= link_to "Delete", message_path(@message), method: :delete, data: {confirm: "Are You Sure"} %>
+		<%= button_to "Edit", edit_message_path(@message),method: :get,class: "btn btn-warning" %> <br>
+		<%= button_to "Delete", message_path(@message), method: :delete, data: {confirm: "Are You Sure"},class: "btn btn-danger" %>
 		<!--%= button_to "Delete", messages_path(@message), :method=>:delete, :class=>:destroy, data: {confirm: "are you sure"} %-->
 	<% end %>
 <% end %>
