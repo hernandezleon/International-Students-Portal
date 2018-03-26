@@ -1,18 +1,26 @@
 <p id="notice"><%= notice %></p>
-<center><h1> <%= @checklist.school_name %> Admissions Checklist</h1></center>
 
-These are the requirements on the <b><%= @checklist.school_name %></b> checklist: 
+<div class="container">
+  <div class="row">
+        <div class="col-md-12 text-center">
+          <center><h1> <%= @checklist.school_name %> Admissions Checklist</h1></center>
+          <p>These are the requirements on the <b><%= @checklist.school_name %></b> checklist: </p>
+        </div>
+  		<div class="col-sm-4 col-sm-offset-1">
+          <div class="list-group" id="list1">
+          	<% @checklist.attributes.each do |k, v| %>
+				<% if v  == true %>					
+					<a href="#" class="list-group-item"><%= k %> <input title="toggle all" type="checkbox" class="all pull-right"></a>				
+				<% end %>
+			<% end %>
+          	
+          
+          </div>
+      </div>
+  </div>      
+</div>  
 
-<% @checklist.attributes.each do |k, v| %>
-	<% if v  == true %>
-		<h2> <%= k %></h2> <br />
-	<% else %>	
-	<% end %>
-<% end %>
 
-
-<br /><br />
-
-
-<%= link_to 'Edit', edit_checklist_path() %> |
-<%= link_to 'Back', checklists_path %>
+<%= button_to 'Edit', edit_checklist_path(), :method => :get, class: "btn btn-warning" %> 
+<br>
+<%= button_to 'Back', checklists_path, :method => :get, class: "btn btn-info" %>
