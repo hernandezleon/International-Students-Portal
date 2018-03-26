@@ -14,15 +14,19 @@
       <tr>
         <h2><%= link_to checklist.school_name, checklist_path(checklist) %></h2>
         <% if can? :manage, Checklist %>
-          <%= button_to 'Edit', edit_checklist_path(checklist), :method => :get, class: "btn btn-warning" %> <br >
+          <%= button_to 'Edit', edit_checklist_path(checklist), :method => :get, class: "btn btn-warning" %> <br> <br>
           <%= button_to 'Destroy', checklist, method: :delete, class: "btn btn-danger", data: { confirm: 'Do you really want to delete this checklist?' } %>
         <% end %>  
+        <br><br>
+        <%= button_to 'Follow this Checklist', checklist, method: :delete, class: "btn btn-info", data: { confirm: 'Do you really want to delete this checklist?' } %>
+
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
+<hr>
 <% if can? :manage, Checklist %>
   <%= button_to 'New Checklist', new_checklist_path, :method => :get, class: "btn btn-success" %>
 <% end %>
