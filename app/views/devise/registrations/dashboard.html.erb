@@ -8,7 +8,7 @@
 
 
 <!-- Dashboard Panels -->   
-
+<div class="row">
 <!-- School Management -->
     <div class="col-lg-6 col-md-3">
         <div class="panel panel-success">
@@ -79,7 +79,9 @@
     </div>
 </div>
 
+</div>
 
+<div class="row">
 <!-- Checklist -->
 <div class="col-lg-6 col-md-3">
     <div class="panel panel-success">
@@ -130,9 +132,10 @@
         </div>
     </div>
 </div>
+</div>
 
-
-<!-- Account Information -->
+<div class="row">
+<!-- Account Management -->
 <div class="col-lg-6 col-md-3">
     <div class="panel panel-warning">
         <div class="panel-heading">
@@ -156,7 +159,8 @@
     
 
 <!--Confirm School Admin Accounts -->
-<center><div class="row">
+<!-- <center> -->
+<!-- <div class="row">  -->
 <% if current_user.email == "jjain654@gmail.com" %>
     <div class="col-lg-6 col-md-3">
         <div class="panel panel-warning">
@@ -170,42 +174,43 @@
                     </div>
                 </div>
             </div>
-            <table class ="table table-inverse">
-                <thead>
-                    <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">School</th>
-                        <th scope="col">Email</th>
-                        <th scope="col"><center>Action</center></th>
-                    </tr>
-                </thead>                                              
-                <tbody>
-                    <% User.all.each do |user| %>
-                        <% if user.approved == false %>
-                            <tr>
-                                <td><%= user.name %></td>
-                                <td><%= user.school %></td>
-                                <td><%= user.email %></td>
-                                <td>
-                                    <div class="btn-toolbar">     
-                                        <%= link_to "Approve User", approve_user_path(user.id), :method => :patch, class: "btn btn-success" %>
-                        
-                                        <%= link_to "Reject User", reject_user_path(user.id), data: { confirm: "Are you sure? Rejecting this account will also DELETE this account!" }, method: :delete, class: "btn btn-danger" %>
-                                    </div> 
-                                </td>   
-                            </tr> 
-                        <% end %>  
-                    <% end %>
-                    <!-- If there are no users to confirm, display message -->
-                    <% if User.where.not(approved: true).count == 0 %>
-                        <center><h3>There are no users to confirm at this time.</h3></center>
-                        <hr>
-        </div> 
-                    <% end %>  
-                </tbody>
-            </table>
+            <div class="panel-footer">           
+                <table class ="table table-inverse">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">School</th>
+                            <th scope="col">Email</th>
+                            <th scope="col"><center>Action</center></th>
+                        </tr>
+                    </thead>                                              
+                    <tbody>
+                        <% User.all.each do |user| %>
+                            <% if user.approved == false %>
+                                <tr>
+                                    <td><%= user.name %></td>
+                                    <td><%= user.school %></td>
+                                    <td><%= user.email %></td>
+                                    <td>
+                                        <div class="btn-toolbar">     
+                                            <%= link_to "Approve User", approve_user_path(user.id), :method => :patch, class: "btn btn-success" %>
+                            
+                                            <%= link_to "Reject User", reject_user_path(user.id), data: { confirm: "Are you sure? Rejecting this account will also DELETE this account!" }, method: :delete, class: "btn btn-danger" %>
+                                        </div> 
+                                    </td>   
+                                </tr> 
+                            <% end %>  
+                        <% end %>
+                        <!-- If there are no users to confirm, display message -->
+                        <% if User.where.not(approved: true).count == 0 %>
+                            <center><h3>There are no users to confirm at this time.</h3></center>
+                            <hr>
+                        <% end %> 
+                    </tbody>
+                </table>
+            </div>                                  
         </div>
     </div>
-
-<% end %>   
-</center>
+<% end %> 
+</div>   
+<!-- </center> -->
