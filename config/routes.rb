@@ -61,7 +61,7 @@ Rails.application.routes.draw do
   get '/ch_list_school_id', to: 'schools#ch_list_school_id', as: 'ch_list_school_id'
   # get 'landing', to: 'devise/registrations#landing'
 
-
+  get 'search', to: 'layouts#search'
 
   # User scope
   # devise_scope :user do

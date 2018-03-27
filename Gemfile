@@ -84,3 +84,9 @@ gem 'cancancan', '~> 2.0'
 gem 'rails_admin', '~> 1.2' 
 
 gem 'delayed_job_active_record'
+
+gem 'sunspot_rails'
+
+group :development do
+  gem 'sunspot_solr'
+end
