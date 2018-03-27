@@ -7358,3 +7358,23 @@ Cont'
 [2018-03-26 17:57:45 -0500 multiverse76 (21717)] INFO : Installing Rails 4 Controller instrumentation
 [2018-03-26 17:57:45 -0500 multiverse76 (21717)] INFO : Finished instrumentation
 [2018-03-26 17:57:45 -0500 multiverse76 (21717)] INFO : Starting Agent shutdown
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Reading configuration from config/newrelic.yml (/home/jay/Desktop/International-Students-Portal)
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Environment: development
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Dispatcher: puma
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Application: My Application (Development)
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Deferring startup of agent reporting thread because puma may fork.
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Installing Net instrumentation
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Installing ActiveJob instrumentation
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Installing Rails 4 view instrumentation
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Installing Rails 4 Controller instrumentation
+[2018-03-26 19:50:05 -0500 multiverse76 (26042)] INFO : Finished instrumentation
+[2018-03-26 19:50:06 -0500 multiverse76 (26042)] INFO : Doing deferred dependency-detection before Rack startup

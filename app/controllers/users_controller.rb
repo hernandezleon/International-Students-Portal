@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   # before_action :admin?, only: :index
-  params.require(:user).permit(:school_name, checklist_ids:[])
+  # params.require(:user).permit(:school_name, checklist_ids:[])
   # def index
   #   if params[:approved] == false
   #     @users = User.where(approved: false)
