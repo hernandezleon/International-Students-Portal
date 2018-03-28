@@ -3,7 +3,7 @@ class SchoolsController < ApplicationController
 
 
 	def index
-		@school = School.all.order("name")
+ 		@school = School.all.order("name")
 	end
 
 	def create

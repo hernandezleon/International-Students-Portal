@@ -29,8 +29,10 @@ Rails.application.routes.draw do
   #resources :google_user
   resources :schools
   resources :messages do
-  resources :comments
+    resources :comments
   end
+  resources :search, only: [:index]
+
 
   # This is used for approving and rejecting users
   match 'users/:id/approve'=> 'users#approve_user', as: 'approve_user', :via => :patch

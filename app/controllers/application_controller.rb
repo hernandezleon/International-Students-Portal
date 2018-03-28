@@ -19,12 +19,12 @@ class ApplicationController < ActionController::Base
      devise_parameter_sanitizer.for(:account_update) << :name << :email << :gender << :date_of_birth << :last_name << :school << :approved << :id
   end
 
-  def search
-    @search = School.search do
-      fulltext params[:search]
-    end
-    @schools = @search.results
-    render 'layouts/search'
-  end
+  # def search
+  #   @search = School.search do
+  #     fulltext params[:search]
+  #   end
+  #   @schools = @search.results
+  #   render 'layouts/search'
+  # end
   
 end

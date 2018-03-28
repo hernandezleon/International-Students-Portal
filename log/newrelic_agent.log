@@ -7485,3 +7485,58 @@ Cont'
 [2018-03-27 14:04:38 -0500 LABi2 (8665)] INFO : Installing Puma::Rack::Builder middleware instrumentation
 [2018-03-27 14:04:41 -0500 LABi2 (8665)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
 >>>>>>> Stashed changes
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : Reading configuration from config/newrelic.yml (/home/jjain/Desktop/International-Students-Portal)
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : Environment: development
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : No known dispatcher detected.
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : Application: My Application (Development)
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : Installing Net instrumentation
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : Installing Rails Sunspot instrumentation
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : Installing ActiveJob instrumentation
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : Installing Rails 4 Controller instrumentation
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : Installing Rails 4 view instrumentation
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : Finished instrumentation
+[2018-03-28 15:20:57 -0500 LABi2 (17181)] INFO : Starting Agent shutdown
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : Reading configuration from config/newrelic.yml (/home/jjain/Desktop/International-Students-Portal)
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : Environment: development
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : No known dispatcher detected.
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : Application: My Application (Development)
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : Installing Net instrumentation
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : Installing Rails Sunspot instrumentation
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : Installing ActiveJob instrumentation
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : Installing Rails 4 Controller instrumentation
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : Installing Rails 4 view instrumentation
+[2018-03-28 15:38:19 -0500 LABi2 (18135)] INFO : Finished instrumentation
+[2018-03-28 15:38:20 -0500 LABi2 (18135)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-28 15:38:22 -0500 LABi2 (18135)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-28 15:38:26 -0500 LABi2 (18143)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-03-28 15:38:26 -0500 LABi2 (18143)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-03-28 15:38:26 -0500 LABi2 (18143)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-03-28 15:38:26 -0500 LABi2 (18143)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-03-28 15:38:27 -0500 LABi2 (18143)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-28 15:38:27 -0500 LABi2 (18143)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-03-28 15:38:27 -0500 LABi2 (18143)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-03-28 15:38:29 -0500 LABi2 (18143)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-03-28 15:39:18 -0500 LABi2 (18148)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-03-28 15:39:18 -0500 LABi2 (18148)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-03-28 15:39:18 -0500 LABi2 (18148)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-03-28 15:39:18 -0500 LABi2 (18148)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-03-28 15:39:18 -0500 LABi2 (18148)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-03-28 15:39:18 -0500 LABi2 (18148)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-03-28 15:39:18 -0500 LABi2 (18148)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-03-28 15:39:20 -0500 LABi2 (18148)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480

@@ -2,10 +2,11 @@ class UserNotifier < ApplicationMailer
   default :from => 'communications@internationalsp.com'
 
   # send a signup email to the user, pass in the user object that   contains the user's email address
-  def send_signup_email(user)
+  def send_confirm_email(user)
     @user = user
     mail( :to => @user.email,
-    :subject => 'Thanks for signing up for our amazing app' )
+    :subject => 'Your School Administrator account has been approved. 
+    Login now at http://www.internationalsp.com/users/sign_in . Here you can start adding information about your school and interact with prospective students.' )
     # using SendGrid's Ruby Library
 	# https://github.com/sendgrid/sendgrid-ruby
 	# require 'sendgrid-ruby'
@@ -23,5 +24,13 @@ class UserNotifier < ApplicationMailer
 	# puts response.body
 	# puts response.headers
   end
+
+  def confirmation_pending(user)
+  	 @user = user
+     mail( :to => @user.email,
+    :subject => 'You have signed up for a School Administrator account which won\'t be accessible
+    until your account is approved. You will receive an email once your account has been approved. Thank you
+    for choosing International Students Portal' )
+  end	
 
 end

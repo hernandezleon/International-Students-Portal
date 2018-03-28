@@ -12,8 +12,10 @@ class UsersController < ApplicationController
   def approve_user
     user = User.find(params[:id])
     user.approved = true
+    UserNotifier.send_confirm_email(user)
     if user.save
       flash[:notice] = "#{user.name} approved"
+
     else
       flash[:alert] = "#{user.name} approval failure"
     end
