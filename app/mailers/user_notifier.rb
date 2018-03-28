@@ -1,6 +1,5 @@
 class UserNotifier < ApplicationMailer
-  default :from => 'communications@internationalsp.com'
-
+  default :from => 'internationalstudentsportal18@gmail.com'
   # send a signup email to the user, pass in the user object that   contains the user's email address
   def send_confirm_email(user)
     @user = user
