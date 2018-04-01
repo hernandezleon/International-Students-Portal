@@ -1,5 +1,36 @@
 # International-Students-Portal
 
+# To make yourself system administrator in local host:
+```sh
+$ rails c
+# Find your user and assign it to a variable such as:
+> u = u.first
+
+# Now set appropriate columns
+> u.approved = true
+> u.save
+> u.admin = true
+> u.save
+> u.system_admin = true
+> u.save
+```
+
+# To make yourself system admin on Heroku (Heroku pipeline access required)
+``` sh
+$ heroku console # This may not work or time out if your network is blocking certain ports
+
+# Find your user and assign it to a variable such as:
+> u = u.first
+
+# Now set appropriate columns
+> u.approved = true
+> u.save
+> u.admin = true
+> u.save
+> u.system_admin = true
+> u.save 
+```
+
 # If CSS is working on localhost but not Heroku, try:
 ```sh
 $ bundle exec rake assets:precompile

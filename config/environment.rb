@@ -35,9 +35,8 @@ ActionMailer::Base.smtp_settings = {
   :address => 'smtp.gmail.com',
   :port => 587,
   :domain => 'gmail.com',
-  # :user_name => "app80241724@heroku.com",
   :user_name => "internationalstudentsportal18@gmail.com",
-  # :password => "ahizspny9445",
+  
   :password => "sliarybur",
   # :domain => 'localhost:3000',
   

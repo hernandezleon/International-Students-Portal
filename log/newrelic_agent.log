@@ -7540,3 +7540,81 @@ Cont'
 [2018-03-28 15:39:18 -0500 LABi2 (18148)] INFO : Installing deferred Puma::Rack::Builder instrumentation
 [2018-03-28 15:39:18 -0500 LABi2 (18148)] INFO : Installing Puma::Rack::Builder middleware instrumentation
 [2018-03-28 15:39:20 -0500 LABi2 (18148)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-04-01 18:11:59 -0500 multiverse76 (19934)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-04-01 18:11:59 -0500 multiverse76 (19934)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-04-01 18:11:59 -0500 multiverse76 (19934)] INFO : Reading configuration from config/newrelic.yml (/home/jay/Desktop/International-Students-Portal)
+[2018-04-01 18:11:59 -0500 multiverse76 (19934)] INFO : Environment: development
+[2018-04-01 18:11:59 -0500 multiverse76 (19934)] INFO : No known dispatcher detected.
+[2018-04-01 18:11:59 -0500 multiverse76 (19934)] INFO : Application: My Application (Development)
+[2018-04-01 18:11:59 -0500 multiverse76 (19934)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-04-01 18:12:00 -0500 multiverse76 (19934)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[2018-04-01 18:12:00 -0500 multiverse76 (19934)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-04-01 18:12:00 -0500 multiverse76 (19934)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-04-01 18:12:00 -0500 multiverse76 (19934)] INFO : Installing Rails Sunspot instrumentation
+[2018-04-01 18:12:00 -0500 multiverse76 (19934)] INFO : Installing Net instrumentation
+[2018-04-01 18:12:00 -0500 multiverse76 (19934)] INFO : Installing ActiveJob instrumentation
+[2018-04-01 18:12:00 -0500 multiverse76 (19934)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-04-01 18:12:00 -0500 multiverse76 (19934)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-04-01 18:12:00 -0500 multiverse76 (19934)] INFO : Installing Rails 4 view instrumentation
+[2018-04-01 18:12:00 -0500 multiverse76 (19934)] INFO : Installing Rails 4 Controller instrumentation
+[2018-04-01 18:12:00 -0500 multiverse76 (19934)] INFO : Finished instrumentation
+[2018-04-01 18:12:00 -0500 multiverse76 (19934)] INFO : Starting Agent shutdown
+[2018-04-01 18:16:45 -0500 multiverse76 (20282)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-04-01 18:16:45 -0500 multiverse76 (20282)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-04-01 18:16:45 -0500 multiverse76 (20282)] INFO : Reading configuration from config/newrelic.yml (/home/jay/Desktop/International-Students-Portal)
+[2018-04-01 18:16:45 -0500 multiverse76 (20282)] INFO : Environment: development
+[2018-04-01 18:16:45 -0500 multiverse76 (20282)] INFO : No known dispatcher detected.
+[2018-04-01 18:16:45 -0500 multiverse76 (20282)] INFO : Application: My Application (Development)
+[2018-04-01 18:16:46 -0500 multiverse76 (20282)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-04-01 18:16:46 -0500 multiverse76 (20282)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[2018-04-01 18:16:46 -0500 multiverse76 (20282)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-04-01 18:16:46 -0500 multiverse76 (20282)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-04-01 18:16:46 -0500 multiverse76 (20282)] INFO : Installing Rails Sunspot instrumentation
+[2018-04-01 18:16:46 -0500 multiverse76 (20282)] INFO : Installing Net instrumentation
+[2018-04-01 18:16:46 -0500 multiverse76 (20282)] INFO : Installing ActiveJob instrumentation
+[2018-04-01 18:16:46 -0500 multiverse76 (20282)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-04-01 18:16:46 -0500 multiverse76 (20282)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-04-01 18:16:46 -0500 multiverse76 (20282)] INFO : Installing Rails 4 view instrumentation
+[2018-04-01 18:16:46 -0500 multiverse76 (20282)] INFO : Installing Rails 4 Controller instrumentation
+[2018-04-01 18:16:46 -0500 multiverse76 (20282)] INFO : Finished instrumentation
+[2018-04-01 18:16:46 -0500 multiverse76 (20282)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-04-01 18:16:48 -0500 multiverse76 (20282)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-04-01 18:17:00 -0500 multiverse76 (20292)] INFO : Starting Agent shutdown
+[2018-04-01 18:17:00 -0500 multiverse76 (20304)] INFO : Starting Agent shutdown
+[2018-04-01 18:17:00 -0500 multiverse76 (20282)] INFO : Starting Agent shutdown
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : Reading configuration from config/newrelic.yml (/home/jay/Desktop/International-Students-Portal)
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : Environment: development
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : No known dispatcher detected.
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : Application: My Application (Development)
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : Installing Rails Sunspot instrumentation
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : Installing Net instrumentation
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : Installing ActiveJob instrumentation
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : Installing Rails 4 view instrumentation
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : Installing Rails 4 Controller instrumentation
+[2018-04-01 18:17:08 -0500 multiverse76 (20376)] INFO : Finished instrumentation
+[2018-04-01 18:17:09 -0500 multiverse76 (20376)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-04-01 18:17:14 -0500 multiverse76 (20383)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-04-01 18:17:14 -0500 multiverse76 (20383)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-04-01 18:17:14 -0500 multiverse76 (20383)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-04-01 18:17:14 -0500 multiverse76 (20383)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-04-01 18:17:14 -0500 multiverse76 (20383)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-04-01 18:17:14 -0500 multiverse76 (20383)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-04-01 18:17:14 -0500 multiverse76 (20383)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-04-01 18:17:15 -0500 multiverse76 (20391)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-04-01 18:17:15 -0500 multiverse76 (20391)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-04-01 18:17:15 -0500 multiverse76 (20391)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-04-01 18:17:15 -0500 multiverse76 (20391)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-04-01 18:17:16 -0500 multiverse76 (20391)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-04-01 18:17:16 -0500 multiverse76 (20391)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-04-01 18:17:16 -0500 multiverse76 (20391)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-04-01 18:17:23 -0500 multiverse76 (20376)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-04-01 18:17:23 -0500 multiverse76 (20391)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-04-01 18:17:23 -0500 multiverse76 (20383)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
