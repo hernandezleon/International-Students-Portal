@@ -58,11 +58,12 @@ class RegistrationsController < Devise::RegistrationsController
   def create_admin
     @user = User.new(user_params)
     @user.admin = true
+    UserNotifier.confirmation_pending(@user)
+
     if @user.save
       flash[:success] = "School Admin successfully created."
       sign_in(@user)
       redirect_to user_root_path(@user)
-      UserNotifier.confirmation_pending(@user)
 
     else
       render 'new_admin'
