@@ -1,6 +1,7 @@
 <h2><%= @message.title %></h2>
 <p>Posted by <%= @message.user.email %> <%= time_ago_in_words(@message.created_at) %> ago</p>
 <h4><%= @message.description %></h4>
+<hr>
 <br />
 <h3> Comments: </h3>
 <br />
@@ -14,8 +15,16 @@
 <%= button_to "Back", messages_path,:method => :get,class: "btn btn-primary" %> <br>
 <% if user_signed_in? %>
 	<% if @message.user_id == current_user.id %>
-		<%= button_to "Edit", edit_message_path(@message),method: :get,class: "btn btn-warning" %> <br>
-		<%= button_to "Delete", message_path(@message), method: :delete, data: {confirm: "Are You Sure"},class: "btn btn-danger" %>
+		<div class="container">
+		<div class="row">
+			<div class="col-xs-6">
+				<%= button_to "Edit", edit_message_path(@message),method: :get,class: "btn btn-warning" %> <br>
+			</div>
+			<div class="col-xs-6">
+				<%= button_to "Delete", message_path(@message), method: :delete, data: {confirm: "Are You Sure"},class: "btn btn-danger" %>
+			</div>	
+		</div>
+	</div>
 		<!--%= button_to "Delete", messages_path(@message), :method=>:delete, :class=>:destroy, data: {confirm: "are you sure"} %-->
 	<% end %>
 <% end %>

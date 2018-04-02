@@ -125,11 +125,11 @@
         </div>
         <div class="panel-footer">
             <% if current_user.messages.each do |message| %>
-                <p> Newest messages and comments </p>
-                <%= link_to message.title, message_path(message), :method => :get %> updated at <%= message.updated_at %>
+                <center><h4> Your newest messages </h4></center>
+                <h4><%= link_to message.title, message_path(message), :method => :get %></h4> updated at <%= message.updated_at %>
                 <br>
             <% end.empty? %>
-                <h4> You have no activity in the Message Board </h4>
+                <center><h4> You have no activity in the Message Board </h4></center>
             <% end %>          
         </div>
     </div>
