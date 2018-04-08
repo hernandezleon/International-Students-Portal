@@ -8633,3 +8633,35 @@ Cont'
 [2018-04-08 00:16:23 -0500 Karlas-MacBook-Air.local (2775)] INFO : Installing deferred Puma::Rack::Builder instrumentation
 [2018-04-08 00:16:23 -0500 Karlas-MacBook-Air.local (2775)] INFO : Installing Puma::Rack::Builder middleware instrumentation
 [2018-04-08 00:16:25 -0500 Karlas-MacBook-Air.local (2775)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-04-08 14:21:49 -0500 Karlas-MacBook-Air.local (2229)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2018-04-08 14:21:49 -0500 Karlas-MacBook-Air.local (2229)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-211.newrelic.com:443 after 0.001849 seconds: Failed to open TCP connection to collector-211.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2018-04-08 14:21:57 -0500 Karlas-MacBook-Air.local (3928)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-04-08 14:21:57 -0500 Karlas-MacBook-Air.local (3928)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-04-08 14:21:57 -0500 Karlas-MacBook-Air.local (3928)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-04-08 14:21:57 -0500 Karlas-MacBook-Air.local (3928)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-04-08 14:21:57 -0500 Karlas-MacBook-Air.local (3928)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2018-04-08 14:21:57 -0500 Karlas-MacBook-Air.local (3928)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error talking to collector-211.newrelic.com:443 after 2 attempts: Failed to open TCP connection to collector-211.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2018-04-08 14:21:57 -0500 Karlas-MacBook-Air.local (3928)] INFO : Will re-attempt in 60 seconds
+[2018-04-08 14:21:57 -0500 Karlas-MacBook-Air.local (3928)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-04-08 14:21:57 -0500 Karlas-MacBook-Air.local (3928)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-04-08 14:21:57 -0500 Karlas-MacBook-Air.local (3928)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-04-08 14:22:49 -0500 Karlas-MacBook-Air.local (2229)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2018-04-08 14:22:49 -0500 Karlas-MacBook-Air.local (2229)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-211.newrelic.com:443 after 0.005981 seconds: Failed to open TCP connection to collector-211.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2018-04-08 14:22:49 -0500 Karlas-MacBook-Air.local (2229)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2018-04-08 14:22:49 -0500 Karlas-MacBook-Air.local (2229)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-211.newrelic.com:443 after 0.003412 seconds: Failed to open TCP connection to collector-211.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2018-04-08 14:22:59 -0500 Karlas-MacBook-Air.local (3928)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2018-04-08 14:23:00 -0500 Karlas-MacBook-Air.local (3928)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error talking to collector-211.newrelic.com:443 after 2 attempts: Failed to open TCP connection to collector-211.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2018-04-08 14:23:00 -0500 Karlas-MacBook-Air.local (3928)] INFO : Will re-attempt in 120 seconds
+[2018-04-08 14:25:01 -0500 Karlas-MacBook-Air.local (3928)] ERROR : Error occurred detecting: gcp
+[2018-04-08 14:25:01 -0500 Karlas-MacBook-Air.local (3928)] ERROR : JSON::ParserError: 784: unexpected token at '<html><head><meta http-equiv="refresh" content="0;url=http://www.search-error.com/index.php?origURL=http://metadata.google.internal/computeMetadata/v1/instance/&bc="/></head><body><script type="text/javascript">window.location="http://www.search-error.com/index.php?origURL="+escape(window.location)+"&r="+escape(document.referrer)+"&bc=";</script></body></html>'
+[2018-04-08 14:25:05 -0500 Karlas-MacBook-Air.local (3928)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-04-08 14:38:47 -0500 Karlas-MacBook-Air.local (3927)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-04-08 14:38:47 -0500 Karlas-MacBook-Air.local (3927)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-04-08 14:38:47 -0500 Karlas-MacBook-Air.local (3927)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-04-08 14:38:47 -0500 Karlas-MacBook-Air.local (3927)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-04-08 14:38:48 -0500 Karlas-MacBook-Air.local (3927)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-04-08 14:38:48 -0500 Karlas-MacBook-Air.local (3927)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-04-08 14:38:48 -0500 Karlas-MacBook-Air.local (3927)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-04-08 14:38:49 -0500 Karlas-MacBook-Air.local (3927)] ERROR : Error occurred detecting: gcp
+[2018-04-08 14:38:49 -0500 Karlas-MacBook-Air.local (3927)] ERROR : JSON::ParserError: 784: unexpected token at '<html><head><meta http-equiv="refresh" content="0;url=http://www.search-error.com/index.php?origURL=http://metadata.google.internal/computeMetadata/v1/instance/&bc="/></head><body><script type="text/javascript">window.location="http://www.search-error.com/index.php?origURL="+escape(window.location)+"&r="+escape(document.referrer)+"&bc=";</script></body></html>'
+[2018-04-08 14:38:51 -0500 Karlas-MacBook-Air.local (3927)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480

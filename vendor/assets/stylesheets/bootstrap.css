@@ -4629,9 +4629,10 @@ a.badge:focus {
 }
 .jumbotron h1,
 .jumbotron .h1 {
-  color: black;
-  font-style: bold;
+  color: white;
+  font-weight: bold;
   font-size: 65px !important;
+  text-shadow: 4px 4px black;
 }
 .jumbotron h2,
 .jumbotron .h1 {
@@ -4639,9 +4640,9 @@ a.badge:focus {
 }
 .jumbotron p {
   margin-bottom: 30px;
-  font-size: 35px !important;
-  font-weight: bold;
-  color: black;
+  font-size: 25px !important;
+  color:  white;
+  text-shadow: 2px 2px black ;
 }
 .jumbotron > hr {
   border-top-color: inherit;
@@ -4664,8 +4665,8 @@ a.badge:focus {
   }
   .jumbotron h1,
   .jumbotron .h1 {
-    font-style: bold;
-    color: black !important;
+    font-weight: bold;
+    color: white !important;
     font-size: 63px;
   }
 }
