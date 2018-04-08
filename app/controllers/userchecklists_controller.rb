@@ -8,8 +8,10 @@ class UserchecklistsController < ApplicationController
 		@user_checklist = Userchecklist.new(userchecklist_params)
 		@user_checklist.userid = current_user.id
 		@cl_id = @user_checklist.id
+		
+		@school = School.find(@user_checklist.school_id)
 
-		@school_checklist = Checklist.find(@user_checklist.school_id)
+		@school_checklist = Checklist.find(@school.checklist_id)
 		#@school_checklist = Checklist.where(school_id: 3)
 
 		#@user_checklist.act_score = @school_checklist.act_score
@@ -61,9 +63,13 @@ class UserchecklistsController < ApplicationController
 			@user_checklist.online_application = nil
 		end
 
-		@user_checklist.save
+		if @user_checklist.save
+			redirect_to edit_userchecklist_path(@user_checklist)
+		else
+			render 'new'
+		end
 		#@cl_id = @user_checklist.id
-		redirect_to edit_userchecklist_path(@user_checklist)
+		#redirect_to edit_userchecklist_path(@user_checklist)
 	end
 
 	def index
