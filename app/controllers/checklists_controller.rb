@@ -57,6 +57,10 @@ class ChecklistsController < ApplicationController
         format.json { render json: @checklist.errors, status: :unprocessable_entity }
       end
     end
+    @school = School.find(@checklist.school_id)
+    @school.checklist_id = @checklist.id
+    @school.save
+    
   end
 
   # PATCH/PUT /checklists/1
