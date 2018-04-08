@@ -4623,7 +4623,7 @@ a.badge:focus {
 .jumbotron {
   padding: 30px 15px;
   margin-bottom: 30px;
-  background-image: url('https://raw.githubusercontent.com/hernandezleon/International-Students-Portal/MessageBranch/vendor/assets/stylesheets/here.jpg');
+  background-image: url('https://raw.githubusercontent.com/hernandezleon/International-Students-Portal/MessageBranch/vendor/assets/stylesheets/bg-masthead.jpg');
   
   /*background-image: url('intl-static-jumbo.jpeg');*/
 }

@@ -19,7 +19,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="<%= is_active?('/') %>"><a href="/">Home</a></li>
-        <li class="<%= is_active?('/help') %>"><a href="help">About Us</a></li>
+        <li class="<%= is_active?('/help') %>"><a href="/aboutus">About Us</a></li>
         <li class="<%= is_active?('/messages') %>"><a href="/messages">Message Board</a></li>
       <!--ul class="nav navbar-nav"-->
 
@@ -45,14 +45,10 @@
               <%#= text_field_tag :query, params[:query], :placeholder => "Search for anything" %>
               <%#= submit_tag "Search", class: "btn btn-success" %>            
           <%# end %>
-          <input type="text" name="query" id="query" placeholder="I want to find ...">
-          <input type="submit" name="commit" value="Search" class="btn btn-success">
+          <input type="text" name="query" id="query" placeholder="Search">
+          <button class="btn btn-success"> <img src ="https://raw.githubusercontent.com/hernandezleon/International-Students-Portal/MessageBranch/app/views/layouts/loop2.png" width="20" height="20"> </button>
         </div>
       </form>  
-
-
-        
-      
 
       <!-- <form class="navbar-form navbar-left" role="search" id="navBarSearchForm">
         <div class="form-group">
@@ -63,7 +59,7 @@
 
      <ul class="nav navbar-nav">
      <% if !user_signed_in? %>
-      <li><a href="landing">Sign Up</a></li>
+      <li><a href="/landing">Sign Up</a></li>
       <% end %>
         <% if user_signed_in? %>
           <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>

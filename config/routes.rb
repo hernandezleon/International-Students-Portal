@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   devise_for :users, :controllers => {:registrations => "registrations"}
   devise_scope :user do
-    get '/users/landing', to: 'devise/registrations#landing'
+    get '/landing', to: 'devise/registrations#landing'
     get '/dashboard' => "devise/registrations#dashboard", as: :user_root  
     match '/new_admin', :controller => 'registrations', :action => 'new_admin', :via => :get    # post "devise/registrations#new_admin"
     match '/new_admin', :controller => 'registrations', :action => 'create_admin', :via => :post    # post "devise/registrations#new_admin"
@@ -47,8 +47,8 @@ Rails.application.routes.draw do
   root 'startup#index'
   #messageRoot 'messages#index'
   
-  #get 'starutp/help', to: 'startup#help', as: :help
-  match '/help', to: 'startup#help', :via => [:get, :post]
+  # get 'starutp/aboutus', to: 'startup#aboutus', as: :aboutus
+  match '/aboutus', to: 'startup#aboutus', :via => [:get, :post]
   match '/startup',to:'startup#index',:via => [:get, :post]
   match '/contactus',to:'startup#contactus',:via => [:get, :post]
   get '/new_school' => "schools#new"  
