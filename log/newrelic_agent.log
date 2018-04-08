@@ -8617,3 +8617,19 @@ Cont'
 [2018-04-07 19:45:57 -0500 Karlas-MacBook-Air.local (2247)] INFO : Installing Puma::Rack::Builder middleware instrumentation
 [2018-04-07 19:45:57 -0500 Karlas-MacBook-Air.local (2246)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
 [2018-04-07 19:45:58 -0500 Karlas-MacBook-Air.local (2247)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-04-07 22:28:00 -0500 Karlas-MacBook-Air.local (2776)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-04-07 22:28:00 -0500 Karlas-MacBook-Air.local (2776)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-04-07 22:28:00 -0500 Karlas-MacBook-Air.local (2776)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-04-07 22:28:00 -0500 Karlas-MacBook-Air.local (2776)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-04-07 22:28:00 -0500 Karlas-MacBook-Air.local (2776)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-04-07 22:28:00 -0500 Karlas-MacBook-Air.local (2776)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-04-07 22:28:00 -0500 Karlas-MacBook-Air.local (2776)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-04-07 22:28:03 -0500 Karlas-MacBook-Air.local (2776)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-04-08 00:16:23 -0500 Karlas-MacBook-Air.local (2775)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-04-08 00:16:23 -0500 Karlas-MacBook-Air.local (2775)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-04-08 00:16:23 -0500 Karlas-MacBook-Air.local (2775)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-04-08 00:16:23 -0500 Karlas-MacBook-Air.local (2775)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-04-08 00:16:23 -0500 Karlas-MacBook-Air.local (2775)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-04-08 00:16:23 -0500 Karlas-MacBook-Air.local (2775)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-04-08 00:16:23 -0500 Karlas-MacBook-Air.local (2775)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-04-08 00:16:25 -0500 Karlas-MacBook-Air.local (2775)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
