@@ -1,0 +1,94 @@
+<form class="pure-form"
+<%= simple_form_for(@user_checklist) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+
+      <!--div class="field"-->
+        <!--%= f.label :school_name %><br-->
+        <!--%= f.text_field :school_name, :required => true %-->
+        <%#= f.collection_select :school_id, School.all, :id, :name, {prompt: "Choose a School"} %>
+      <!--/div-->
+    
+    <% if @user_checklist.online_application == nil %>
+    <% %>
+    <% else %>
+      <div class="field" >  
+      	<%= f.label :online_application %>
+        <%= f.check_box :online_application %> <br />
+      </div>
+      <% end %>
+
+    <% if @user_checklist.application_fee == nil %>
+    <% %>
+    <% else %>
+      <div class="field">  
+        <%= f.label :application_fee %>
+        <%= f.check_box :application_fee %> <br />
+      </div>
+      <% end %>
+
+    <% if @user_checklist.visa_proof == nil %>
+    <% %>
+    <% else %>
+      <div class="field">  
+        <%= f.label :visa_proof %>
+        <%= f.check_box :visa_proof %> <br />
+      </div>
+      <% end %>
+    
+    <% if @user_checklist.i_20 == nil %>
+    <% %>
+    <% else %>
+    <div class="field">  
+      <%= f.label :i_20 %>
+      <%= f.check_box :i_20 %> <br />
+    </div>
+    <% end %>
+
+    <% if @user_checklist.previous_college_transcript == nil %>
+    <% %>
+    <% else %>
+    <div class="field">  
+      <%= f.label :previous_college_transcript %>
+      <%= f.check_box :previous_college_transcript %> <br />
+    </div>
+    <% end %>
+
+    <% if @user_checklist.high_school_transcript == nil %>
+    <% %>
+    <% else %>
+    <div class="field">  
+      <%= f.label :high_school_transcript %>
+      <%= f.check_box :high_school_transcript %> <br />
+    </div>
+    <% end %>
+
+    <% if @user_checklist.act_score == nil %>
+    <% %>
+    <% else %>
+    <div class="field">  
+      <%= f.label :act_score %>
+      <%= f.check_box :act_score %> <br />
+    </div>
+    <% end %>
+
+    <% if @user_checklist.sat_score == nil %>
+    <% %>
+    <% else %>
+    <div class="field">  
+      <%= f.label :sat_score %>
+      <%= f.check_box :sat_score %> <br />
+    </div>
+    <% end %>
+
+
+
+  </div>
+  <%#= @user_checklist.application_fee %>
+  <div class="form-actions">
+    
+    <%= f.button :submit %>
+  </div>
+<% end %>
+</form>

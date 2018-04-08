@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180401231200) do
+ActiveRecord::Schema.define(version: 20180408001239) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,14 +32,6 @@ ActiveRecord::Schema.define(version: 20180401231200) do
   end
 
   add_index "checklists", ["school_id"], name: "index_checklists_on_school_id", unique: true, using: :btree
-
-  create_table "checklists_users", id: false, force: :cascade do |t|
-    t.integer "user_id",      null: false
-    t.integer "checklist_id", null: false
-  end
-
-  add_index "checklists_users", ["checklist_id", "user_id"], name: "index_checklists_users_on_checklist_id_and_user_id", using: :btree
-  add_index "checklists_users", ["user_id", "checklist_id"], name: "index_checklists_users_on_user_id_and_checklist_id", using: :btree
 
   create_table "comments", force: :cascade do |t|
     t.text     "content"
@@ -111,10 +103,23 @@ ActiveRecord::Schema.define(version: 20180401231200) do
     t.integer  "checklist_id"
   end
 
-  create_table "user_checklists", id: false, force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "checklist_id"
+  create_table "userchecklists", force: :cascade do |t|
+    t.integer  "userid"
+    t.integer  "checklist"
+    t.boolean  "act_score"
+    t.boolean  "sat_score"
+    t.boolean  "high_school_transcript"
+    t.boolean  "previous_college_transcript"
+    t.boolean  "i_20"
+    t.boolean  "visa_proof"
+    t.boolean  "application_fee"
+    t.boolean  "online_application"
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.integer  "school_id"
   end
+
+  add_index "userchecklists", ["userid", "school_id"], name: "index_userchecklists_on_userid_and_school_id", unique: true, using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
