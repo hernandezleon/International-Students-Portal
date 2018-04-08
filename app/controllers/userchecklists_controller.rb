@@ -61,13 +61,18 @@ class UserchecklistsController < ApplicationController
 			@user_checklist.online_application = nil
 		end
 
-		@user_checklist.save
+		if @user_checklist.save
+			redirect_to edit_userchecklist_path(@user_checklist)
+		else
+			render 'new'
+		end
 		#@cl_id = @user_checklist.id
-		redirect_to edit_userchecklist_path(@user_checklist)
+		#redirect_to edit_userchecklist_path(@user_checklist)
+
 	end
 
 	def index
-		@school_checklist = Checklist.where(school_id: @user_checklist.school_id)
+		#@school_checklist = Checklist.where(school_id: @user_checklist.school_id)
 	end
 
 	def show
