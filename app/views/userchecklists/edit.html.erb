@@ -1,0 +1,13 @@
+<!--h1> Edit Test </h1-->
+<h1><%#= @school.name %></h1>
+
+<center><h1>Edit your Checklist for <%= @school.name %></h1></center>
+
+Keep track of important documents submitted to this school 
+
+<br />
+<br />
+
+<%= render 'form_new' %>
+
+<%= link_to 'Back', root_path %>

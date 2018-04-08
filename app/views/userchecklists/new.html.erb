@@ -1,0 +1,64 @@
+<form class="pure-form"
+<%= simple_form_for(@user_checklist) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+
+      <div class="field">
+        <!--%= f.label :school_name %><br-->
+        <!--%= f.text_field :school_name, :required => true %-->
+        <%= f.collection_select :school_id, School.all, :id, :name, {prompt: "Choose a School"} %>
+      </div>
+
+    
+      <!--div class="field" >  
+      	<%= f.label :online_application %> <br />
+        <%= f.check_box :online_application %> <br />
+      </div>
+
+      <div class="field">  
+        <%= f.label :application_fee %> <br />
+        <%= f.check_box :application_fee %> <br />
+      </div>
+
+      <div class="field">  
+        <%= f.label :visa_proof %> <br />
+        <%= f.check_box :visa_proof %> <br />
+      </div>
+    
+    <div class="field">  
+      <%= f.label :i_20 %> <br />
+      <%= f.check_box :i_20 %> <br />
+    </div>
+
+    <div class="field">  
+      <%= f.label :previous_college_transcript %> <br />
+      <%= f.check_box :previous_college_transcript %> <br />
+    </div>
+
+    <div class="field">  
+      <%= f.label :high_school_transcript %> <br />
+      <%= f.check_box :high_school_transcript %> <br />
+    </div>
+
+
+    <div class="field">  
+      <%= f.label :act_score %> <br />
+      <%= f.check_box :act_score %> <br />
+    </div>
+
+    <div class="field">  
+      <%= f.label :sat_score %> <br />
+      <%= f.check_box :sat_score %> <br />
+    </div-->
+
+
+
+  </div>
+  
+  <div class="form-actions">
+    
+    <%= f.button :submit %>
+  </div>
+<% end %>
+</form>

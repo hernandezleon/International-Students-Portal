@@ -93,6 +93,11 @@ class ChecklistsController < ApplicationController
     
   end
 
+  def new_student_checklist_school_select
+    @user_checklist = Userchecklist.new
+  end
+  #helper_method :new_student_checklist_school_select
+
   
 
   private

@@ -32,6 +32,7 @@ Rails.application.routes.draw do
     resources :comments
   end
   resources :search, only: [:index]
+  resources :userchecklists
 
 
   # This is used for approving and rejecting users
@@ -128,6 +129,8 @@ Rails.application.routes.draw do
 
     #resources :sessions, only: [:create, :destroy]
     resource :home, only: [:show]
+
+    match '/student_checklist_select' => 'checklists#new_student_checklist_school_select', :via => :get
 
   
  
