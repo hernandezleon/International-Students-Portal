@@ -1,25 +1,36 @@
 
 <center>
 	<h1>Sign up as a Student or a School Administrator</h1>
+	<br>
+	<br>
+	<div class="row">
+    <div class="col-md-6 col-md-offset-3"> 
 
-	<br ><br ><br >
+        <div class="row">
+		    <div class="col-sm-6 form-group">
+		    	<br>
 
-	<%= link_to "Sign Up as a Student", new_user_registration_path,:style=>'color:#FFFFFF;', :class => "btn btn-primary btn-lg" %>
+		    	A student will be able to view school information and checklists and participate in the forum.
+		    	<br>
+				<br>
+				<br>
+				<%= link_to "Sign Up as a Student", new_user_registration_path,:style=>'color:#FFFFFF;', :class => "btn btn-info btn-block" %>
+			</div>
 
+		    <div class="col-sm-6 form-group">
 
-	<br >
-
-	A student will be able to view school information and checklists and participate in the forum.
-
-	<br ><br ><br ><br >
-
-
-	<%= link_to "Sign Up as a School Administrator", new_admin_path ,:style=>'color:#FFFFFF;', :class => "btn btn-primary btn-lg" %>
-
-	<br >
-
-	A School Administrator will be able to add information about their respective school and edit checklist information as well be a moderator in their respective school forum. 
+		    	A School Administrator will be able to add information about their respective school and edit checklist information as well be a moderator in their respective school forum. 
+				<br>
+				<br>
+				<%= link_to "Sign Up as a School Administrator", new_admin_path ,:style=>'color:#FFFFFF;', :class => "btn btn-info btn-block"%>
+			</div>
+		</div>
+	</div>
+	</div>
 
 </center>
+<br>
+<br>
+<br>
 
       

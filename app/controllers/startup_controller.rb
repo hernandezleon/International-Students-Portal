@@ -4,7 +4,7 @@ class StartupController < ApplicationController
 	def index
   	end
 
-	def help
+	def aboutus
   	end
 
   	def dashboard

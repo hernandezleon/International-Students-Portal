@@ -1,1 +1,9 @@
-<h1>Test</h1>
+<center><h1> List of your Checklists </h1></center>
+
+<br />
+
+<% @user_checklists.each do |f| %>
+<% @school = School.find(f.school_id) %>
+<h2><%= link_to @school.name, userchecklist_path(f) %><br />
+<% end %>
+

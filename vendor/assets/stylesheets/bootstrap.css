@@ -4623,24 +4623,26 @@ a.badge:focus {
 .jumbotron {
   padding: 30px 15px;
   margin-bottom: 30px;
-  background-image: url('https://raw.githubusercontent.com/hernandezleon/International-Students-Portal/MessageBranch/vendor/assets/stylesheets/here.jpg');
+  background-image: url('https://raw.githubusercontent.com/hernandezleon/International-Students-Portal/MessageBranch/vendor/assets/stylesheets/bg-masthead.jpg');
   
   /*background-image: url('intl-static-jumbo.jpeg');*/
 }
 .jumbotron h1,
 .jumbotron .h1 {
-  color: inherit;
+  color: white;
+  font-weight: bold;
   font-size: 65px !important;
+  text-shadow: 4px 4px black;
 }
 .jumbotron h2,
 .jumbotron .h1 {
-  color: inherit;;
+  color: black ;;
 }
 .jumbotron p {
   margin-bottom: 30px;
-  font-size: 55px;
-  font-weight: bold;
-  color: inherit;
+  font-size: 25px !important;
+  color:  white;
+  text-shadow: 2px 2px black ;
 }
 .jumbotron > hr {
   border-top-color: inherit;
@@ -4663,7 +4665,8 @@ a.badge:focus {
   }
   .jumbotron h1,
   .jumbotron .h1 {
-    color: white;
+    font-weight: bold;
+    color: white !important;
     font-size: 63px;
   }
 }
