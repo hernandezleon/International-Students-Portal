@@ -8740,3 +8740,42 @@ Cont'
 [2018-04-09 18:30:23 -0500 sglennon-HP-ENVY-x360-m6-Convertible (3306)] INFO : Installing Puma::Rack::Builder middleware instrumentation
 [2018-04-09 18:30:26 -0500 sglennon-HP-ENVY-x360-m6-Convertible (3297)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
 [2018-04-09 18:30:26 -0500 sglennon-HP-ENVY-x360-m6-Convertible (3306)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Reading configuration from config/newrelic.yml (/home/sglennon/rails_projects/International-Students-Portal)
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Environment: development
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : No known dispatcher detected.
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Application: My Application (Development)
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Installing Rails Sunspot instrumentation
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Installing ActiveJob instrumentation
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Installing Net instrumentation
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Installing Rails 4 Controller instrumentation
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Installing Rails 4 view instrumentation
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Finished instrumentation
+[2018-04-10 01:19:37 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-04-10 01:19:40 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-04-10 01:19:45 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4225)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-04-10 01:19:45 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4225)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-04-10 01:19:45 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4225)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-04-10 01:19:45 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4225)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-04-10 01:19:45 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4225)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-04-10 01:19:45 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4225)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-04-10 01:19:45 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4225)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-04-10 01:19:45 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4234)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-04-10 01:19:45 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4234)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-04-10 01:19:45 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4234)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-04-10 01:19:45 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4234)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-04-10 01:19:45 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4234)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-04-10 01:19:45 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4234)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-04-10 01:19:45 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4234)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-04-10 01:19:48 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4225)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-04-10 01:19:48 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4234)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-04-10 02:02:16 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4234)] INFO : Starting Agent shutdown
+[2018-04-10 02:02:16 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4225)] INFO : Starting Agent shutdown
+[2018-04-10 02:02:16 -0500 sglennon-HP-ENVY-x360-m6-Convertible (4218)] INFO : Starting Agent shutdown

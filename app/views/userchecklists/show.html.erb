@@ -1,1 +1,11 @@
-<h1> Show Test </h1>
+<center><h1>Edit your Checklist for <%= @school.name %></h1></center>
+
+Keep track of important documents submitted to this school 
+
+<br />
+<br />
+
+<%= render 'form_new' %>
+<% @addr = '/userchecklists/' + @user_checklist.id.to_s %>
+<%= button_to 'Delete', @addr, method: :delete, data: {confirm: "Are You Sure?"} %>
+<%= button_to 'Back', userchecklists_path %> 
