@@ -64,7 +64,8 @@ class UserchecklistsController < ApplicationController
 		end
 
 		if @user_checklist.save
-			redirect_to edit_userchecklist_path(@user_checklist)
+			#redirect_to edit_userchecklist_path(@user_checklist)
+			redirect_to '/userchecklists'
 		else
 			render 'new'
 		end
