@@ -8665,3 +8665,57 @@ Cont'
 [2018-04-08 14:38:49 -0500 Karlas-MacBook-Air.local (3927)] ERROR : Error occurred detecting: gcp
 [2018-04-08 14:38:49 -0500 Karlas-MacBook-Air.local (3927)] ERROR : JSON::ParserError: 784: unexpected token at '<html><head><meta http-equiv="refresh" content="0;url=http://www.search-error.com/index.php?origURL=http://metadata.google.internal/computeMetadata/v1/instance/&bc="/></head><body><script type="text/javascript">window.location="http://www.search-error.com/index.php?origURL="+escape(window.location)+"&r="+escape(document.referrer)+"&bc=";</script></body></html>'
 [2018-04-08 14:38:51 -0500 Karlas-MacBook-Air.local (3927)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-04-08 18:07:27 -0500 Karlas-MacBook-Air.local (3928)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2018-04-08 18:07:27 -0500 Karlas-MacBook-Air.local (3928)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-211.newrelic.com:443 after 0.001682 seconds: Failed to open TCP connection to collector-211.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2018-04-08 20:56:06 -0500 Karlas-MacBook-Air.local (2229)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2018-04-08 20:56:06 -0500 Karlas-MacBook-Air.local (2229)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-211.newrelic.com:443 after 0.003135 seconds: Failed to open TCP connection to collector-211.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2018-04-08 23:32:34 -0500 Karlas-MacBook-Air.local (4706)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-04-08 23:32:34 -0500 Karlas-MacBook-Air.local (4706)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-04-08 23:32:34 -0500 Karlas-MacBook-Air.local (4706)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-04-08 23:32:34 -0500 Karlas-MacBook-Air.local (4706)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-04-08 23:32:35 -0500 Karlas-MacBook-Air.local (4706)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-04-08 23:32:35 -0500 Karlas-MacBook-Air.local (4706)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-04-08 23:32:35 -0500 Karlas-MacBook-Air.local (4706)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-04-08 23:32:37 -0500 Karlas-MacBook-Air.local (4706)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-04-08 23:33:50 -0500 Karlas-MacBook-Air.local (4706)] INFO : Starting Agent shutdown
+[2018-04-08 23:33:50 -0500 Karlas-MacBook-Air.local (4707)] INFO : Starting Agent shutdown
+[2018-04-08 23:33:51 -0500 Karlas-MacBook-Air.local (2229)] INFO : Starting Agent shutdown
+[2018-04-15 15:49:47 -0500 Karlas-MacBook-Air.local (2690)] INFO : Starting the New Relic agent version 4.7.1.340 in "development" environment.
+[2018-04-15 15:49:47 -0500 Karlas-MacBook-Air.local (2690)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2018-04-15 15:49:47 -0500 Karlas-MacBook-Air.local (2690)] INFO : Reading configuration from config/newrelic.yml (/Users/KarlaLucia/International-Students-Portal)
+[2018-04-15 15:49:47 -0500 Karlas-MacBook-Air.local (2690)] INFO : Environment: development
+[2018-04-15 15:49:47 -0500 Karlas-MacBook-Air.local (2690)] INFO : No known dispatcher detected.
+[2018-04-15 15:49:47 -0500 Karlas-MacBook-Air.local (2690)] INFO : Application: My Application (Development)
+[2018-04-15 15:49:47 -0500 Karlas-MacBook-Air.local (2690)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-04-15 15:49:48 -0500 Karlas-MacBook-Air.local (2690)] INFO : Installing ActiveJob instrumentation
+[2018-04-15 15:49:48 -0500 Karlas-MacBook-Air.local (2690)] INFO : Installing ActiveRecord 4 instrumentation
+[2018-04-15 15:49:48 -0500 Karlas-MacBook-Air.local (2690)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[2018-04-15 15:49:48 -0500 Karlas-MacBook-Air.local (2690)] INFO : Installing Net instrumentation
+[2018-04-15 15:49:48 -0500 Karlas-MacBook-Air.local (2690)] INFO : Installing deferred Rack::Builder instrumentation
+[2018-04-15 15:49:48 -0500 Karlas-MacBook-Air.local (2690)] INFO : Installing Rack::Builder middleware instrumentation
+[2018-04-15 15:49:48 -0500 Karlas-MacBook-Air.local (2690)] INFO : Installing Rails 3+ middleware instrumentation
+[2018-04-15 15:49:48 -0500 Karlas-MacBook-Air.local (2690)] INFO : Installing Rails Sunspot instrumentation
+[2018-04-15 15:49:48 -0500 Karlas-MacBook-Air.local (2690)] INFO : Installing Rails 4 Controller instrumentation
+[2018-04-15 15:49:48 -0500 Karlas-MacBook-Air.local (2690)] INFO : Installing Rails 4 view instrumentation
+[2018-04-15 15:49:48 -0500 Karlas-MacBook-Air.local (2690)] INFO : Finished instrumentation
+[2018-04-15 15:49:48 -0500 Karlas-MacBook-Air.local (2690)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-04-15 15:49:50 -0500 Karlas-MacBook-Air.local (2690)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-04-15 15:50:23 -0500 Karlas-MacBook-Air.local (2708)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-04-15 15:50:23 -0500 Karlas-MacBook-Air.local (2708)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-04-15 15:50:23 -0500 Karlas-MacBook-Air.local (2708)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-04-15 15:50:23 -0500 Karlas-MacBook-Air.local (2708)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-04-15 15:50:23 -0500 Karlas-MacBook-Air.local (2708)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-04-15 15:50:23 -0500 Karlas-MacBook-Air.local (2708)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-04-15 15:50:23 -0500 Karlas-MacBook-Air.local (2708)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-04-15 15:50:24 -0500 Karlas-MacBook-Air.local (2707)] WARN : Ignoring addition of NewRelic::Agent::Samplers::CpuSampler because it is already registered.
+[2018-04-15 15:50:24 -0500 Karlas-MacBook-Air.local (2707)] WARN : Ignoring addition of NewRelic::Agent::Samplers::MemorySampler because it is already registered.
+[2018-04-15 15:50:24 -0500 Karlas-MacBook-Air.local (2707)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler not available: No DJ worker present. Skipping DJ queue sampler
+[2018-04-15 15:50:24 -0500 Karlas-MacBook-Air.local (2707)] WARN : Ignoring addition of NewRelic::Agent::Samplers::VMSampler because it is already registered.
+[2018-04-15 15:50:25 -0500 Karlas-MacBook-Air.local (2707)] INFO : Doing deferred dependency-detection before Rack startup
+[2018-04-15 15:50:25 -0500 Karlas-MacBook-Air.local (2707)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2018-04-15 15:50:25 -0500 Karlas-MacBook-Air.local (2707)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2018-04-15 15:50:29 -0500 Karlas-MacBook-Air.local (2707)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-04-15 15:50:29 -0500 Karlas-MacBook-Air.local (2708)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1850167/applications/103024480
+[2018-04-15 18:01:01 -0500 Karlas-MacBook-Air.local (2708)] INFO : Starting Agent shutdown
+[2018-04-15 18:01:01 -0500 Karlas-MacBook-Air.local (2707)] INFO : Starting Agent shutdown
+[2018-04-15 18:01:01 -0500 Karlas-MacBook-Air.local (2690)] INFO : Starting Agent shutdown
