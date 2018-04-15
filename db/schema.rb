@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180408001239) do
+ActiveRecord::Schema.define(version: 20180411191902) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,14 +32,6 @@ ActiveRecord::Schema.define(version: 20180408001239) do
   end
 
   add_index "checklists", ["school_id"], name: "index_checklists_on_school_id", unique: true, using: :btree
-
-  create_table "checklists_users", id: false, force: :cascade do |t|
-    t.integer "user_id",      null: false
-    t.integer "checklist_id", null: false
-  end
-
-  add_index "checklists_users", ["checklist_id", "user_id"], name: "index_checklists_users_on_checklist_id_and_user_id", using: :btree
-  add_index "checklists_users", ["user_id", "checklist_id"], name: "index_checklists_users_on_user_id_and_checklist_id", using: :btree
 
   create_table "comments", force: :cascade do |t|
     t.text     "content"
@@ -109,11 +101,8 @@ ActiveRecord::Schema.define(version: 20180408001239) do
     t.text     "organizations"
     t.text     "things_to_do_near"
     t.integer  "checklist_id"
-  end
-
-  create_table "user_checklists", id: false, force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "checklist_id"
+    t.text     "website"
+    t.text     "scholarships"
   end
 
   create_table "userchecklists", force: :cascade do |t|

@@ -64,21 +64,25 @@ class UserchecklistsController < ApplicationController
 		end
 
 		if @user_checklist.save
-			redirect_to edit_userchecklist_path(@user_checklist)
+			#redirect_to edit_userchecklist_path(@user_checklist)
+			redirect_to '/userchecklists'
 		else
 			render 'new'
 		end
 		#@cl_id = @user_checklist.id
 		#redirect_to edit_userchecklist_path(@user_checklist)
+
 	end
 
 	def index
-		@school_checklist = Checklist.where(school_id: @user_checklist.school_id)
+		#@school_checklist = Checklist.where(school_id: @user_checklist.school_id)
+		@user_checklists = Userchecklist.where(userid: current_user.id)
 	end
 
 	def show
 		@user_checklist = Userchecklist.find(params[:id])
-		redirect_to edit_userchecklist_path(@user_checklist)
+		#redirect_to edit_userchecklist_path(@user_checklist)
+		@school = School.find(@user_checklist.school_id)
 	end
 
 	def edit
@@ -100,6 +104,9 @@ class UserchecklistsController < ApplicationController
   end
 
 	def destroy
+		@user_checklist = Userchecklist.find(params[:id])
+		@user_checklist.destroy
+		redirect_to root_path
 	end
 
 	private
