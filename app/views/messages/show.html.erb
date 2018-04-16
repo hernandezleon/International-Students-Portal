@@ -1,6 +1,6 @@
 <br>
-	<div class="row">
-      <div class="col-md-6 col-md-offset-3"> 
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
 
 		<!-- MESSAGE -->
 		<h2><%= @message.title %></h2>
@@ -26,18 +26,17 @@
 			<h3> Reply to Message </h3>
 			<%= render 'comments/form' %>
 		<% end %>		
-		</div>
-		
-	<div class="row">
-      <div class="col-md-6 col-md-offset-3"> 
-		<br>
-		<%= button_to "Back", messages_path,:method => :get,class: "btn btn-info", width: "10px", height: "10px" %> 
-		<% if user_signed_in? %>
-		<% if @message.user_id == current_user.id %>
+	</div>
+		<div class="row">
+	 	 <div class="col-md-8 col-md-offset-2">
+			<br>
+			<%= button_to "Back", messages_path,:method => :get,class: "btn btn-info" %> 
+			<% if user_signed_in? %>
+			<% if @message.user_id == current_user.id %>
 
 	</div>
 </div>
-</div>
+
 
 	<% end %>
 <% end %>

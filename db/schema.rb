@@ -33,6 +33,14 @@ ActiveRecord::Schema.define(version: 20180411191902) do
 
   add_index "checklists", ["school_id"], name: "index_checklists_on_school_id", unique: true, using: :btree
 
+  create_table "checklists_users", id: false, force: :cascade do |t|
+    t.integer "user_id",      null: false
+    t.integer "checklist_id", null: false
+  end
+
+  add_index "checklists_users", ["checklist_id", "user_id"], name: "index_checklists_users_on_checklist_id_and_user_id", using: :btree
+  add_index "checklists_users", ["user_id", "checklist_id"], name: "index_checklists_users_on_user_id_and_checklist_id", using: :btree
+
   create_table "comments", force: :cascade do |t|
     t.text     "content"
     t.integer  "message_id"
@@ -103,6 +111,11 @@ ActiveRecord::Schema.define(version: 20180411191902) do
     t.integer  "checklist_id"
     t.text     "website"
     t.text     "scholarships"
+  end
+
+  create_table "user_checklists", id: false, force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "checklist_id"
   end
 
   create_table "userchecklists", force: :cascade do |t|
