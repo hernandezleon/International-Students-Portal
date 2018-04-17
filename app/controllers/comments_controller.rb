@@ -9,7 +9,7 @@ class CommentsController < ApplicationController
 		if @comment.save
 			redirect_to message_path(@message)
 		else
-			render 'new'
+			redirect_to messages_path
 		end
 	end
 
