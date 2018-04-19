@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
 	has_many :messages
 	has_many :comments
   has_many :userchecklists
-  has_and_belongs_to_many :checklists
+  #has_and_belongs_to_many :checklists
   # validates :name, :city, :state, :zip_code, :steps, :school_contact, :organizations, presence: true
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable

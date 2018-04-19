@@ -10,13 +10,22 @@
 		<p>Posted by <%= @message.user.email %> <%= time_ago_in_words(@message.created_at) %> ago</p>
 		
 		<!-- EDIT OR DELETE MAIN COMMENT -->
+		<% if user_signed_in? %>
+		<% if (@message.user_id == current_user.id) %>
 		<div class="row">
-		<div class="col-sm-2 form-group">
-		<%= button_to "Edit", edit_message_path(@message), method: :get,class: "btn btn-warning" %> 
-		</div>
+		
+			<div class="col-sm-2 form-group">
+			<%= button_to "Edit", edit_message_path(@message), method: :get,class: "btn btn-warning" %> 
+			</div>
 
-		<%= button_to "Delete", message_path(@message), method: :delete, data: {confirm: "Are You Sure"},class: "btn btn-danger" %> 
+			<%= button_to "Delete", message_path(@message), method: :delete, data: {confirm: "Are You Sure"},class: "btn btn-danger" %> 
+		<% else %>
+		<% %>
+		
 		</div>
+		<% end %>
+		<% end %>
+
 
 		<h3> Comments: </h3>
 

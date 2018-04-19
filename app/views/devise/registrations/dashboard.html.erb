@@ -97,13 +97,15 @@
         </div>
         <div class="panel-footer">
             <% if can? :manage, Checklist %>
-                <%= button_to "Create and View Checklists", checklists_path, :method => :get,class: "btn btn-success"  %>
+                <%= button_to "View School Checklist Templates", checklists_path, :method => :get,class: "btn btn-success"  %>
                 <br>
-                <%= button_to "Edit Checklist for your University", edit_checklist_path(current_user.id), :method => :get,class: "btn btn-warning"  %>
+                <%= button_to "Create New Checklist Template", '/checklists/new', :method => :get,class: "btn btn-warning"  %>
                 <br>
-                <%= button_to "View All Checklists", checklists_index_path, :method => :get,class: "btn btn-info"  %> 
+                <%#= button_to "View All Checklists", checklists_index_path, :method => :get,class: "btn btn-info"  %> 
             <% else %>
-                <%= button_to "View Checklists", checklists_path, :method => :get,class: "btn btn-info"  %>        
+                <%= button_to "Start A Checklist for a School", '/userchecklists/new', :method => :get, class: "btn btn-warning" %>
+                <br>
+                <%= button_to "View Checklists", '/userchecklists', :method => :get,class: "btn btn-info"  %>        
             <% end %>
             <br />
         </div>

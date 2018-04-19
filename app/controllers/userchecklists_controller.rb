@@ -113,8 +113,7 @@ class UserchecklistsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def userchecklist_params
-      params.require(:userchecklist).permit(:id, :act_score, :sat_score, :high_school_transcript, :previous_college_transcript, :i_20, :visa_proof,
-                                        :application_fee, :online_application, :school_id, :user)
+      params.require(:userchecklist).permit(:id, :act_score, :sat_score, :high_school_transcript, :previous_college_transcript, :i_20, :visa_proof, :application_fee, :online_application, :school_id, :userid)
     end
 
 end

@@ -1,5 +1,6 @@
 class School < ActiveRecord::Base
-	has_one :checklist
+	has_one :checklist, dependent: :destroy
+	has_many :userchecklists, dependent: :destroy
 	#has_many :userchecklists
 	include PgSearch
   	pg_search_scope :search, against: [:name, :city, :state, :semester_tuition, :requirements,
