@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 	has_many :messages
-	has_many :comments
+	has_many :comments, dependent: :destroy
   has_many :userchecklists
   #has_and_belongs_to_many :checklists
   # validates :name, :city, :state, :zip_code, :steps, :school_contact, :organizations, presence: true
