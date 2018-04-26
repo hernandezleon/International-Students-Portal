@@ -1,6 +1,6 @@
 <br>
 <div class="row">
-  <div class="col-md-8 col-md-offset-2">
+    <div class="col-md-8 col-md-offset-2">
 
 		<!-- MESSAGE -->
 		<h2><%= @message.title %></h2>
@@ -11,21 +11,15 @@
 		
 		<!-- EDIT OR DELETE MAIN COMMENT -->
 		<% if user_signed_in? %>
-		<% if (@message.user_id == current_user.id) %>
-		<div class="row">
-		
-			<div class="col-sm-2 form-group">
-			<%= button_to "Edit", edit_message_path(@message), method: :get,class: "btn btn-warning" %> 
-			</div>
-
-			<%= button_to "Delete", message_path(@message), method: :delete, data: {confirm: "Are You Sure"},class: "btn btn-danger" %> 
-		<% else %>
-		<% %>
-		
-		</div>
+			<% if (@message.user_id == current_user.id) %>
+				<div class="row">
+					<div class="col-sm-2 form-group">
+						<%= button_to "Edit", edit_message_path(@message), method: :get,class: "btn btn-warning" %> 
+					</div>
+					<%= button_to "Delete", message_path(@message), method: :delete, data: {confirm: "Are You Sure"},class: "btn btn-danger" %> 
+				</div>
+			<% end %>
 		<% end %>
-		<% end %>
-
 
 		<h3> Comments: </h3>
 
@@ -36,16 +30,13 @@
 			<%= render 'comments/form' %>
 		<% end %>		
 	</div>
-		<div class="row">
-	 	 <div class="col-md-8 col-md-offset-2">
+	<div class="row">
+	 	<div class="col-md-8 col-md-offset-2">
 			<br>
 			<%= button_to "Back", messages_path,:method => :get,class: "btn btn-info" %> 
 			<% if user_signed_in? %>
 			<% if @message.user_id == current_user.id %>
-
+		</div>
 	</div>
-</div>
-
-
 	<% end %>
 <% end %>
