@@ -126,8 +126,9 @@
             </div>
         </div>
         <div class="panel-footer">
+            <center><h4> Your newest messages </h4></center>
             <% if current_user.messages.each do |message| %>
-                <center><h4> Your newest messages </h4></center>
+                
                 <h4><%= link_to message.title, message_path(message), :method => :get %></h4> updated at <%= message.updated_at %>
                 <br>
             <% end.empty? %>
